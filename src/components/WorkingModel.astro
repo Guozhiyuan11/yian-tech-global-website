@@ -1,0 +1,46 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import { content, routeFor, type Locale } from '../i18n/content';
+
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = content[locale].project;
+---
+
+<section class="project-workflow section" id="approach">
+  <div class="shell">
+    <SectionHeading
+      index="05"
+      eyebrow={t.eyebrow}
+      title={t.title}
+      description={t.description}
+    />
+
+    <ol class="project-steps" data-reveal>
+      {
+        t.steps.map((step) => (
+          <li>
+            <p class="project-step__meta"><span>{step.number}</span><span>{step.label}</span></p>
+            <h3>{step.title}</h3>
+            <p>{step.copy}</p>
+            <strong>{step.output}</strong>
+          </li>
+        ))
+      }
+    </ol>
+
+    <aside class="custom-callout" data-reveal>
+      <div>
+        <p>{t.customEyebrow}</p>
+        <h3>{t.customTitle}</h3>
+      </div>
+      <div>
+        <p>{t.customCopy}</p>
+        <div class="custom-callout__actions">
+          <a class="button button--dark" href="#contact">{t.customCta}<span aria-hidden="true">↗</span></a>
+          <a class="button button--line" href={routeFor(locale, 'products')}>{t.catalogueCta}<span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>

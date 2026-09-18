@@ -1,0 +1,78 @@
+---
+import MediaPlaceholder from './MediaPlaceholder.astro';
+import SectionHeading from './SectionHeading.astro';
+import { getMediaSlot, type MediaSlotId } from '../data/media-manifest';
+import { content, type Locale } from '../i18n/content';
+
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = content[locale].delivery;
+const stages = t.stages;
+---
+
+<section class="delivery-story section section--dark" id="capabilities" data-story>
+  <div class="shell">
+    <SectionHeading
+      index="02"
+      eyebrow={t.eyebrow}
+      title={t.title}
+      description={t.description}
+      theme="dark"
+    />
+
+    <div class="delivery-story__grid">
+      <div class="delivery-story__visual" aria-live="polite">
+        {
+          stages.map((stage, index) => (
+            <div class="delivery-story__visual-layer" data-story-image data-active={index === 0 ? 'true' : 'false'}>
+              <MediaPlaceholder slot={getMediaSlot(stage.slot as MediaSlotId)} index={stage.number} variant="story" alt={stage.title} />
+            </div>
+          ))
+        }
+        <div class="delivery-story__word" aria-hidden="true" data-story-word>CONFIRM</div>
+      </div>
+
+      <ol class="delivery-story__steps">
+        {
+          stages.map((stage, index) => (
+            <li class="delivery-step" data-story-step data-word={stage.label.toUpperCase()} data-active={index === 0 ? 'true' : 'false'}>
+              <p><span>{stage.number}</span><span>{stage.label}</span></p>
+              <h3>{stage.title}</h3>
+              <p>{stage.copy}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>
+
+<script>
+  const story = document.querySelector<HTMLElement>('[data-story]');
+
+  if (story && 'IntersectionObserver' in window) {
+    const steps = Array.from(story.querySelectorAll<HTMLElement>('[data-story-step]'));
+    const images = Array.from(story.querySelectorAll<HTMLElement>('[data-story-image]'));
+    const word = story.querySelector<HTMLElement>('[data-story-word]');
+
+    const setActive = (index: number) => {
+      steps.forEach((step, itemIndex) => (step.dataset.active = String(itemIndex === index)));
+      images.forEach((image, itemIndex) => (image.dataset.active = String(itemIndex === index)));
+      if (word) word.textContent = steps[index]?.dataset.word ?? '';
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        const index = steps.indexOf(visible.target as HTMLElement);
+        if (index >= 0) setActive(index);
+      },
+      { rootMargin: '-25% 0px -35% 0px', threshold: [0.2, 0.5, 0.8] },
+    );
+
+    steps.forEach((step) => observer.observe(step));
+  }
+</script>

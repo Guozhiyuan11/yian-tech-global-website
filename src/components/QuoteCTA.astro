@@ -1,0 +1,27 @@
+---
+import { site } from '../data/site';
+import { content, type Locale } from '../i18n/content';
+
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = content[locale].contact;
+---
+
+<section class="quote-cta" id="contact">
+  <div class="shell quote-cta__inner" data-reveal>
+    <p class="quote-cta__eyebrow"><span>06</span><span>{t.eyebrow}</span></p>
+    <h2>{t.titleLine1}<br /><em>{t.titleLine2}</em></h2>
+    <div class="quote-cta__body">
+      <p>{t.copy}</p>
+      <div class="quote-cta__actions">
+        <a class="button button--dark" href={`mailto:${site.email}?subject=${encodeURIComponent(t.emailSubject)}`}>
+          {t.email} <span aria-hidden="true">↗</span>
+        </a>
+        <a class="button button--line" href={site.whatsappHref} target="_blank" rel="noreferrer">
+          {t.whatsapp} <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <p class="quote-cta__note">{t.note}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroStorySlider from '../components/HeroStorySlider.astro';
+import FeaturedProducts from '../components/FeaturedProducts.astro';
+import MaterialDeliveryStory from '../components/MaterialDeliveryStory.astro';
+import IndustryExplorer from '../components/IndustryExplorer.astro';
+import AboutSupply from '../components/AboutSupply.astro';
+import WorkingModel from '../components/WorkingModel.astro';
+import QuoteCTA from '../components/QuoteCTA.astro';
+import { content } from '../i18n/content';
+
+const locale = 'en' as const;
+const t = content[locale];
+---
+
+<BaseLayout
+  title={t.meta.homeTitle}
+  description={t.meta.homeDescription}
+  locale={locale}
+  page="home"
+>
+  <HeroStorySlider locale={locale} />
+
+  <section class="positioning" aria-label="Company positioning">
+    <div class="shell positioning__inner" data-reveal>
+      <p class="positioning__label"><span>{t.positioning.label}</span><span>{t.positioning.sublabel}</span></p>
+      <p class="positioning__statement">
+        {t.positioning.before}<em>{t.positioning.emphasis}</em>{t.positioning.after}
+      </p>
+      <p class="positioning__aside">{t.positioning.aside}</p>
+    </div>
+  </section>
+
+  <FeaturedProducts locale={locale} />
+  <MaterialDeliveryStory locale={locale} />
+  <IndustryExplorer locale={locale} />
+  <AboutSupply locale={locale} />
+  <WorkingModel locale={locale} />
+  <QuoteCTA locale={locale} />
+</BaseLayout>

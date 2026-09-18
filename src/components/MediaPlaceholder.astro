@@ -1,0 +1,57 @@
+---
+import type { MediaSlot } from '../data/media-manifest';
+
+interface Props {
+  slot: MediaSlot;
+  index?: string;
+  variant?: 'hero' | 'product' | 'story' | 'industry';
+  class?: string;
+  alt?: string;
+}
+
+const {
+  slot,
+  index = '00',
+  variant = 'product',
+  class: className = '',
+  alt,
+} = Astro.props;
+---
+
+<figure
+  class:list={['media-frame', `media-frame--${variant}`, className]}
+  style={`--media-focal: ${slot.focalPoint};`}
+  data-media-slot={slot.id}
+  data-ready={slot.currentImage ? 'true' : 'false'}
+>
+  {
+    slot.currentImage ? (
+      <img
+        class="media-frame__image"
+        src={slot.currentImage}
+        alt={alt ?? slot.alt}
+        loading={variant === 'hero' && index === '01' ? 'eager' : 'lazy'}
+        fetchpriority={variant === 'hero' && index === '01' ? 'high' : 'auto'}
+        decoding="async"
+        sizes={variant === 'hero' ? '100vw' : '(max-width: 760px) 100vw, 50vw'}
+      />
+    ) : (
+      <div class="media-frame__placeholder" aria-label={`${slot.id}: image awaiting original`}>
+        <div class="media-frame__field" aria-hidden="true">
+          <span class="media-frame__ring"></span>
+          <span class="media-frame__axis media-frame__axis--x"></span>
+          <span class="media-frame__axis media-frame__axis--y"></span>
+          <span class="media-frame__mark media-frame__mark--a"></span>
+          <span class="media-frame__mark media-frame__mark--b"></span>
+        </div>
+        <figcaption class="media-frame__caption">
+          <span class="media-frame__index">{index}</span>
+          <span class="media-frame__state">Image pending</span>
+          <strong>{slot.preferredSubject}</strong>
+          <span>Ref. {slot.sourceImageIds.map((id) => String(id).padStart(2, '0')).join(' / ')}</span>
+          <span>{slot.desktopAspectRatio} desktop · {slot.mobileAspectRatio} mobile</span>
+        </figcaption>
+      </div>
+    )
+  }
+</figure>

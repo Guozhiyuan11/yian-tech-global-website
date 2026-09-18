@@ -1,0 +1,79 @@
+---
+import MediaPlaceholder from './MediaPlaceholder.astro';
+import SectionHeading from './SectionHeading.astro';
+import { getMediaSlot, type MediaSlotId } from '../data/media-manifest';
+import { content, type Locale } from '../i18n/content';
+
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = content[locale].industries;
+const industries = t.items;
+---
+
+<section class="industries section" id="industries" data-industries>
+  <div class="shell">
+    <SectionHeading
+      index="03"
+      eyebrow={t.eyebrow}
+      title={t.title}
+      description={t.description}
+    />
+
+    <div class="industries__grid">
+      <div class="industries__visual">
+        {
+          industries.map((industry, index) => (
+            <div data-industry-image data-active={index === 0 ? 'true' : 'false'}>
+              <MediaPlaceholder slot={getMediaSlot(industry.slot as MediaSlotId)} index={industry.number} variant="industry" alt={industry.title} />
+            </div>
+          ))
+        }
+      </div>
+      <div class="industries__list" role="tablist" aria-label={t.ariaLabel}>
+        {
+          industries.map((industry, index) => (
+            <button
+              type="button"
+              role="tab"
+              aria-selected={index === 0 ? 'true' : 'false'}
+              class="industry-row"
+              data-industry-trigger
+              data-index={index}
+            >
+              <span>{industry.number}</span>
+              <span><strong>{industry.title}</strong><small>{industry.copy}</small></span>
+              <span aria-hidden="true">↗</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const explorer = document.querySelector<HTMLElement>('[data-industries]');
+
+  if (explorer) {
+    const triggers = Array.from(explorer.querySelectorAll<HTMLButtonElement>('[data-industry-trigger]'));
+    const images = Array.from(explorer.querySelectorAll<HTMLElement>('[data-industry-image]'));
+
+    const activate = (index: number) => {
+      triggers.forEach((trigger, itemIndex) => trigger.setAttribute('aria-selected', String(itemIndex === index)));
+      images.forEach((image, itemIndex) => (image.dataset.active = String(itemIndex === index)));
+    };
+
+    triggers.forEach((trigger, index) => {
+      trigger.addEventListener('mouseenter', () => activate(index));
+      trigger.addEventListener('focus', () => activate(index));
+      trigger.addEventListener('click', () => activate(index));
+      trigger.addEventListener('keydown', (event) => {
+        if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+        event.preventDefault();
+        const next = (index + (event.key === 'ArrowDown' ? 1 : -1) + triggers.length) % triggers.length;
+        triggers[next].focus();
+        activate(next);
+      });
+    });
+  }
+</script>

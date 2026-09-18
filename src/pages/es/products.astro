@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCatalogue from '../../components/ProductCatalogue.astro';
+import QuoteCTA from '../../components/QuoteCTA.astro';
+import { content } from '../../i18n/content';
+
+const locale = 'es' as const;
+const t = content[locale];
+---
+
+<BaseLayout title={t.meta.productsTitle} description={t.meta.productsDescription} locale={locale} page="products">
+  <ProductCatalogue locale={locale} />
+  <QuoteCTA locale={locale} />
+</BaseLayout>

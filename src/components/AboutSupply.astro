@@ -1,0 +1,71 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import { content, type Locale } from '../i18n/content';
+
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = content[locale].about;
+const sources = locale === 'es'
+  ? [
+      { title: 'Aviso de mejora de la línea inoxidable, Gobierno de Shawan (2024)', href: 'https://www.shawan.gov.cn/shawa/hjbh/5b88098acb8d4d87bc4030853.html' },
+      { title: 'Plan de trabajo industrial de Shawan (2025)', href: 'https://shawan.gov.cn/shawa/lsfbf/29005315/2025031016275529685800000.html' },
+      { title: 'Informe de trabajo del Gobierno de Shawan (2018)', href: 'https://www.shawan.gov.cn/shawa/zfgzbg/4005b8b3444d4c8cb9a074e70.html' },
+    ]
+  : [
+      { title: 'Stainless-line upgrade notice, Shawan Government (2024)', href: 'https://www.shawan.gov.cn/shawa/hjbh/5b88098acb8d4d87bc4030853.html' },
+      { title: 'Shawan industrial work plan (2025)', href: 'https://shawan.gov.cn/shawa/lsfbf/29005315/2025031016275529685800000.html' },
+      { title: 'Shawan Government work report (2018)', href: 'https://www.shawan.gov.cn/shawa/zfgzbg/4005b8b3444d4c8cb9a074e70.html' },
+    ];
+---
+
+<section class="about-supply section" id="about">
+  <div class="shell">
+    <SectionHeading
+      index="04"
+      eyebrow={t.eyebrow}
+      title={t.title}
+      description={t.description}
+    />
+
+    <div class="about-supply__grid">
+      <figure class="about-supply__visual" data-reveal>
+        <img
+          src="/media/inventory/steel-39.webp"
+          alt={locale === 'es' ? 'Inventario de tubos de acero inoxidable en almacén' : 'Stainless steel tube inventory in a warehouse'}
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Sichuan Fali · Shawan, Leshan · {locale === 'es' ? 'contexto de suministro' : 'supply context'}</figcaption>
+      </figure>
+
+      <div class="about-supply__body" data-reveal>
+        <p class="about-supply__lead">{t.lead}</p>
+        <div class="about-supply__facts">
+          {
+            t.facts.map((fact) => (
+              <article>
+                <strong>{fact.value}</strong>
+                <p>{fact.label}</p>
+                <small>{fact.note}</small>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="about-evidence" data-reveal>
+      <div>
+        <p>{t.evidenceTitle}</p>
+        <ul>{t.evidence.map((item) => <li>{item}</li>)}</ul>
+      </div>
+      <div>
+        <p>{t.sourceLabel}</p>
+        <div class="about-evidence__sources">
+          {sources.map((source) => <a href={source.href} target="_blank" rel="noreferrer">{source.title}<span aria-hidden="true">↗</span></a>)}
+        </div>
+        <small>{t.sourceNote}</small>
+      </div>
+    </div>
+  </div>
+</section>

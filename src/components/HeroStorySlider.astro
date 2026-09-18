@@ -1,0 +1,149 @@
+---
+import MediaPlaceholder from './MediaPlaceholder.astro';
+import { getMediaSlot, type MediaSlotId } from '../data/media-manifest';
+import { content, type Locale } from '../i18n/content';
+
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = content[locale].hero;
+const slides = t.slides;
+---
+
+<section
+  class="hero"
+  id="top"
+  aria-roledescription="carousel"
+  aria-label={t.ariaLabel}
+  data-story-label={t.story}
+  data-story-of={t.of}
+  data-hero
+>
+  <div class="hero__slides">
+    {
+      slides.map((slide, index) => (
+        <article
+          class="hero-slide"
+          data-hero-slide
+          data-active={index === 0 ? 'true' : 'false'}
+          aria-hidden={index === 0 ? 'false' : 'true'}
+        >
+          <MediaPlaceholder
+            slot={getMediaSlot(slide.slot as MediaSlotId)}
+            index={slide.number}
+            variant="hero"
+            class="hero-slide__media"
+            alt={slide.alt}
+          />
+          <div class="hero-slide__shade" aria-hidden="true"></div>
+          <div class="hero-slide__content shell">
+            <p class="hero-slide__eyebrow">
+              <span>{slide.number}</span><span>{slide.label}</span>
+            </p>
+            <h1 class="hero-slide__title">
+              {slide.headline.map((line) => (
+                <span class:list={['hero-slide__line', { 'hero-slide__line--emphasis': line.includes(slide.emphasis) }]}>
+                  <span>{line}</span>
+                </span>
+              ))}
+            </h1>
+            <div class="hero-slide__lower">
+              <p>{slide.copy}</p>
+              <a class="text-link text-link--light" href={slide.href}>
+                <span>{slide.cta}</span><span aria-hidden="true">↘</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+
+  <div class="hero-controls shell">
+    <div class="hero-controls__counter" aria-hidden="true">
+      <span data-current>01</span><span class="hero-controls__rule"><i></i></span><span>04</span>
+    </div>
+    <div class="hero-controls__buttons">
+      <button type="button" data-hero-prev aria-label={t.previous}>
+        <span aria-hidden="true">←</span><span>{t.previousShort}</span>
+      </button>
+      <button type="button" data-hero-next aria-label={t.next}>
+        <span>{t.nextShort}</span><span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </div>
+  <p class="sr-only" aria-live="polite" data-hero-live>{t.story} 1 {t.of} 4: {slides[0].label}</p>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-hero]');
+
+  if (root) {
+    const slides = Array.from(root.querySelectorAll<HTMLElement>('[data-hero-slide]'));
+    const current = root.querySelector<HTMLElement>('[data-current]');
+    const live = root.querySelector<HTMLElement>('[data-hero-live]');
+    const nextButton = root.querySelector<HTMLButtonElement>('[data-hero-next]');
+    const prevButton = root.querySelector<HTMLButtonElement>('[data-hero-prev]');
+    let active = 0;
+    let pointerStartX = 0;
+    let pointerStartY = 0;
+    let pointerId: number | null = null;
+
+    const show = (requested: number, direction: 'next' | 'prev' = 'next') => {
+      const next = (requested + slides.length) % slides.length;
+      if (next === active) return;
+
+      root.dataset.direction = direction;
+      slides.forEach((slide, index) => {
+        const isActive = index === next;
+        slide.dataset.active = String(isActive);
+        slide.setAttribute('aria-hidden', String(!isActive));
+      });
+      active = next;
+      root.style.setProperty('--hero-progress', `${((active + 1) / slides.length) * 100}%`);
+      if (current) current.textContent = String(active + 1).padStart(2, '0');
+      if (live) {
+        const label = slides[active]?.querySelector('.hero-slide__eyebrow span:last-child')?.textContent ?? '';
+        live.textContent = `${root.dataset.storyLabel ?? 'Story'} ${active + 1} ${root.dataset.storyOf ?? 'of'} ${slides.length}: ${label}`;
+      }
+    };
+
+    nextButton?.addEventListener('click', () => show(active + 1, 'next'));
+    prevButton?.addEventListener('click', () => show(active - 1, 'prev'));
+
+    root.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        show(active + 1, 'next');
+      }
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        show(active - 1, 'prev');
+      }
+    });
+
+    root.addEventListener('pointerdown', (event) => {
+      if ((event.target as Element).closest('a, button')) return;
+      pointerId = event.pointerId;
+      pointerStartX = event.clientX;
+      pointerStartY = event.clientY;
+      root.setPointerCapture(event.pointerId);
+      root.classList.add('hero--dragging');
+    });
+
+    root.addEventListener('pointerup', (event) => {
+      if (pointerId !== event.pointerId) return;
+      const deltaX = event.clientX - pointerStartX;
+      const deltaY = event.clientY - pointerStartY;
+      root.classList.remove('hero--dragging');
+      pointerId = null;
+      if (Math.abs(deltaX) > 56 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
+        show(active + (deltaX < 0 ? 1 : -1), deltaX < 0 ? 'next' : 'prev');
+      }
+    });
+
+    root.addEventListener('pointercancel', () => {
+      root.classList.remove('hero--dragging');
+      pointerId = null;
+    });
+  }
+</script>

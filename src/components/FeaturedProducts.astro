@@ -1,0 +1,95 @@
+---
+import MediaPlaceholder from './MediaPlaceholder.astro';
+import SectionHeading from './SectionHeading.astro';
+import { getFeaturedProducts } from '../data/steel-products';
+import { getMediaSlot } from '../data/media-manifest';
+import { content, routeFor, type Locale } from '../i18n/content';
+
+interface Props { locale?: Locale }
+const { locale = 'en' } = Astro.props;
+const t = content[locale].featured;
+const products = getFeaturedProducts(locale);
+---
+
+<section class="products section" id="materials">
+  <div class="shell">
+    <SectionHeading
+      index="01"
+      eyebrow={t.eyebrow}
+      title={t.title}
+      description={t.description}
+    />
+
+    <div class="product-rail" data-product-rail>
+      <div class="product-rail__track" data-product-track tabindex="0" aria-label={t.eyebrow}>
+        {
+          products.map((product) => (
+            <article class="product-panel">
+              <MediaPlaceholder
+                slot={getMediaSlot(product.mediaSlot)}
+                index={product.index}
+                variant="product"
+                class="product-panel__media"
+                alt={product.titleLabel}
+              />
+              <div class="product-panel__content">
+                <p class="product-panel__meta"><span>{product.index}</span><span>{product.businessGroupLabel}</span></p>
+                <h3>{product.titleLabel}</h3>
+                <p>{product.descriptionLabel}</p>
+                <a class="text-link" href="#contact"><span>{t.discuss}</span><span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+      <div class="product-rail__controls" aria-label={t.controls}>
+        <p><span data-product-current>01</span> / {String(products.length).padStart(2, '0')}</p>
+        <div class="product-rail__actions">
+          <a class="text-link" href={routeFor(locale, 'products')}><span>{t.viewAll}</span><span aria-hidden="true">↗</span></a>
+          <div>
+            <button type="button" data-product-prev aria-label={t.previous}>←</button>
+            <button type="button" data-product-next aria-label={t.next}>→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const rail = document.querySelector<HTMLElement>('[data-product-rail]');
+  const track = rail?.querySelector<HTMLElement>('[data-product-track]');
+  const items = track ? Array.from(track.querySelectorAll<HTMLElement>('.product-panel')) : [];
+  const current = rail?.querySelector<HTMLElement>('[data-product-current]');
+
+  if (rail && track && items.length) {
+    const closestIndex = () => {
+      const left = track.scrollLeft;
+      return items.reduce((best, item, index) => {
+        const bestDistance = Math.abs(items[best].offsetLeft - left);
+        const distance = Math.abs(item.offsetLeft - left);
+        return distance < bestDistance ? index : best;
+      }, 0);
+    };
+
+    const move = (step: number) => {
+      const next = Math.max(0, Math.min(items.length - 1, closestIndex() + step));
+      items[next].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    };
+
+    rail.querySelector('[data-product-prev]')?.addEventListener('click', () => move(-1));
+    rail.querySelector('[data-product-next]')?.addEventListener('click', () => move(1));
+
+    let raf = 0;
+    track.addEventListener(
+      'scroll',
+      () => {
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => {
+          if (current) current.textContent = String(closestIndex() + 1).padStart(2, '0');
+        });
+      },
+      { passive: true },
+    );
+  }
+</script>

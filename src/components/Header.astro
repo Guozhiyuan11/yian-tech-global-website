@@ -1,0 +1,107 @@
+---
+import { site } from '../data/site';
+import { content, routeFor, type Locale, type PageId } from '../i18n/content';
+
+interface Props {
+  locale?: Locale;
+  page?: PageId;
+}
+
+const { locale = 'en', page = 'home' } = Astro.props;
+const t = content[locale];
+const home = routeFor(locale, 'home');
+const products = routeFor(locale, 'products');
+const sectionHref = (id: string) => page === 'home' ? `#${id}` : `${home}#${id}`;
+---
+
+<header class="site-header" data-site-header>
+  <a class="brand" href={home} aria-label={`${site.name} home`}>
+    <svg class="brand__mark" viewBox="0 0 42 42" aria-hidden="true">
+      <path d="M5 5h9.5L21 17.5 27.5 5H37L25.2 26v11h-8.4V26L5 5Z"></path>
+    </svg>
+    <span class="brand__name">YIAN <b>TECH GLOBAL</b></span>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+    <span>{t.nav.menu}</span>
+    <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
+  </button>
+
+  <nav class="main-nav" id="main-navigation" aria-label={t.nav.primary} data-main-nav>
+    <a href={sectionHref('materials')}>{t.nav.materials}</a>
+    <a href={products} aria-current={page === 'products' ? 'page' : undefined}>{t.nav.products}</a>
+    <a href={sectionHref('capabilities')}>{t.nav.capabilities}</a>
+    <a href={sectionHref('about')}>{t.nav.about}</a>
+    <a href={sectionHref('approach')}>{t.nav.process}</a>
+    <span class="language-switch" aria-label="Language / Idioma">
+      <a href={routeFor('en', page)} lang="en" aria-current={locale === 'en' ? 'page' : undefined}>EN</a>
+      <i aria-hidden="true">/</i>
+      <a href={routeFor('es', page)} lang="es" aria-current={locale === 'es' ? 'page' : undefined}>ES</a>
+    </span>
+    <a class="main-nav__contact" href={sectionHref('contact')}>{t.nav.enquiry} <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('[data-site-header]');
+  const toggle = header?.querySelector<HTMLButtonElement>('.menu-toggle');
+  const nav = header?.querySelector<HTMLElement>('[data-main-nav]');
+
+  if (header && toggle && nav) {
+    let lastScroll = window.scrollY;
+    const focusable = () => Array.from(nav.querySelectorAll<HTMLAnchorElement>('a[href]'));
+
+    const closeMenu = (restoreFocus = false) => {
+      header.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-locked');
+      if (restoreFocus) toggle.focus();
+    };
+
+    toggle.addEventListener('click', () => {
+      const willOpen = !header.classList.contains('menu-open');
+      header.classList.toggle('menu-open', willOpen);
+      toggle.setAttribute('aria-expanded', String(willOpen));
+      document.body.classList.toggle('menu-locked', willOpen);
+      if (willOpen) focusable()[0]?.focus();
+    });
+
+    nav.addEventListener('click', (event) => {
+      if ((event.target as Element).closest('a')) closeMenu(false);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (!header.classList.contains('menu-open')) return;
+
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeMenu(true);
+        return;
+      }
+
+      if (event.key === 'Tab') {
+        const items = [toggle, ...focusable()];
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        const current = window.scrollY;
+        header.classList.toggle('site-header--solid', current > 24);
+        header.classList.toggle('site-header--hidden', current > lastScroll && current > 160);
+        if (Math.abs(current - lastScroll) > 8) lastScroll = current;
+      },
+      { passive: true },
+    );
+  }
+</script>
