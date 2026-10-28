@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HeroStorySlider from '../../components/HeroStorySlider.astro';
 import FeaturedProducts from '../../components/FeaturedProducts.astro';
+import SandstoneSection from '../../components/SandstoneSection.astro';
 import MaterialDeliveryStory from '../../components/MaterialDeliveryStory.astro';
 import IndustryExplorer from '../../components/IndustryExplorer.astro';
 import AboutSupply from '../../components/AboutSupply.astro';
@@ -27,6 +28,7 @@ const t = content[locale];
   </section>
 
   <FeaturedProducts locale={locale} />
+  <SandstoneSection locale={locale} />
   <MaterialDeliveryStory locale={locale} />
   <IndustryExplorer locale={locale} />
   <AboutSupply locale={locale} />

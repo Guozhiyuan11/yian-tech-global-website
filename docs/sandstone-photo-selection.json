@@ -1,0 +1,297 @@
+{
+  "hero": {
+    "id": "s1704",
+    "alt": {
+      "en": "Sandstone profile and curved-piece samples.",
+      "es": "Muestras de perfiles y piezas curvas de arenisca."
+    }
+  },
+  "colours": [
+    {
+      "id": "red",
+      "name": {
+        "en": "Red",
+        "es": "Rojo"
+      },
+      "photos": [
+        {
+          "id": "s0054",
+          "alt": {
+            "en": "Red sandstone sample pieces showing different surface textures.",
+            "es": "Muestras de arenisca roja con diferentes texturas."
+          }
+        },
+        {
+          "id": "s0346",
+          "alt": {
+            "en": "Close view of red sandstone grain.",
+            "es": "Detalle del grano de la arenisca roja."
+          }
+        }
+      ]
+    },
+    {
+      "id": "yellow-woodgrain",
+      "name": {
+        "en": "Yellow woodgrain",
+        "es": "Amarillo veteado"
+      },
+      "photos": [
+        {
+          "id": "s0413",
+          "alt": {
+            "en": "Yellow woodgrain sandstone sample pieces.",
+            "es": "Muestras de arenisca amarilla veteada."
+          }
+        },
+        {
+          "id": "s0436",
+          "alt": {
+            "en": "Two light woodgrain sandstone samples.",
+            "es": "Dos muestras de arenisca clara veteada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "golden-yellow",
+      "name": {
+        "en": "Golden yellow",
+        "es": "Amarillo dorado"
+      },
+      "photos": [
+        {
+          "id": "s0498",
+          "alt": {
+            "en": "Golden-yellow sandstone sample pieces.",
+            "es": "Muestras de arenisca de color amarillo dorado."
+          }
+        },
+        {
+          "id": "s0474",
+          "alt": {
+            "en": "Textured golden-yellow sandstone surface.",
+            "es": "Superficie texturada de arenisca amarilla dorada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "patterned-yellow",
+      "name": {
+        "en": "Patterned yellow",
+        "es": "Amarillo texturado"
+      },
+      "photos": [
+        {
+          "id": "s0590",
+          "alt": {
+            "en": "Yellow sandstone samples with linear surface patterns.",
+            "es": "Muestras de arenisca amarilla con patrones lineales."
+          }
+        },
+        {
+          "id": "s0592",
+          "alt": {
+            "en": "Angled view of a patterned yellow sandstone sample.",
+            "es": "Vista en ángulo de una muestra de arenisca amarilla texturada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "grey",
+      "name": {
+        "en": "Grey tones",
+        "es": "Tonos grises"
+      },
+      "photos": [
+        {
+          "id": "s0638",
+          "alt": {
+            "en": "Grey sandstone slab colour reference.",
+            "es": "Referencia de color de una placa de arenisca gris."
+          }
+        },
+        {
+          "id": "s0611",
+          "alt": {
+            "en": "Two grey sandstone pieces with rough surfaces.",
+            "es": "Dos piezas de arenisca gris con superficies rugosas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cream-beige",
+      "name": {
+        "en": "Cream & beige",
+        "es": "Crema y beige"
+      },
+      "photos": [
+        {
+          "id": "s0692",
+          "alt": {
+            "en": "Cream and beige sandstone sample pieces.",
+            "es": "Muestras de arenisca en tonos crema y beige."
+          }
+        },
+        {
+          "id": "s0683",
+          "alt": {
+            "en": "Cream-beige sandstone slabs.",
+            "es": "Placas de arenisca crema y beige."
+          }
+        }
+      ]
+    },
+    {
+      "id": "grey-green",
+      "name": {
+        "en": "Grey-green",
+        "es": "Gris verdoso"
+      },
+      "photos": [
+        {
+          "id": "s0881",
+          "alt": {
+            "en": "Grey-green sandstone samples showing tonal variation.",
+            "es": "Muestras de arenisca gris verdosa con variaciones de tono."
+          }
+        },
+        {
+          "id": "s0787",
+          "alt": {
+            "en": "Grey-green sandstone blocks with rough surfaces.",
+            "es": "Bloques de arenisca gris verdosa con superficies rugosas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "red-woodgrain",
+      "name": {
+        "en": "Violet-red woodgrain",
+        "es": "Rojo violáceo veteado"
+      },
+      "photos": [
+        {
+          "id": "s1745",
+          "alt": {
+            "en": "Violet-red sandstone panel with fine linear grain.",
+            "es": "Panel de arenisca rojo violáceo con vetas lineales finas."
+          }
+        },
+        {
+          "id": "s1743",
+          "alt": {
+            "en": "Red woodgrain sandstone slabs.",
+            "es": "Placas de arenisca roja veteada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chocolate",
+      "name": {
+        "en": "Chocolate brown",
+        "es": "Marrón chocolate"
+      },
+      "photos": [
+        {
+          "id": "s1764",
+          "alt": {
+            "en": "Brown sandstone colour samples.",
+            "es": "Muestras de color de arenisca marrón."
+          }
+        },
+        {
+          "id": "s1765",
+          "alt": {
+            "en": "Brown sandstone slab surface.",
+            "es": "Superficie de una placa de arenisca marrón."
+          }
+        }
+      ]
+    },
+    {
+      "id": "black",
+      "name": {
+        "en": "Black",
+        "es": "Negro"
+      },
+      "photos": [
+        {
+          "id": "s1798",
+          "alt": {
+            "en": "Black sandstone sample pieces.",
+            "es": "Muestras de arenisca negra."
+          }
+        },
+        {
+          "id": "s1839",
+          "alt": {
+            "en": "Black sandstone samples with a rough surface.",
+            "es": "Muestras de arenisca negra con una superficie rugosa."
+          }
+        }
+      ]
+    }
+  ],
+  "work": [
+    {
+      "id": "carved-reliefs",
+      "title": {
+        "en": "Carved details",
+        "es": "Detalles tallados"
+      },
+      "copy": {
+        "en": "Relief panels in two tones. Bring a design reference to the custom-order discussion.",
+        "es": "Paneles en relieve en dos tonos. Comparta una referencia de diseño al consultar su pedido a medida."
+      },
+      "photo": {
+        "id": "s1197",
+        "alt": {
+          "en": "Lotus relief panels in two sandstone colour tones.",
+          "es": "Paneles con relieve de loto en dos tonalidades de arenisca."
+        }
+      }
+    },
+    {
+      "id": "shaped-pieces",
+      "title": {
+        "en": "Shaped pieces",
+        "es": "Piezas con formas especiales"
+      },
+      "copy": {
+        "en": "Colour and shape considered together. Send dimensions or a drawing for your own brief.",
+        "es": "Color y forma considerados en conjunto. Envíe dimensiones o un plano para su proyecto."
+      },
+      "photo": {
+        "id": "s1403",
+        "alt": {
+          "en": "Spherical sandstone forms in light and woodgrain tones.",
+          "es": "Formas esféricas de arenisca en tonos claros y veteados."
+        }
+      }
+    },
+    {
+      "id": "architecture-reference",
+      "title": {
+        "en": "Architectural reference",
+        "es": "Referencia arquitectónica"
+      },
+      "copy": {
+        "en": "A facade reference for discussing the look and intended setting of your project.",
+        "es": "Una referencia de fachada para conversar sobre el aspecto y el entorno de su proyecto."
+      },
+      "photo": {
+        "id": "s1337",
+        "alt": {
+          "en": "Sandstone facade reference.",
+          "es": "Referencia de fachada de arenisca."
+        }
+      }
+    }
+  ]
+}

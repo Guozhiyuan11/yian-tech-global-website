@@ -2,6 +2,7 @@
 import { site } from '../data/site';
 import { catalogCategories, catalogProducts, localizeProduct } from '../data/catalog';
 import { content, routeFor, type Locale } from '../i18n/content';
+import { sandstoneHero } from '../data/sandstone';
 
 interface Props { locale?: Locale }
 const { locale = 'en' } = Astro.props;
@@ -25,7 +26,13 @@ const subjectFor = (name: string) => encodeURIComponent(`${content[locale].conta
     <h1>{t.title}</h1>
     <div class="catalogue-hero__lower">
       <p>{t.intro}</p>
-      <p>{t.productCount}</p>
+      <div class="catalogue-hero__routes">
+        <p>{t.productCount}</p>
+        <a href={routeFor(locale, 'sandstone')}>
+          <img src={sandstoneHero.src} srcset={sandstoneHero.srcSet} sizes="80px" width="80" height="60" alt="" decoding="async" />
+          <span>{t.sandstoneCta}</span><span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -60,7 +67,7 @@ const subjectFor = (name: string) => encodeURIComponent(`${content[locale].conta
                 <div><dt>{t.confidence}</dt><dd>{product.confidence === 'high' ? t.high : t.medium}</dd></div>
               </dl>
               <p>{product.detail}</p>
-              <a class="text-link" href={`mailto:${site.email}?subject=${subjectFor(product.name)}`}>
+              <a class="text-link" href={`${site.salesMailto}?subject=${subjectFor(product.name)}`}>
                 <span>{t.enquiry}</span><span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -79,7 +86,7 @@ const subjectFor = (name: string) => encodeURIComponent(`${content[locale].conta
     </div>
     <div>
       <p>{t.customCopy}</p>
-      <a class="button button--dark" href={`mailto:${site.email}?subject=${encodeURIComponent(t.customCta)}`}>
+      <a class="button button--dark" href={`${site.salesMailto}?subject=${encodeURIComponent(t.customCta)}`}>
         {t.customCta}<span aria-hidden="true">↗</span>
       </a>
     </div>

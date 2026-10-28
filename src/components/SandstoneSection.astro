@@ -1,0 +1,169 @@
+---
+import { site } from '../data/site';
+import { routeFor, type Locale } from '../i18n/content';
+import { sandstoneHero, sandstoneColours, sandstoneWork, sandstoneEnquiry, sandstoneBrief } from '../data/sandstone';
+import SandstoneGallery from './SandstoneGallery.astro';
+
+interface Props { locale?: Locale; standalone?: boolean }
+const { locale = 'en', standalone = false } = Astro.props;
+const copy = {
+  en: {
+    eyebrow: 'Materials / Sandstone', title: 'Sandstone.', custom: 'Custom orders welcome',
+    statement: 'Your colour. Your project.',
+    intro: 'Explore sandstone through colour, texture and form. Our colour options share the same applications, with custom orders shaped around your project requirements.',
+    browse: 'Explore colours & textures', explore: 'Discover sandstone', email: 'Discuss a custom order',
+    heroCaption: 'Colour, form, detail.', colourCount: 'colour & texture references',
+    previewTitle: 'Find your starting point.', viewAll: 'View all colour references',
+    workEyebrow: 'Forms & design references', workTitle: 'Beyond the flat surface.',
+    workIntro: 'From carved details to shaped pieces and architectural references. Share the look you have in mind, then we can discuss your own dimensions and design.',
+    guideTitle: 'Make it your own.', guideIntro: 'A colour reference, a drawing, a clear brief. Start the conversation with the details below.',
+    steps: [
+      { title: 'Choose your colour', text: 'Select a colour reference above, or send a photograph or sample reference of your own.' },
+      { title: 'Define the details', text: 'Send dimensions, thickness, drawings, the intended use and any surface or shape requirements.' },
+      { title: 'Plan the order', text: 'Include quantity and unit, delivery destination and your preferred timing.' },
+    ],
+    whatsapp: 'Discuss on WhatsApp', back: 'Back to all products',
+  },
+  es: {
+    eyebrow: 'Materiales / Arenisca', title: 'Arenisca.', custom: 'Pedidos a medida',
+    statement: 'Su color. Su proyecto.',
+    intro: 'Explore la arenisca por color, textura y forma. Las opciones de color comparten las mismas aplicaciones y aceptamos pedidos a medida según los requisitos de su proyecto.',
+    browse: 'Explorar colores y texturas', explore: 'Descubrir la arenisca', email: 'Consultar un pedido a medida',
+    heroCaption: 'Color, forma, detalle.', colourCount: 'referencias de color y textura',
+    previewTitle: 'Encuentre su punto de partida.', viewAll: 'Ver todas las referencias de color',
+    workEyebrow: 'Formas y referencias de diseño', workTitle: 'Más allá de la superficie.',
+    workIntro: 'Desde relieves tallados hasta piezas con formas especiales y referencias arquitectónicas. Comparta el aspecto que busca para consultar sus propias dimensiones y diseño.',
+    guideTitle: 'Hágala suya.', guideIntro: 'Una referencia de color, un plano y una descripción clara. Comience con los detalles siguientes.',
+    steps: [
+      { title: 'Elija su color', text: 'Seleccione una referencia de color o envíe una fotografía o referencia de muestra propia.' },
+      { title: 'Defina los detalles', text: 'Envíe dimensiones, espesor, planos, uso previsto y requisitos de superficie o forma.' },
+      { title: 'Planifique el pedido', text: 'Indique cantidad y unidad, destino de entrega y plazo deseado.' },
+    ],
+    whatsapp: 'Consultar por WhatsApp', back: 'Volver a todos los productos',
+  },
+} as const;
+const t = copy[locale];
+const Heading = standalone ? 'h1' : 'h2';
+const previewColours = ['cream-beige', 'golden-yellow', 'red', 'grey-green', 'red-woodgrain'].map((id) => sandstoneColours.find((colour) => colour.id === id)!).filter(Boolean);
+const whatsappHref = `${site.whatsappHref}?text=${encodeURIComponent(sandstoneBrief(locale))}`;
+---
+
+<section class:list={['sandstone', { 'sandstone--standalone': standalone }]} id={standalone ? 'top' : 'sandstone'} aria-labelledby="sandstone-title">
+  <div class="shell">
+    <div class="sandstone__eyebrow"><p>{t.eyebrow}</p><p>↗ {t.custom}</p></div>
+    <div class="sandstone__hero">
+      <div class="sandstone__copy">
+        <Heading id="sandstone-title">{t.title}</Heading>
+        <p class="sandstone__statement">{t.statement}</p>
+        <p class="sandstone__intro">{t.intro}</p>
+        <div class="sandstone__actions">
+          <a class="sandstone__button" href={standalone ? '#sandstone-colours' : routeFor(locale, 'sandstone')}><span>{standalone ? t.browse : t.explore}</span><span aria-hidden="true">↗</span></a>
+          <a class="sandstone__link" href={sandstoneEnquiry(locale)}>{t.email} <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="sandstone__visual">
+        <img src={sandstoneHero.src} srcset={sandstoneHero.srcSet} sizes="(min-width: 64rem) 54vw, calc(100vw - 2.3rem)" width={sandstoneHero.width} height={sandstoneHero.height} alt={sandstoneHero.alt[locale]} loading={standalone ? 'eager' : 'lazy'} fetchpriority={standalone ? 'high' : 'auto'} decoding="async" />
+        <figcaption><span>{t.heroCaption}</span><span>{String(sandstoneColours.length).padStart(2, '0')} / {t.colourCount}</span></figcaption>
+      </figure>
+    </div>
+    {!standalone && (
+      <div class="sandstone__preview">
+        <div class="sandstone__preview-heading"><h3>{t.previewTitle}</h3><a href={`${routeFor(locale, 'sandstone')}#sandstone-colours`}>{t.viewAll} ↗</a></div>
+        <div class="sandstone__preview-grid">
+          {previewColours.map((colour) => {
+            const image = colour.images[0];
+            return <a href={`${routeFor(locale, 'sandstone')}#sandstone-colours`}>
+              <img src={image.src} srcset={image.srcSet} sizes="(min-width: 48rem) 20vw, 42vw" width={image.width} height={image.height} alt={image.alt[locale]} loading="lazy" decoding="async" />
+              <span>{colour.name[locale]} <b aria-hidden="true">↗</b></span>
+            </a>;
+          })}
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+{standalone && <>
+  <SandstoneGallery locale={locale} />
+  <section class="sandstone-work" aria-labelledby="sandstone-work-title">
+    <div class="shell">
+      <div class="sandstone-work__heading">
+        <div><p class="sandstone__eyebrow-label">{t.workEyebrow}</p><h2 id="sandstone-work-title">{t.workTitle}</h2></div><p>{t.workIntro}</p>
+      </div>
+      <div class="sandstone-work__grid">
+        {sandstoneWork.map((work) => <figure>
+          <img src={work.image.src} srcset={work.image.srcSet} sizes="(min-width: 48rem) 33vw, calc(100vw - 2.3rem)" width={work.image.width} height={work.image.height} alt={work.image.alt[locale]} loading="lazy" decoding="async" />
+          <figcaption><h3>{work.title[locale]}</h3><p>{work.copy[locale]}</p></figcaption>
+        </figure>)}
+      </div>
+    </div>
+  </section>
+  <section class="sandstone-brief" aria-labelledby="sandstone-brief-title">
+    <div class="shell">
+      <div class="sandstone-brief__heading"><h2 id="sandstone-brief-title">{t.guideTitle}</h2><p>{t.guideIntro}</p></div>
+      <ol class="sandstone-brief__steps">{t.steps.map((step, index) => <li><span>{String(index + 1).padStart(2, '0')}</span><h3>{step.title}</h3><p>{step.text}</p></li>)}</ol>
+      <div class="sandstone__actions">
+        <a class="sandstone__button" href={sandstoneEnquiry(locale)}>{t.email} <span aria-hidden="true">↗</span></a>
+        <a class="sandstone__link" href={whatsappHref} target="_blank" rel="noreferrer">{t.whatsapp} <span aria-hidden="true">↗</span></a>
+        <a class="sandstone-brief__back" href={routeFor(locale, 'products')}>← {t.back}</a>
+      </div>
+    </div>
+  </section>
+</>}
+
+<style>
+  .sandstone { color: #30271f; background: #d8c6af; padding-block: clamp(4rem, 7vw, 8rem); scroll-margin-top: 5rem; }
+  .sandstone--standalone { padding-top: clamp(7.5rem, 10vw, 10rem); padding-bottom: 0; }
+  .sandstone__eyebrow { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 1.5rem; border-bottom: 1px solid #30271f40; font: 600 .72rem/1.5 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+  .sandstone__eyebrow p:last-child { text-align: right; }
+  .sandstone__hero { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(2rem, 4vw, 5rem); padding-block: clamp(2.5rem, 5vw, 5rem); }
+  .sandstone__copy { min-width: 0; }
+  .sandstone__copy h1, .sandstone__copy h2 { font-size: clamp(3.8rem, 7vw, 8.5rem); line-height: .95; font-weight: 400; letter-spacing: -.07em; }
+  .sandstone__statement { font-size: clamp(1.6rem, 2.6vw, 3rem); line-height: 1.1; letter-spacing: -.04em; margin-top: 1.6rem; }
+  .sandstone__intro { max-width: 43ch; font-size: clamp(.98rem, 1.2vw, 1.2rem); line-height: 1.65; margin-top: 1.8rem; }
+  .sandstone__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2rem; margin-top: 2.2rem; }
+  .sandstone__button, .sandstone__link { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 3.4rem; font-size: .82rem; font-weight: 600; line-height: 1.45; }
+  .sandstone__button { color: #f5eee5; background: #30271f; border: 1px solid #30271f; padding: .9rem 1.1rem; }
+  .sandstone__button:hover { color: #30271f; background: transparent; }
+  .sandstone__link { border-bottom: 1px solid currentColor; }
+  .sandstone__link:hover { color: #664328; }
+  .sandstone__visual { min-width: 0; }
+  .sandstone__visual img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .sandstone__visual figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; font: .65rem/1.5 var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+  .sandstone__visual figcaption span:last-child { max-width: 26ch; text-align: right; }
+  .sandstone__preview { border-top: 1px solid #30271f40; padding-top: 2rem; }
+  .sandstone__preview-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.6rem; }
+  .sandstone__preview-heading h3 { font-size: 1.3rem; font-weight: 400; letter-spacing: -.03em; }
+  .sandstone__preview-heading a { min-height: 2.75rem; display: inline-flex; align-items: center; font-size: .78rem; border-bottom: 1px solid; }
+  .sandstone__preview-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.1rem; }
+  .sandstone__preview-grid a { display: block; min-width: 0; }
+  .sandstone__preview-grid img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+  .sandstone__preview-grid span { display: flex; justify-content: space-between; gap: .5rem; margin-top: .8rem; font-size: .85rem; line-height: 1.4; }
+  .sandstone__preview-grid b { font-weight: 400; }
+  .sandstone-work { color: #30271f; background: #eee8de; padding-block: clamp(4rem, 7vw, 8rem); }
+  .sandstone-work__heading, .sandstone-brief__heading { display: grid; grid-template-columns: 1.3fr 1fr; align-items: end; gap: 2rem 5rem; margin-bottom: 3rem; }
+  .sandstone__eyebrow-label { font: .7rem/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.5rem; }
+  .sandstone-work h2, .sandstone-brief h2 { font-size: clamp(2.7rem, 5vw, 6rem); font-weight: 400; letter-spacing: -.055em; line-height: 1.05; max-width: 14ch; }
+  .sandstone-work__heading > p, .sandstone-brief__heading > p { max-width: 45ch; font-size: 1rem; line-height: 1.65; }
+  .sandstone-work__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+  .sandstone-work__grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .sandstone-work figcaption h3 { font-size: 1.35rem; font-weight: 400; letter-spacing: -.03em; margin-top: 1.3rem; }
+  .sandstone-work figcaption p { max-width: 43ch; font-size: .88rem; line-height: 1.6; margin-top: .7rem; }
+  .sandstone-brief { background: #d8c6af; color: #30271f; padding-block: clamp(4rem, 7vw, 8rem); }
+  .sandstone-brief__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+  .sandstone-brief__steps li { border-top: 1px solid #30271f40; padding-top: 1.5rem; }
+  .sandstone-brief__steps span { font: .72rem/1.5 var(--mono); }
+  .sandstone-brief__steps h3 { margin-top: 1.4rem; font-size: 1.3rem; font-weight: 500; letter-spacing: -.03em; }
+  .sandstone-brief__steps p { margin-top: .8rem; max-width: 42ch; font-size: .9rem; line-height: 1.65; }
+  .sandstone-brief__back { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .8rem; margin-left: auto; }
+  .sandstone a:focus-visible, .sandstone-brief a:focus-visible { outline: 2px solid #30271f; outline-offset: 5px; }
+  @media (max-width: 63.99rem) { .sandstone__hero { grid-template-columns: minmax(0, 1fr); } .sandstone__copy h1, .sandstone__copy h2 { font-size: clamp(3.8rem, 10vw, 7.5rem); } .sandstone__visual img { max-height: 40rem; } }
+  @media (max-width: 47.99rem) {
+    .sandstone__eyebrow { font-size: .6rem; gap: 1rem; } .sandstone__copy h1, .sandstone__copy h2 { font-size: clamp(3.4rem, 13vw, 5rem); }
+    .sandstone__hero { gap: 2rem; } .sandstone__statement { font-size: 1.65rem; } .sandstone__actions { align-items: stretch; flex-direction: column; gap: 1rem; }
+    .sandstone__button { width: 100%; } .sandstone__link { width: max-content; max-width: 100%; } .sandstone__visual figcaption { font-size: .55rem; }
+    .sandstone__preview-grid { display: flex; gap: .85rem; overflow-x: auto; padding-bottom: .7rem; scroll-snap-type: x mandatory; } .sandstone__preview-grid a { flex: 0 0 43%; scroll-snap-align: start; }
+    .sandstone-work__heading, .sandstone-brief__heading, .sandstone-work__grid, .sandstone-brief__steps { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+    .sandstone-brief__back { margin-left: 0; } .sandstone-work__grid { gap: 3rem; }
+  }
+</style>

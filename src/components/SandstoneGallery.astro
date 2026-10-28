@@ -1,0 +1,598 @@
+---
+import { sandstoneColours, sandstoneEnquiry } from '../data/sandstone';
+import type { Locale } from '../i18n/content';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const copy = {
+  en: {
+    eyebrow: 'Explore sandstone',
+    title: 'Colour & character.',
+    intro: 'Explore colour and texture references within our sandstone range. Open a reference to see more photographs and discuss your custom requirements.',
+    reference: 'Photographs are a colour reference. Final colour and appearance are confirmed against the agreed sample.',
+    view: 'View photographs',
+    open: 'View photographs of',
+    close: 'Close photographs',
+    previous: 'Previous photograph',
+    next: 'Next photograph',
+    enquiry: 'Enquire about this colour',
+    customTitle: 'Made for your requirements.',
+    customCopy: 'Send your dimensions, drawings, quantity and destination to discuss a custom sandstone order.',
+    customCta: 'Discuss a custom order',
+  },
+  es: {
+    eyebrow: 'Explore la arenisca',
+    title: 'Color y carácter.',
+    intro: 'Explore referencias de color y textura de nuestra gama de arenisca. Abra una referencia para ver más fotografías y consultar sus requisitos a medida.',
+    reference: 'Las fotografías sirven como referencia de color. El color y el aspecto finales se confirman con la muestra acordada.',
+    view: 'Ver fotografías',
+    open: 'Ver fotografías de',
+    close: 'Cerrar fotografías',
+    previous: 'Fotografía anterior',
+    next: 'Fotografía siguiente',
+    enquiry: 'Consultar este color',
+    customTitle: 'A la medida de sus requisitos.',
+    customCopy: 'Envíe dimensiones, planos, cantidad y destino para consultar un pedido de arenisca a medida.',
+    customCta: 'Consultar un pedido a medida',
+  },
+} as const;
+const t = copy[locale];
+const colours = sandstoneColours.filter((colour) => colour.images.length > 0);
+const firstImage = colours[0]?.images[0];
+const galleryData = colours.map((colour) => ({
+  name: colour.name[locale],
+  enquiry: sandstoneEnquiry(locale, colour.name[locale]),
+  images: colour.images.map((image) => ({
+    src: image.src,
+    srcSet: image.srcSet,
+    width: image.width,
+    height: image.height,
+    alt: image.alt[locale],
+  })),
+}));
+const serializedGallery = JSON.stringify(galleryData).replace(/</g, '\\u003c');
+---
+
+<section class="sandstone-gallery" id="sandstone-colours" aria-labelledby="sandstone-gallery-title" data-sandstone-gallery>
+  <div class="shell">
+    <header class="sandstone-gallery__header">
+      <div>
+        <p class="sandstone-gallery__eyebrow">{t.eyebrow}</p>
+        <h2 id="sandstone-gallery-title">{t.title}</h2>
+      </div>
+      <p class="sandstone-gallery__intro">{t.intro}</p>
+    </header>
+
+    <div class="sandstone-gallery__grid">
+      {
+        colours.map((colour, index) => {
+          const image = colour.images[0];
+          return (
+            <article class="sandstone-colour">
+              <button
+                class="sandstone-colour__preview"
+                type="button"
+                data-gallery-open={index}
+                aria-label={`${t.open} ${colour.name[locale]}`}
+                aria-haspopup="dialog"
+                aria-controls="sandstone-photo-viewer"
+              >
+                <img
+                  src={image.src}
+                  srcset={image.srcSet}
+                  sizes="(min-width: 112rem) 320px, (min-width: 75rem) calc((100vw - 12rem) / 5), (min-width: 48rem) calc((100vw - 7rem) / 3), (min-width: 24rem) calc((100vw - 3.5rem) / 2), calc(100vw - 2.5rem)"
+                  width={image.width}
+                  height={image.height}
+                  alt={image.alt[locale]}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="sandstone-colour__open" aria-hidden="true">↗</span>
+              </button>
+              <div class="sandstone-colour__caption">
+                <h3>{colour.name[locale]}</h3>
+                <span>{t.view}</span>
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+
+    <p class="sandstone-gallery__reference">{t.reference}</p>
+
+    <div class="sandstone-gallery__custom">
+      <h2>{t.customTitle}</h2>
+      <div>
+        <p>{t.customCopy}</p>
+        <a href={sandstoneEnquiry(locale)}>
+          <span>{t.customCta}</span><span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {
+    firstImage && (
+      <dialog class="sandstone-viewer" id="sandstone-photo-viewer" aria-labelledby="sandstone-viewer-title" aria-describedby="sandstone-viewer-note" data-gallery-viewer>
+        <div class="sandstone-viewer__layout">
+          <header class="sandstone-viewer__header">
+            <h2 id="sandstone-viewer-title" data-viewer-title>{colours[0].name[locale]}</h2>
+            <button type="button" class="sandstone-viewer__close" aria-label={t.close} data-viewer-close autofocus>
+              <span aria-hidden="true">×</span>
+            </button>
+          </header>
+          <figure class="sandstone-viewer__figure">
+            <img
+              src={firstImage.src}
+              srcset={firstImage.srcSet}
+              sizes="(min-width: 80rem) 1200px, calc(100vw - 2rem)"
+              width={firstImage.width}
+              height={firstImage.height}
+              alt={firstImage.alt[locale]}
+              loading="lazy"
+              decoding="async"
+              data-viewer-image
+            />
+          </figure>
+          <div class="sandstone-viewer__footer">
+            <div class="sandstone-viewer__navigation">
+              <button type="button" aria-label={t.previous} data-viewer-previous><span aria-hidden="true">←</span></button>
+              <p role="status" aria-live="polite" aria-atomic="true" data-viewer-count>1 / {colours[0].images.length}</p>
+              <button type="button" aria-label={t.next} data-viewer-next><span aria-hidden="true">→</span></button>
+            </div>
+            <a class="sandstone-viewer__enquiry" href={sandstoneEnquiry(locale, colours[0].name[locale])} data-viewer-enquiry>
+              <span>{t.enquiry}</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p class="sandstone-viewer__note" id="sandstone-viewer-note">{t.reference}</p>
+        </div>
+      </dialog>
+    )
+  }
+  <script type="application/json" data-gallery-data set:html={serializedGallery} />
+</section>
+
+<script>
+  interface GalleryImage {
+    src: string;
+    srcSet: string;
+    width: number;
+    height: number;
+    alt: string;
+  }
+
+  interface GalleryColour {
+    name: string;
+    enquiry: string;
+    images: GalleryImage[];
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-sandstone-gallery]').forEach((gallery) => {
+    const dataElement = gallery.querySelector<HTMLScriptElement>('[data-gallery-data]');
+    const viewer = gallery.querySelector<HTMLDialogElement>('[data-gallery-viewer]');
+    const image = viewer?.querySelector<HTMLImageElement>('[data-viewer-image]');
+    const title = viewer?.querySelector<HTMLElement>('[data-viewer-title]');
+    const count = viewer?.querySelector<HTMLElement>('[data-viewer-count]');
+    const enquiry = viewer?.querySelector<HTMLAnchorElement>('[data-viewer-enquiry]');
+    const previous = viewer?.querySelector<HTMLButtonElement>('[data-viewer-previous]');
+    const next = viewer?.querySelector<HTMLButtonElement>('[data-viewer-next]');
+    const close = viewer?.querySelector<HTMLButtonElement>('[data-viewer-close]');
+
+    if (!dataElement || !viewer || !image || !title || !count || !enquiry || !previous || !next || !close) return;
+
+    const colours = JSON.parse(dataElement.textContent || '[]') as GalleryColour[];
+    let colourIndex = 0;
+    let imageIndex = 0;
+    let trigger: HTMLButtonElement | null = null;
+    let previousOverflow = '';
+    let backdropPress = false;
+
+    const render = () => {
+      const colour = colours[colourIndex];
+      const selected = colour?.images[imageIndex];
+      if (!colour || !selected) return;
+      title.textContent = colour.name;
+      image.alt = selected.alt;
+      image.width = selected.width;
+      image.height = selected.height;
+      image.srcset = selected.srcSet;
+      image.src = selected.src;
+      count.textContent = `${imageIndex + 1} / ${colour.images.length}`;
+      enquiry.href = colour.enquiry;
+      previous.disabled = next.disabled = colour.images.length < 2;
+    };
+
+    const move = (step: number) => {
+      const total = colours[colourIndex]?.images.length || 0;
+      if (!viewer.open || total < 2) return;
+      imageIndex = (imageIndex + step + total) % total;
+      render();
+    };
+
+    gallery.querySelectorAll<HTMLButtonElement>('[data-gallery-open]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const selected = Number(button.dataset.galleryOpen);
+        if (!Number.isInteger(selected) || !colours[selected]?.images.length) return;
+        colourIndex = selected;
+        imageIndex = 0;
+        trigger = button;
+        render();
+        if (!viewer.open) {
+          previousOverflow = document.documentElement.style.overflow;
+          viewer.showModal();
+          document.documentElement.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    close.addEventListener('click', () => viewer.close());
+    previous.addEventListener('click', () => move(-1));
+    next.addEventListener('click', () => move(1));
+
+    viewer.addEventListener('keydown', (event) => {
+      if (!viewer.open || event.altKey || event.ctrlKey || event.metaKey) return;
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        move(event.key === 'ArrowLeft' ? -1 : 1);
+      }
+    });
+
+    const isBackdrop = (event: MouseEvent) => {
+      if (event.target !== viewer) return false;
+      const bounds = viewer.getBoundingClientRect();
+      return event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+    };
+
+    viewer.addEventListener('pointerdown', (event) => {
+      backdropPress = isBackdrop(event);
+    });
+
+    viewer.addEventListener('click', (event) => {
+      if (backdropPress && isBackdrop(event)) viewer.close();
+      backdropPress = false;
+    });
+
+    viewer.addEventListener('close', () => {
+      document.documentElement.style.overflow = previousOverflow;
+      backdropPress = false;
+      trigger?.focus({ preventScroll: true });
+    });
+  });
+</script>
+
+<style>
+  .sandstone-gallery {
+    --gallery-ink: #30271f;
+    --gallery-line: rgba(48, 39, 31, 0.23);
+    padding-block: clamp(4rem, 7vw, 8rem);
+    color: var(--gallery-ink);
+    background: #d8c6af;
+    scroll-margin-top: 5rem;
+  }
+
+  .sandstone-gallery__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+    align-items: end;
+    gap: 2rem 5rem;
+    margin-bottom: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  .sandstone-gallery__eyebrow {
+    margin-bottom: 1.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .sandstone-gallery__header h2 {
+    max-width: 15ch;
+    font-size: clamp(2.6rem, 5vw, 6rem);
+    font-weight: 400;
+    letter-spacing: -0.055em;
+    line-height: 1.05;
+  }
+
+  .sandstone-gallery__intro {
+    max-width: 40ch;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .sandstone-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: clamp(2rem, 3vw, 3.5rem) clamp(0.75rem, 1.3vw, 1.5rem);
+  }
+
+  .sandstone-colour {
+    min-width: 0;
+  }
+
+  .sandstone-colour__preview {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    color: var(--gallery-ink);
+    background: #c9b59c;
+    cursor: pointer;
+    aspect-ratio: 4 / 5;
+  }
+
+  .sandstone-colour__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease;
+  }
+
+  .sandstone-colour__preview:hover img {
+    transform: scale(1.035);
+  }
+
+  .sandstone-colour__open {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    color: var(--gallery-ink);
+    background: #efe6d9;
+    font-size: 1.2rem;
+  }
+
+  .sandstone-colour__caption {
+    display: grid;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .sandstone-colour__caption h3 {
+    font-size: clamp(1rem, 1.3vw, 1.35rem);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .sandstone-colour__caption > span {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+
+  .sandstone-gallery__reference {
+    max-width: 75ch;
+    margin-top: 2.25rem;
+    font-size: 0.8rem;
+    line-height: 1.65;
+  }
+
+  .sandstone-gallery__custom {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
+    gap: 2rem 5rem;
+    align-items: start;
+    margin-top: clamp(3.5rem, 6vw, 6rem);
+    padding-top: clamp(2rem, 4vw, 4rem);
+    border-top: 1px solid var(--gallery-line);
+  }
+
+  .sandstone-gallery__custom h2 {
+    max-width: 18ch;
+    font-size: clamp(1.9rem, 3vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+  }
+
+  .sandstone-gallery__custom p {
+    max-width: 40ch;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .sandstone-gallery__custom a,
+  .sandstone-viewer__enquiry {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 3rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid currentColor;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .sandstone-gallery a:focus-visible,
+  .sandstone-gallery button:focus-visible {
+    outline: 2px solid var(--gallery-ink);
+    outline-offset: 5px;
+  }
+
+  .sandstone-viewer {
+    width: min(calc(100vw - 2rem), 78rem);
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100dvh - 2rem);
+    margin: auto;
+    padding: 0;
+    overflow: auto;
+    border: 0;
+    color: var(--gallery-ink);
+    background: #eee5d9;
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.28);
+  }
+
+  .sandstone-viewer::backdrop {
+    background: rgba(20, 17, 14, 0.82);
+  }
+
+  .sandstone-viewer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .sandstone-viewer__header h2 {
+    font-size: clamp(1.2rem, 2vw, 1.75rem);
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .sandstone-viewer__close,
+  .sandstone-viewer__navigation button {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 2.75rem;
+    min-height: 2.75rem;
+    padding: 0;
+    border: 1px solid var(--gallery-line);
+    color: inherit;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .sandstone-viewer__close {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+
+  .sandstone-viewer__close:hover,
+  .sandstone-viewer__navigation button:hover:not(:disabled) {
+    background: #dbcbb6;
+  }
+
+  .sandstone-viewer__navigation button:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .sandstone-viewer__figure {
+    display: grid;
+    place-items: center;
+    background: #28231e;
+  }
+
+  .sandstone-viewer__figure img {
+    display: block;
+    width: 100%;
+    height: min(62svh, 44rem);
+    object-fit: contain;
+  }
+
+  .sandstone-viewer__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    padding: 1rem 1.5rem 0;
+  }
+
+  .sandstone-viewer__navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sandstone-viewer__navigation p {
+    min-width: 5.5rem;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .sandstone-viewer__enquiry {
+    margin-top: 0;
+  }
+
+  .sandstone-viewer__note {
+    padding: 1rem 1.5rem 1.25rem;
+    font-size: 0.7rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 74.99rem) {
+    .sandstone-gallery__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .sandstone-gallery__header,
+    .sandstone-gallery__custom {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .sandstone-gallery__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem 0.75rem;
+    }
+
+    .sandstone-gallery__intro,
+    .sandstone-gallery__custom p {
+      font-size: 0.9rem;
+    }
+
+    .sandstone-viewer__header {
+      padding: 0.75rem 1rem;
+    }
+
+    .sandstone-viewer__footer {
+      padding: 1rem 1rem 0;
+    }
+
+    .sandstone-viewer__note {
+      padding: 1rem;
+    }
+
+    .sandstone-viewer__figure img {
+      height: 50svh;
+    }
+  }
+
+  @media (max-width: 29.99rem) {
+    .sandstone-viewer__footer {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .sandstone-viewer__navigation {
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 23.99rem) {
+    .sandstone-gallery__grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sandstone-colour__preview img {
+      transition: none;
+    }
+  }
+</style>

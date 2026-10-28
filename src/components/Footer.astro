@@ -23,12 +23,13 @@ const sectionHref = (id: string) => page === 'home' ? `#${id}` : `${home}#${id}`
       <p>{t.footer.explore}</p>
       <a href={sectionHref('materials')}>{t.nav.materials}</a>
       <a href={products}>{t.nav.products}</a>
+      <a href={routeFor(locale, 'sandstone')}>{t.nav.sandstone}</a>
       <a href={sectionHref('capabilities')}>{t.nav.capabilities}</a>
       <a href={sectionHref('about')}>{t.nav.about}</a>
     </div>
     <div>
       <p>{t.footer.contact}</p>
-      <a href={`mailto:${site.email}`}>{site.email}</a>
+      {site.salesEmails.map((email) => <a href={`mailto:${email}`}>{email}</a>)}
       <a href={site.whatsappHref} target="_blank" rel="noreferrer">{site.whatsappDisplay}</a>
     </div>
     <div>

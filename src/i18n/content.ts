@@ -1,7 +1,8 @@
 export type Locale = 'en' | 'es';
-export type PageId = 'home' | 'products';
+export type PageId = 'home' | 'products' | 'sandstone';
 
 export const routeFor = (locale: Locale, page: PageId) => {
+  if (page === 'sandstone') return locale === 'es' ? '/es/sandstone/' : '/sandstone/';
   if (page === 'products') return locale === 'es' ? '/es/products/' : '/products/';
   return locale === 'es' ? '/es/' : '/';
 };
@@ -11,16 +12,19 @@ export const content = {
     languageName: 'English',
     skip: 'Skip to content',
     meta: {
-      homeTitle: 'Steel Products & Project Supply',
-      homeDescription: 'Steel products, custom fabrication and international project supply coordination from YIAN Tech Global.',
-      productsTitle: 'Steel Product Catalogue',
-      productsDescription: 'Explore stainless tube, coil, railway rail, construction steel and made-to-drawing fabricated products.',
+      homeTitle: 'Steel, Sandstone & Project Supply',
+      homeDescription: 'Steel products, custom sandstone and international project supply coordination from YIAN Tech Global.',
+      productsTitle: 'Steel & Sandstone Products',
+      productsDescription: 'Explore steel product references and sandstone with colour options and custom orders.',
+      sandstoneTitle: 'Sandstone · Colour Options & Custom Orders',
+      sandstoneDescription: 'Explore sandstone colours, textures, carved details and shaped pieces. View photographs and discuss custom dimensions, drawings and project quantities with YIAN Tech Global.',
     },
     nav: {
       menu: 'Menu',
       primary: 'Primary navigation',
       materials: 'Materials',
       products: 'Products',
+      sandstone: 'Sandstone',
       capabilities: 'Capabilities',
       about: 'About',
       process: 'Project process',
@@ -58,11 +62,11 @@ export const content = {
       ],
     },
     positioning: {
-      label: 'YIAN / STEEL',
+      label: 'YIAN / MATERIALS',
       sublabel: 'GLOBAL B2B SUPPLY',
       before: 'We connect ',
       emphasis: 'material requirements',
-      after: ' with steel products, custom fabrication and a controlled path to delivery.',
+      after: ' with steel products, sandstone and a controlled path to delivery.',
       aside: 'Built for technical buyers, infrastructure projects and international procurement teams.',
     },
     featured: {
@@ -141,7 +145,7 @@ export const content = {
       email: 'Email a project brief',
       whatsapp: 'WhatsApp',
       note: 'Direct contact only in this review build. No form data is collected or submitted.',
-      emailSubject: 'Steel project enquiry',
+      emailSubject: 'Project supply enquiry',
     },
     footer: {
       strapline: ['Engineered materials.', 'Reliable project coordination.'],
@@ -154,11 +158,12 @@ export const content = {
     },
     products: {
       eyebrow: 'Product catalogue',
-      title: 'Forty supplied references. Ten practical product routes.',
-      intro: 'Use the filters to review the products and capabilities identified in the supplied workbook. Availability, material grade, dimensions and compliance are confirmed against each enquiry.',
-      all: 'All products',
-      filterLabel: 'Filter product catalogue',
-      productCount: '40 references',
+      title: 'Steel references. Custom sandstone.',
+      intro: 'Browse our steel references below, or explore sandstone by colour and custom requirements. Availability, dimensions and the supply scope are confirmed with each enquiry.',
+      all: 'All steel references',
+      filterLabel: 'Filter steel references',
+      productCount: '40 steel references',
+      sandstoneCta: 'Explore custom sandstone',
       process: 'Material / process',
       confidence: 'Image identification',
       high: 'High confidence',
@@ -185,16 +190,19 @@ export const content = {
     languageName: 'Español',
     skip: 'Saltar al contenido',
     meta: {
-      homeTitle: 'Productos de acero y suministro para proyectos',
-      homeDescription: 'Productos de acero, fabricación a medida y coordinación internacional de suministro de YIAN Tech Global.',
-      productsTitle: 'Catálogo de productos de acero',
-      productsDescription: 'Explore tubos y bobinas inoxidables, rieles ferroviarios, acero para construcción y productos fabricados según plano.',
+      homeTitle: 'Acero, arenisca y suministro para proyectos',
+      homeDescription: 'Productos de acero, arenisca a medida y coordinación internacional de suministro de YIAN Tech Global.',
+      productsTitle: 'Productos de acero y arenisca',
+      productsDescription: 'Explore referencias de acero y arenisca con opciones de color y pedidos a medida.',
+      sandstoneTitle: 'Arenisca · Opciones de color y pedidos a medida',
+      sandstoneDescription: 'Explore colores, texturas, relieves y piezas de arenisca. Vea las fotografías y consulte dimensiones, planos y cantidades a medida con YIAN Tech Global.',
     },
     nav: {
       menu: 'Menú',
       primary: 'Navegación principal',
       materials: 'Materiales',
       products: 'Productos',
+      sandstone: 'Arenisca',
       capabilities: 'Capacidades',
       about: 'Nosotros',
       process: 'Proceso del proyecto',
@@ -232,11 +240,11 @@ export const content = {
       ],
     },
     positioning: {
-      label: 'YIAN / ACERO',
+      label: 'YIAN / MATERIALES',
       sublabel: 'SUMINISTRO B2B GLOBAL',
       before: 'Conectamos los ',
       emphasis: 'requisitos de material',
-      after: ' con productos de acero, fabricación a medida y una ruta controlada hasta la entrega.',
+      after: ' con productos de acero, arenisca y una ruta controlada hasta la entrega.',
       aside: 'Para compradores técnicos, proyectos de infraestructura y equipos internacionales de compras.',
     },
     featured: {
@@ -315,7 +323,7 @@ export const content = {
       email: 'Enviar resumen por correo',
       whatsapp: 'WhatsApp',
       note: 'Contacto directo en esta versión de revisión. No se recopilan ni envían datos mediante formularios.',
-      emailSubject: 'Consulta de proyecto de acero',
+      emailSubject: 'Consulta de suministro para proyecto',
     },
     footer: {
       strapline: ['Materiales de ingeniería.', 'Coordinación fiable del proyecto.'],
@@ -328,11 +336,12 @@ export const content = {
     },
     products: {
       eyebrow: 'Catálogo de productos',
-      title: 'Cuarenta referencias. Diez rutas prácticas de producto.',
-      intro: 'Use los filtros para revisar los productos y capacidades identificados en el libro suministrado. Disponibilidad, grado, dimensiones y cumplimiento se confirman en cada consulta.',
-      all: 'Todos',
-      filterLabel: 'Filtrar catálogo de productos',
-      productCount: '40 referencias',
+      title: 'Referencias de acero. Arenisca a medida.',
+      intro: 'Explore las referencias de acero o consulte la arenisca por color y requisitos a medida. La disponibilidad, las dimensiones y el alcance se confirman en cada consulta.',
+      all: 'Todas las referencias de acero',
+      filterLabel: 'Filtrar referencias de acero',
+      productCount: '40 referencias de acero',
+      sandstoneCta: 'Explorar arenisca a medida',
       process: 'Material / proceso',
       confidence: 'Identificación de la imagen',
       high: 'Alta confianza',

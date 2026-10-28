@@ -1,0 +1,369 @@
+{
+  "hero": {
+    "src": "/media/sandstone/custom-profiles-s1704-1920.webp",
+    "srcSet": "/media/sandstone/custom-profiles-s1704-640.webp 640w, /media/sandstone/custom-profiles-s1704-1280.webp 1280w, /media/sandstone/custom-profiles-s1704-1920.webp 1920w",
+    "width": 1920,
+    "height": 1440,
+    "alt": {
+      "en": "Sandstone profile and curved-piece samples.",
+      "es": "Muestras de perfiles y piezas curvas de arenisca."
+    }
+  },
+  "colours": [
+    {
+      "id": "red",
+      "name": {
+        "en": "Red",
+        "es": "Rojo"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/red-s0054-1600.webp",
+          "srcSet": "/media/sandstone/red-s0054-480.webp 480w, /media/sandstone/red-s0054-960.webp 960w, /media/sandstone/red-s0054-1600.webp 1600w",
+          "width": 1600,
+          "height": 2133,
+          "alt": {
+            "en": "Red sandstone sample pieces showing different surface textures.",
+            "es": "Muestras de arenisca roja con diferentes texturas."
+          }
+        },
+        {
+          "src": "/media/sandstone/red-s0346-1600.webp",
+          "srcSet": "/media/sandstone/red-s0346-480.webp 480w, /media/sandstone/red-s0346-960.webp 960w, /media/sandstone/red-s0346-1600.webp 1600w",
+          "width": 1600,
+          "height": 900,
+          "alt": {
+            "en": "Close view of red sandstone grain.",
+            "es": "Detalle del grano de la arenisca roja."
+          }
+        }
+      ]
+    },
+    {
+      "id": "yellow-woodgrain",
+      "name": {
+        "en": "Yellow woodgrain",
+        "es": "Amarillo veteado"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0413-1600.webp",
+          "srcSet": "/media/sandstone/yellow-woodgrain-s0413-480.webp 480w, /media/sandstone/yellow-woodgrain-s0413-960.webp 960w, /media/sandstone/yellow-woodgrain-s0413-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Yellow woodgrain sandstone sample pieces.",
+            "es": "Muestras de arenisca amarilla veteada."
+          }
+        },
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0436-1600.webp",
+          "srcSet": "/media/sandstone/yellow-woodgrain-s0436-480.webp 480w, /media/sandstone/yellow-woodgrain-s0436-960.webp 960w, /media/sandstone/yellow-woodgrain-s0436-1600.webp 1600w",
+          "width": 1600,
+          "height": 721,
+          "alt": {
+            "en": "Two light woodgrain sandstone samples.",
+            "es": "Dos muestras de arenisca clara veteada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "golden-yellow",
+      "name": {
+        "en": "Golden yellow",
+        "es": "Amarillo dorado"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/golden-yellow-s0498-1600.webp",
+          "srcSet": "/media/sandstone/golden-yellow-s0498-480.webp 480w, /media/sandstone/golden-yellow-s0498-960.webp 960w, /media/sandstone/golden-yellow-s0498-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Golden-yellow sandstone sample pieces.",
+            "es": "Muestras de arenisca de color amarillo dorado."
+          }
+        },
+        {
+          "src": "/media/sandstone/golden-yellow-s0474-1600.webp",
+          "srcSet": "/media/sandstone/golden-yellow-s0474-480.webp 480w, /media/sandstone/golden-yellow-s0474-960.webp 960w, /media/sandstone/golden-yellow-s0474-1600.webp 1600w",
+          "width": 1600,
+          "height": 2133,
+          "alt": {
+            "en": "Textured golden-yellow sandstone surface.",
+            "es": "Superficie texturada de arenisca amarilla dorada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "patterned-yellow",
+      "name": {
+        "en": "Patterned yellow",
+        "es": "Amarillo texturado"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/patterned-yellow-s0590-1280.webp",
+          "srcSet": "/media/sandstone/patterned-yellow-s0590-480.webp 480w, /media/sandstone/patterned-yellow-s0590-960.webp 960w, /media/sandstone/patterned-yellow-s0590-1280.webp 1280w",
+          "width": 1280,
+          "height": 950,
+          "alt": {
+            "en": "Yellow sandstone samples with linear surface patterns.",
+            "es": "Muestras de arenisca amarilla con patrones lineales."
+          }
+        },
+        {
+          "src": "/media/sandstone/patterned-yellow-s0592-1280.webp",
+          "srcSet": "/media/sandstone/patterned-yellow-s0592-480.webp 480w, /media/sandstone/patterned-yellow-s0592-960.webp 960w, /media/sandstone/patterned-yellow-s0592-1280.webp 1280w",
+          "width": 1280,
+          "height": 950,
+          "alt": {
+            "en": "Angled view of a patterned yellow sandstone sample.",
+            "es": "Vista en ángulo de una muestra de arenisca amarilla texturada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "grey",
+      "name": {
+        "en": "Grey tones",
+        "es": "Tonos grises"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/grey-s0638-1600.webp",
+          "srcSet": "/media/sandstone/grey-s0638-480.webp 480w, /media/sandstone/grey-s0638-960.webp 960w, /media/sandstone/grey-s0638-1600.webp 1600w",
+          "width": 1600,
+          "height": 2133,
+          "alt": {
+            "en": "Grey sandstone slab colour reference.",
+            "es": "Referencia de color de una placa de arenisca gris."
+          }
+        },
+        {
+          "src": "/media/sandstone/grey-s0611-1279.webp",
+          "srcSet": "/media/sandstone/grey-s0611-480.webp 480w, /media/sandstone/grey-s0611-960.webp 960w, /media/sandstone/grey-s0611-1279.webp 1279w",
+          "width": 1279,
+          "height": 1706,
+          "alt": {
+            "en": "Two grey sandstone pieces with rough surfaces.",
+            "es": "Dos piezas de arenisca gris con superficies rugosas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cream-beige",
+      "name": {
+        "en": "Cream & beige",
+        "es": "Crema y beige"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/cream-beige-s0692-1600.webp",
+          "srcSet": "/media/sandstone/cream-beige-s0692-480.webp 480w, /media/sandstone/cream-beige-s0692-960.webp 960w, /media/sandstone/cream-beige-s0692-1600.webp 1600w",
+          "width": 1600,
+          "height": 1600,
+          "alt": {
+            "en": "Cream and beige sandstone sample pieces.",
+            "es": "Muestras de arenisca en tonos crema y beige."
+          }
+        },
+        {
+          "src": "/media/sandstone/cream-beige-s0683-1600.webp",
+          "srcSet": "/media/sandstone/cream-beige-s0683-480.webp 480w, /media/sandstone/cream-beige-s0683-960.webp 960w, /media/sandstone/cream-beige-s0683-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Cream-beige sandstone slabs.",
+            "es": "Placas de arenisca crema y beige."
+          }
+        }
+      ]
+    },
+    {
+      "id": "grey-green",
+      "name": {
+        "en": "Grey-green",
+        "es": "Gris verdoso"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/grey-green-s0881-1600.webp",
+          "srcSet": "/media/sandstone/grey-green-s0881-480.webp 480w, /media/sandstone/grey-green-s0881-960.webp 960w, /media/sandstone/grey-green-s0881-1600.webp 1600w",
+          "width": 1600,
+          "height": 2133,
+          "alt": {
+            "en": "Grey-green sandstone samples showing tonal variation.",
+            "es": "Muestras de arenisca gris verdosa con variaciones de tono."
+          }
+        },
+        {
+          "src": "/media/sandstone/grey-green-s0787-1600.webp",
+          "srcSet": "/media/sandstone/grey-green-s0787-480.webp 480w, /media/sandstone/grey-green-s0787-960.webp 960w, /media/sandstone/grey-green-s0787-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Grey-green sandstone blocks with rough surfaces.",
+            "es": "Bloques de arenisca gris verdosa con superficies rugosas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "red-woodgrain",
+      "name": {
+        "en": "Violet-red woodgrain",
+        "es": "Rojo violáceo veteado"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/red-woodgrain-s1745-1600.webp",
+          "srcSet": "/media/sandstone/red-woodgrain-s1745-480.webp 480w, /media/sandstone/red-woodgrain-s1745-960.webp 960w, /media/sandstone/red-woodgrain-s1745-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Violet-red sandstone panel with fine linear grain.",
+            "es": "Panel de arenisca rojo violáceo con vetas lineales finas."
+          }
+        },
+        {
+          "src": "/media/sandstone/red-woodgrain-s1743-1600.webp",
+          "srcSet": "/media/sandstone/red-woodgrain-s1743-480.webp 480w, /media/sandstone/red-woodgrain-s1743-960.webp 960w, /media/sandstone/red-woodgrain-s1743-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Red woodgrain sandstone slabs.",
+            "es": "Placas de arenisca roja veteada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "chocolate",
+      "name": {
+        "en": "Chocolate brown",
+        "es": "Marrón chocolate"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/chocolate-s1764-1600.webp",
+          "srcSet": "/media/sandstone/chocolate-s1764-480.webp 480w, /media/sandstone/chocolate-s1764-960.webp 960w, /media/sandstone/chocolate-s1764-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Brown sandstone colour samples.",
+            "es": "Muestras de color de arenisca marrón."
+          }
+        },
+        {
+          "src": "/media/sandstone/chocolate-s1765-1600.webp",
+          "srcSet": "/media/sandstone/chocolate-s1765-480.webp 480w, /media/sandstone/chocolate-s1765-960.webp 960w, /media/sandstone/chocolate-s1765-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Brown sandstone slab surface.",
+            "es": "Superficie de una placa de arenisca marrón."
+          }
+        }
+      ]
+    },
+    {
+      "id": "black",
+      "name": {
+        "en": "Black",
+        "es": "Negro"
+      },
+      "images": [
+        {
+          "src": "/media/sandstone/black-s1798-1440.webp",
+          "srcSet": "/media/sandstone/black-s1798-480.webp 480w, /media/sandstone/black-s1798-960.webp 960w, /media/sandstone/black-s1798-1440.webp 1440w",
+          "width": 1440,
+          "height": 1080,
+          "alt": {
+            "en": "Black sandstone sample pieces.",
+            "es": "Muestras de arenisca negra."
+          }
+        },
+        {
+          "src": "/media/sandstone/black-s1839-1600.webp",
+          "srcSet": "/media/sandstone/black-s1839-480.webp 480w, /media/sandstone/black-s1839-960.webp 960w, /media/sandstone/black-s1839-1600.webp 1600w",
+          "width": 1600,
+          "height": 1200,
+          "alt": {
+            "en": "Black sandstone samples with a rough surface.",
+            "es": "Muestras de arenisca negra con una superficie rugosa."
+          }
+        }
+      ]
+    }
+  ],
+  "work": [
+    {
+      "id": "carved-reliefs",
+      "title": {
+        "en": "Carved details",
+        "es": "Detalles tallados"
+      },
+      "copy": {
+        "en": "Relief panels in two tones. Bring a design reference to the custom-order discussion.",
+        "es": "Paneles en relieve en dos tonos. Comparta una referencia de diseño al consultar su pedido a medida."
+      },
+      "image": {
+        "src": "/media/sandstone/carved-reliefs-s1197-1600.webp",
+        "srcSet": "/media/sandstone/carved-reliefs-s1197-480.webp 480w, /media/sandstone/carved-reliefs-s1197-960.webp 960w, /media/sandstone/carved-reliefs-s1197-1600.webp 1600w",
+        "width": 1600,
+        "height": 1200,
+        "alt": {
+          "en": "Lotus relief panels in two sandstone colour tones.",
+          "es": "Paneles con relieve de loto en dos tonalidades de arenisca."
+        }
+      }
+    },
+    {
+      "id": "shaped-pieces",
+      "title": {
+        "en": "Shaped pieces",
+        "es": "Piezas con formas especiales"
+      },
+      "copy": {
+        "en": "Colour and shape considered together. Send dimensions or a drawing for your own brief.",
+        "es": "Color y forma considerados en conjunto. Envíe dimensiones o un plano para su proyecto."
+      },
+      "image": {
+        "src": "/media/sandstone/shaped-pieces-s1403-1600.webp",
+        "srcSet": "/media/sandstone/shaped-pieces-s1403-480.webp 480w, /media/sandstone/shaped-pieces-s1403-960.webp 960w, /media/sandstone/shaped-pieces-s1403-1600.webp 1600w",
+        "width": 1600,
+        "height": 1200,
+        "alt": {
+          "en": "Spherical sandstone forms in light and woodgrain tones.",
+          "es": "Formas esféricas de arenisca en tonos claros y veteados."
+        }
+      }
+    },
+    {
+      "id": "architecture-reference",
+      "title": {
+        "en": "Architectural reference",
+        "es": "Referencia arquitectónica"
+      },
+      "copy": {
+        "en": "A facade reference for discussing the look and intended setting of your project.",
+        "es": "Una referencia de fachada para conversar sobre el aspecto y el entorno de su proyecto."
+      },
+      "image": {
+        "src": "/media/sandstone/architecture-reference-s1337-1600.webp",
+        "srcSet": "/media/sandstone/architecture-reference-s1337-480.webp 480w, /media/sandstone/architecture-reference-s1337-960.webp 960w, /media/sandstone/architecture-reference-s1337-1600.webp 1600w",
+        "width": 1600,
+        "height": 1200,
+        "alt": {
+          "en": "Sandstone facade reference.",
+          "es": "Referencia de fachada de arenisca."
+        }
+      }
+    }
+  ]
+}

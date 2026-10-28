@@ -10,9 +10,11 @@ interface Props {
   description?: string;
   locale?: Locale;
   page?: PageId;
+  shareImage?: string;
+  shareImageAlt?: string;
 }
 
-const { title, description = site.description, locale = 'en', page = 'home' } = Astro.props;
+const { title, description = site.description, locale = 'en', page = 'home', shareImage, shareImageAlt } = Astro.props;
 const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
 const t = content[locale];
 const canonical = `https://${site.domain}${routeFor(locale, page)}`;
@@ -27,6 +29,16 @@ const canonical = `https://${site.domain}${routeFor(locale, page)}`;
     <meta name="theme-color" content="#111311" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    {shareImage && <>
+      <meta property="og:image" content={new URL(shareImage, `https://${site.domain}`).href} />
+      <meta property="og:image:alt" content={shareImageAlt} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={new URL(shareImage, `https://${site.domain}`).href} />
+    </>}
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="en" href={`https://${site.domain}${routeFor('en', page)}`} />
     <link rel="alternate" hreflang="es" href={`https://${site.domain}${routeFor('es', page)}`} />

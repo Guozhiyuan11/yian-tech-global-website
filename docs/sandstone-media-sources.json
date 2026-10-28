@@ -1,0 +1,654 @@
+{
+  "archive": "砂岩分类照片.rar",
+  "date": "2026-10-28",
+  "photos": [
+    {
+      "id": "s1704",
+      "original": "砂岩工艺产品/砂岩工艺产品 (94).JPG",
+      "sha256": "3c53d5a5f229975b88373e47a798239aa81ddf7739f097898ffc6d1ed4ba5ae5",
+      "sourceWidth": 4608,
+      "sourceHeight": 3456,
+      "outputs": [
+        {
+          "src": "/media/sandstone/custom-profiles-s1704-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 22094
+        },
+        {
+          "src": "/media/sandstone/custom-profiles-s1704-1280.webp",
+          "width": 1280,
+          "height": 960,
+          "bytes": 104408
+        },
+        {
+          "src": "/media/sandstone/custom-profiles-s1704-1920.webp",
+          "width": 1920,
+          "height": 1440,
+          "bytes": 235674
+        }
+      ]
+    },
+    {
+      "id": "s0054",
+      "original": "红砂岩/红砂岩各色 (145).JPG",
+      "sha256": "fe42981f9e7dd76d87e3a988e393da13de7084b77c5029fee7c5a63ffcac36d9",
+      "sourceWidth": 3264,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/red-s0054-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 44070
+        },
+        {
+          "src": "/media/sandstone/red-s0054-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 153514
+        },
+        {
+          "src": "/media/sandstone/red-s0054-1600.webp",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 364316
+        }
+      ]
+    },
+    {
+      "id": "s0346",
+      "original": "红砂岩/红砂岩各色 (95).JPG",
+      "sha256": "b6b39546dd6051c8494418875f748dcada0f2db9974f0f559e345c4b33e7acf2",
+      "sourceWidth": 1919,
+      "sourceHeight": 1080,
+      "outputs": [
+        {
+          "src": "/media/sandstone/red-s0346-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 35490
+        },
+        {
+          "src": "/media/sandstone/red-s0346-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 139706
+        },
+        {
+          "src": "/media/sandstone/red-s0346-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 313664
+        }
+      ]
+    },
+    {
+      "id": "s0413",
+      "original": "黄木纹砂岩/黄木纹砂岩 (5).JPG",
+      "sha256": "f431d3e8fafa1ad99980f98d7a508e6b976ccaa53282b33e27ff9bedbbcebdcc",
+      "sourceWidth": 3264,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0413-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 25958
+        },
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0413-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 135996
+        },
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0413-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 397002
+        }
+      ]
+    },
+    {
+      "id": "s0436",
+      "original": "黄木纹砂岩/黄木纹砂岩 (69).JPG",
+      "sha256": "09f93b54717e90e4246dcac7d2aa72d92183cd185feb25af3a541894872874f0",
+      "sourceWidth": 2370,
+      "sourceHeight": 1068,
+      "outputs": [
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0436-480.webp",
+          "width": 480,
+          "height": 216,
+          "bytes": 16900
+        },
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0436-960.webp",
+          "width": 960,
+          "height": 433,
+          "bytes": 79944
+        },
+        {
+          "src": "/media/sandstone/yellow-woodgrain-s0436-1600.webp",
+          "width": 1600,
+          "height": 721,
+          "bytes": 193136
+        }
+      ]
+    },
+    {
+      "id": "s0498",
+      "original": "黄砂岩黄金砂岩/黄砂岩黄金砂岩 (24).JPG",
+      "sha256": "68eb54fcf60de3d07d810ff889697c8978dc474e39630e82e1e701da95cd31aa",
+      "sourceWidth": 3264,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/golden-yellow-s0498-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 19054
+        },
+        {
+          "src": "/media/sandstone/golden-yellow-s0498-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 138122
+        },
+        {
+          "src": "/media/sandstone/golden-yellow-s0498-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 466416
+        }
+      ]
+    },
+    {
+      "id": "s0474",
+      "original": "黄砂岩黄金砂岩/黄砂岩黄金砂岩 (101).JPG",
+      "sha256": "421b4eb6e1339cfeca39312ad99c30de0d44993a532333af7ba2b4e84510eb8c",
+      "sourceWidth": 4032,
+      "sourceHeight": 3024,
+      "outputs": [
+        {
+          "src": "/media/sandstone/golden-yellow-s0474-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 118084
+        },
+        {
+          "src": "/media/sandstone/golden-yellow-s0474-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 420086
+        },
+        {
+          "src": "/media/sandstone/golden-yellow-s0474-1600.webp",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 1014546
+        }
+      ]
+    },
+    {
+      "id": "s0590",
+      "original": "黄砂岩剪刀纹/黄砂岩剪刀纹 (16).JPG",
+      "sha256": "0a2cbc7c66b62f494838340794cd75762db51c7a3b6a757b22952d525c781872",
+      "sourceWidth": 1280,
+      "sourceHeight": 950,
+      "outputs": [
+        {
+          "src": "/media/sandstone/patterned-yellow-s0590-480.webp",
+          "width": 480,
+          "height": 356,
+          "bytes": 24192
+        },
+        {
+          "src": "/media/sandstone/patterned-yellow-s0590-960.webp",
+          "width": 960,
+          "height": 712,
+          "bytes": 108806
+        },
+        {
+          "src": "/media/sandstone/patterned-yellow-s0590-1280.webp",
+          "width": 1280,
+          "height": 950,
+          "bytes": 161100
+        }
+      ]
+    },
+    {
+      "id": "s0592",
+      "original": "黄砂岩剪刀纹/黄砂岩剪刀纹 (18).JPG",
+      "sha256": "9e1455db67f6c94cd809ce88404b3bf8ef4c463ad9c93e2eb2343572ef61ccca",
+      "sourceWidth": 1280,
+      "sourceHeight": 950,
+      "outputs": [
+        {
+          "src": "/media/sandstone/patterned-yellow-s0592-480.webp",
+          "width": 480,
+          "height": 356,
+          "bytes": 26196
+        },
+        {
+          "src": "/media/sandstone/patterned-yellow-s0592-960.webp",
+          "width": 960,
+          "height": 712,
+          "bytes": 108306
+        },
+        {
+          "src": "/media/sandstone/patterned-yellow-s0592-1280.webp",
+          "width": 1280,
+          "height": 950,
+          "bytes": 162192
+        }
+      ]
+    },
+    {
+      "id": "s0638",
+      "original": "灰黑砂岩/灰黑砂岩 (80).JPG",
+      "sha256": "7f18e091282bea9c5809759976f90a23021abbeebbc1e792d4aa50c7f561d973",
+      "sourceWidth": 3264,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/grey-s0638-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 35604
+        },
+        {
+          "src": "/media/sandstone/grey-s0638-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 146352
+        },
+        {
+          "src": "/media/sandstone/grey-s0638-1600.webp",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 341636
+        }
+      ]
+    },
+    {
+      "id": "s0611",
+      "original": "灰黑砂岩/灰黑砂岩 (112).JPG",
+      "sha256": "35c257032158aaa4b6b573cf57f186e8885c531bdd56792e7f6f20660277ebc7",
+      "sourceWidth": 1279,
+      "sourceHeight": 1706,
+      "outputs": [
+        {
+          "src": "/media/sandstone/grey-s0611-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 73168
+        },
+        {
+          "src": "/media/sandstone/grey-s0611-960.webp",
+          "width": 960,
+          "height": 1281,
+          "bytes": 230428
+        },
+        {
+          "src": "/media/sandstone/grey-s0611-1279.webp",
+          "width": 1279,
+          "height": 1706,
+          "bytes": 344306
+        }
+      ]
+    },
+    {
+      "id": "s0692",
+      "original": "米黄砂岩/米黄砂岩 (40).JPG",
+      "sha256": "a060bfa3f6a54265e4a867ce5bae20dcfa273613818fc2cbb4d063bd47222507",
+      "sourceWidth": 2448,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/cream-beige-s0692-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 27196
+        },
+        {
+          "src": "/media/sandstone/cream-beige-s0692-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 137046
+        },
+        {
+          "src": "/media/sandstone/cream-beige-s0692-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 377878
+        }
+      ]
+    },
+    {
+      "id": "s0683",
+      "original": "米黄砂岩/米黄砂岩 (32).JPG",
+      "sha256": "7b2c3daf2aa7fdaabae6e4c1937caf1af854da2f7e1051f3a1025384d4b6df95",
+      "sourceWidth": 2272,
+      "sourceHeight": 1704,
+      "outputs": [
+        {
+          "src": "/media/sandstone/cream-beige-s0683-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 9596
+        },
+        {
+          "src": "/media/sandstone/cream-beige-s0683-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 36478
+        },
+        {
+          "src": "/media/sandstone/cream-beige-s0683-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 100954
+        }
+      ]
+    },
+    {
+      "id": "s0881",
+      "original": "青砂岩灰绿砂岩/青砂，灰绿砂 (90).JPG",
+      "sha256": "44a4f252940e03b379b570fadf00c747d38b334691f1f8f1c0ef09e263cddb6f",
+      "sourceWidth": 4032,
+      "sourceHeight": 3024,
+      "outputs": [
+        {
+          "src": "/media/sandstone/grey-green-s0881-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 65338
+        },
+        {
+          "src": "/media/sandstone/grey-green-s0881-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 331560
+        },
+        {
+          "src": "/media/sandstone/grey-green-s0881-1600.webp",
+          "width": 1600,
+          "height": 2133,
+          "bytes": 933406
+        }
+      ]
+    },
+    {
+      "id": "s0787",
+      "original": "青砂岩灰绿砂岩/青砂，灰绿砂 (142).JPG",
+      "sha256": "cae707e968e2d158c99af96449b53e40bbdcc0d97bf2578c2856dca575549001",
+      "sourceWidth": 4032,
+      "sourceHeight": 3024,
+      "outputs": [
+        {
+          "src": "/media/sandstone/grey-green-s0787-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 36070
+        },
+        {
+          "src": "/media/sandstone/grey-green-s0787-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 135862
+        },
+        {
+          "src": "/media/sandstone/grey-green-s0787-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 346880
+        }
+      ]
+    },
+    {
+      "id": "s1745",
+      "original": "紫红木纹砂岩/紫红木纹砂岩 (7).JPG",
+      "sha256": "786bd089c3ecd046dc8e6d82fdfe3865d61e87b8e0af6381ed76a1c3c566b729",
+      "sourceWidth": 4608,
+      "sourceHeight": 3456,
+      "outputs": [
+        {
+          "src": "/media/sandstone/red-woodgrain-s1745-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 6624
+        },
+        {
+          "src": "/media/sandstone/red-woodgrain-s1745-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 30466
+        },
+        {
+          "src": "/media/sandstone/red-woodgrain-s1745-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 90826
+        }
+      ]
+    },
+    {
+      "id": "s1743",
+      "original": "紫红木纹砂岩/紫红木纹砂岩 (5).JPG",
+      "sha256": "a266d617cb6cc901595e75348e5e094d1316bf1d140da4c531cdbb288aa987be",
+      "sourceWidth": 4608,
+      "sourceHeight": 3456,
+      "outputs": [
+        {
+          "src": "/media/sandstone/red-woodgrain-s1743-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 18996
+        },
+        {
+          "src": "/media/sandstone/red-woodgrain-s1743-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 63624
+        },
+        {
+          "src": "/media/sandstone/red-woodgrain-s1743-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 152954
+        }
+      ]
+    },
+    {
+      "id": "s1764",
+      "original": "紫砂岩巧克力砂岩/紫砂岩巧克力砂岩 (5).JPG",
+      "sha256": "d64a58cc2024d3cb5fb0211598ea9f75489279f1fcf3a370a40da40317bf3345",
+      "sourceWidth": 2272,
+      "sourceHeight": 1704,
+      "outputs": [
+        {
+          "src": "/media/sandstone/chocolate-s1764-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 31286
+        },
+        {
+          "src": "/media/sandstone/chocolate-s1764-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 155008
+        },
+        {
+          "src": "/media/sandstone/chocolate-s1764-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 362974
+        }
+      ]
+    },
+    {
+      "id": "s1765",
+      "original": "紫砂岩巧克力砂岩/紫砂岩巧克力砂岩 (6).JPG",
+      "sha256": "8cd0814d1f118539025b6386e43719264b743f885bff81aad935c63024193750",
+      "sourceWidth": 4608,
+      "sourceHeight": 3456,
+      "outputs": [
+        {
+          "src": "/media/sandstone/chocolate-s1765-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 13356
+        },
+        {
+          "src": "/media/sandstone/chocolate-s1765-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 47614
+        },
+        {
+          "src": "/media/sandstone/chocolate-s1765-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 133634
+        }
+      ]
+    },
+    {
+      "id": "s1798",
+      "original": "黑砂岩/黑砂岩 (30).JPG",
+      "sha256": "b96444ab40ed989c5d269a981e7eb719ab9edd83b9f14ed3bb069ef11a5cec9c",
+      "sourceWidth": 1440,
+      "sourceHeight": 1080,
+      "outputs": [
+        {
+          "src": "/media/sandstone/black-s1798-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 20196
+        },
+        {
+          "src": "/media/sandstone/black-s1798-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 82870
+        },
+        {
+          "src": "/media/sandstone/black-s1798-1440.webp",
+          "width": 1440,
+          "height": 1080,
+          "bytes": 152988
+        }
+      ]
+    },
+    {
+      "id": "s1839",
+      "original": "黑砂岩/黑砂岩 (65).JPG",
+      "sha256": "8800c3416927627a99f74a34125a1c999288366c610ed64b1ff7ce14215174f7",
+      "sourceWidth": 1706,
+      "sourceHeight": 1279,
+      "outputs": [
+        {
+          "src": "/media/sandstone/black-s1839-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 37406
+        },
+        {
+          "src": "/media/sandstone/black-s1839-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 133204
+        },
+        {
+          "src": "/media/sandstone/black-s1839-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 299928
+        }
+      ]
+    },
+    {
+      "id": "s1197",
+      "original": "砂岩雕刻/砂岩雕刻产品 (372).JPG",
+      "sha256": "49964d6f59769082fb6d5c8e622eff10c3886c7bab15ac6828e5fc3199fd9deb",
+      "sourceWidth": 3264,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/carved-reliefs-s1197-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 23184
+        },
+        {
+          "src": "/media/sandstone/carved-reliefs-s1197-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 77958
+        },
+        {
+          "src": "/media/sandstone/carved-reliefs-s1197-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 172760
+        }
+      ]
+    },
+    {
+      "id": "s1403",
+      "original": "砂岩工艺产品/砂岩工艺产品 (116).JPG",
+      "sha256": "6547dd57b187c20a97e713c3da628a321337d70cfd98cd4e6d0d49632183f56d",
+      "sourceWidth": 3264,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/shaped-pieces-s1403-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 18972
+        },
+        {
+          "src": "/media/sandstone/shaped-pieces-s1403-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 61990
+        },
+        {
+          "src": "/media/sandstone/shaped-pieces-s1403-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 149648
+        }
+      ]
+    },
+    {
+      "id": "s1337",
+      "original": "砂岩工程实例/砂岩工程实例 (6).JPG",
+      "sha256": "4de089da03ce550e665dc0590577c6aa889e1e668d9ff7e0b4f1e2ecb3ae68c3",
+      "sourceWidth": 3264,
+      "sourceHeight": 2448,
+      "outputs": [
+        {
+          "src": "/media/sandstone/architecture-reference-s1337-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 45256
+        },
+        {
+          "src": "/media/sandstone/architecture-reference-s1337-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 133404
+        },
+        {
+          "src": "/media/sandstone/architecture-reference-s1337-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 283798
+        }
+      ]
+    }
+  ]
+}

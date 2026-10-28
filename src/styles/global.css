@@ -188,7 +188,8 @@
       border-color 260ms ease;
   }
 
-  .site-header--solid {
+  .site-header--solid,
+  .site-header--paper {
     color: var(--ink);
     background: rgba(239, 238, 232, 0.92);
     border-color: var(--line);
@@ -213,6 +214,9 @@
     height: 2.15rem;
     fill: var(--accent);
   }
+
+  .site-header--paper .brand__mark { fill: var(--ink); }
+  .site-header--paper.menu-open .brand__mark { fill: var(--accent); }
 
   .brand__name {
     font-size: 0.78rem;
@@ -290,7 +294,8 @@
     font-weight: 800;
   }
 
-  .site-header--solid .language-switch a[aria-current="page"] { color: #5f6d00; }
+  .site-header--solid:not(.menu-open) .language-switch a[aria-current="page"],
+  .site-header--paper:not(.menu-open) .language-switch a[aria-current="page"] { color: #5f6d00; }
 
   .menu-toggle {
     position: relative;
@@ -1330,6 +1335,11 @@
   .catalogue-hero__lower { display: grid; grid-template-columns: minmax(0, 36rem) auto; justify-content: space-between; gap: 2rem; align-items: end; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.4); }
   .catalogue-hero__lower p:first-child { line-height: 1.55; }
   .catalogue-hero__lower p:last-child { color: var(--accent); font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .catalogue-hero__routes { display: grid; gap: 0.9rem; align-content: end; }
+  .catalogue-hero__routes p { color: var(--accent); font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .catalogue-hero__routes a { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 0.6rem; border-bottom: 1px solid currentColor; font-size: 0.85rem; }
+  .catalogue-hero__routes a:hover { color: var(--accent); }
+  .catalogue-hero__routes a img { width: 5rem; height: 3.75rem; object-fit: cover; flex: 0 0 auto; }
 
   .catalogue { background: var(--paper); }
   .catalogue-filter { position: relative; display: flex; flex-wrap: wrap; gap: 0.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
@@ -1512,6 +1522,24 @@
     gap: 0.75rem;
     margin-top: 2.5rem;
   }
+
+  .quote-cta__emails {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .quote-cta__emails a {
+    width: fit-content;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .site-footer__links a[href^="mailto:"] { overflow-wrap: anywhere; }
 
   .button {
     display: flex;

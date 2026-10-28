@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SandstoneSection from '../components/SandstoneSection.astro';
+import { content } from '../i18n/content';
+import { sandstoneHero } from '../data/sandstone';
+
+const locale = 'en' as const;
+const t = content[locale].meta;
+---
+
+<BaseLayout title={t.sandstoneTitle} description={t.sandstoneDescription} locale={locale} page="sandstone" shareImage={sandstoneHero.src} shareImageAlt={sandstoneHero.alt[locale]}>
+  <SandstoneSection locale={locale} standalone />
+</BaseLayout>

@@ -14,12 +14,15 @@ const t = content[locale].contact;
     <div class="quote-cta__body">
       <p>{t.copy}</p>
       <div class="quote-cta__actions">
-        <a class="button button--dark" href={`mailto:${site.email}?subject=${encodeURIComponent(t.emailSubject)}`}>
+        <a class="button button--dark" href={`${site.salesMailto}?subject=${encodeURIComponent(t.emailSubject)}`}>
           {t.email} <span aria-hidden="true">↗</span>
         </a>
         <a class="button button--line" href={site.whatsappHref} target="_blank" rel="noreferrer">
           {t.whatsapp} <span aria-hidden="true">↗</span>
         </a>
+      </div>
+      <div class="quote-cta__emails">
+        {site.salesEmails.map((email) => <a href={`mailto:${email}`}>{email}</a>)}
       </div>
       <p class="quote-cta__note">{t.note}</p>
     </div>
