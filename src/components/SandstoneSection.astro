@@ -1,7 +1,7 @@
 ---
 import { site } from '../data/site';
 import { routeFor, type Locale } from '../i18n/content';
-import { sandstoneHero, sandstoneColours, sandstoneWork, sandstoneEnquiry, sandstoneBrief } from '../data/sandstone';
+import { sandstoneHero, sandstoneColours, sandstoneWork, sandstoneCategories, sandstoneEnquiry, sandstoneBrief, sandstoneAlbumRoute } from '../data/sandstone';
 import SandstoneGallery from './SandstoneGallery.astro';
 
 interface Props { locale?: Locale; standalone?: boolean }
@@ -16,6 +16,8 @@ const copy = {
     previewTitle: 'Find your starting point.', viewAll: 'View all colour references',
     workEyebrow: 'Forms & design references', workTitle: 'Beyond the flat surface.',
     workIntro: 'From carved details to shaped pieces and architectural references. Share the look you have in mind, then we can discuss your own dimensions and design.',
+    album: 'Explore album', photos: 'photographs',
+    categoryTitle: 'Browse by product & setting.', categoryCopy: 'Start with the detail, component or setting you have in mind. Each collection brings together relevant photographs across the colour range.', productBrowse: 'Explore forms & applications',
     guideTitle: 'Make it your own.', guideIntro: 'A colour reference, a drawing, a clear brief. Start the conversation with the details below.',
     steps: [
       { title: 'Choose your colour', text: 'Select a colour reference above, or send a photograph or sample reference of your own.' },
@@ -33,6 +35,8 @@ const copy = {
     previewTitle: 'Encuentre su punto de partida.', viewAll: 'Ver todas las referencias de color',
     workEyebrow: 'Formas y referencias de diseño', workTitle: 'Más allá de la superficie.',
     workIntro: 'Desde relieves tallados hasta piezas con formas especiales y referencias arquitectónicas. Comparta el aspecto que busca para consultar sus propias dimensiones y diseño.',
+    album: 'Explorar álbum', photos: 'fotografías',
+    categoryTitle: 'Explore por producto y entorno.', categoryCopy: 'Empiece por el detalle, componente o entorno que busca. Cada colección reúne fotografías relacionadas de distintos colores.', productBrowse: 'Explorar formas y aplicaciones',
     guideTitle: 'Hágala suya.', guideIntro: 'Una referencia de color, un plano y una descripción clara. Comience con los detalles siguientes.',
     steps: [
       { title: 'Elija su color', text: 'Seleccione una referencia de color o envíe una fotografía o referencia de muestra propia.' },
@@ -59,6 +63,7 @@ const whatsappHref = `${site.whatsappHref}?text=${encodeURIComponent(sandstoneBr
         <div class="sandstone__actions">
           <a class="sandstone__button" href={standalone ? '#sandstone-colours' : routeFor(locale, 'sandstone')}><span>{standalone ? t.browse : t.explore}</span><span aria-hidden="true">↗</span></a>
           <a class="sandstone__link" href={sandstoneEnquiry(locale)}>{t.email} <span aria-hidden="true">↗</span></a>
+          {standalone && <a class="sandstone__link" href="#sandstone-applications">{t.productBrowse} <span aria-hidden="true">↓</span></a>}
         </div>
       </div>
       <figure class="sandstone__visual">
@@ -72,7 +77,7 @@ const whatsappHref = `${site.whatsappHref}?text=${encodeURIComponent(sandstoneBr
         <div class="sandstone__preview-grid">
           {previewColours.map((colour) => {
             const image = colour.images[0];
-            return <a href={`${routeFor(locale, 'sandstone')}#sandstone-colours`}>
+            return <a href={sandstoneAlbumRoute(locale, colour.id)}>
               <img src={image.src} srcset={image.srcSet} sizes="(min-width: 48rem) 20vw, 42vw" width={image.width} height={image.height} alt={image.alt[locale]} loading="lazy" decoding="async" />
               <span>{colour.name[locale]} <b aria-hidden="true">↗</b></span>
             </a>;
@@ -85,16 +90,27 @@ const whatsappHref = `${site.whatsappHref}?text=${encodeURIComponent(sandstoneBr
 
 {standalone && <>
   <SandstoneGallery locale={locale} />
-  <section class="sandstone-work" aria-labelledby="sandstone-work-title">
+  <section class="sandstone-work" id="sandstone-applications" aria-labelledby="sandstone-work-title">
     <div class="shell">
       <div class="sandstone-work__heading">
         <div><p class="sandstone__eyebrow-label">{t.workEyebrow}</p><h2 id="sandstone-work-title">{t.workTitle}</h2></div><p>{t.workIntro}</p>
       </div>
       <div class="sandstone-work__grid">
-        {sandstoneWork.map((work) => <figure>
+        {sandstoneWork.map((work) => <a class="sandstone-work__card" href={sandstoneAlbumRoute(locale, work.id)}><figure>
           <img src={work.image.src} srcset={work.image.srcSet} sizes="(min-width: 48rem) 33vw, calc(100vw - 2.3rem)" width={work.image.width} height={work.image.height} alt={work.image.alt[locale]} loading="lazy" decoding="async" />
-          <figcaption><h3>{work.title[locale]}</h3><p>{work.copy[locale]}</p></figcaption>
-        </figure>)}
+          <div class="sandstone-work__strip" aria-hidden="true">{work.images.slice(1, 4).map((photo) => <img src={photo.src} srcset={photo.srcSet} sizes="(min-width: 48rem) 11vw, 33vw" width={photo.width} height={photo.height} alt="" loading="lazy" decoding="async" />)}</div>
+          <figcaption><h3>{work.title[locale]}</h3><p>{work.copy[locale]}</p><span class="sandstone-work__album">{t.album} · {work.images.length} {t.photos}<b aria-hidden="true">↗</b></span></figcaption>
+        </figure></a>)}
+      </div>
+      <div class="sandstone-categories" id="sandstone-categories">
+        <div class="sandstone-work__heading"><h2>{t.categoryTitle}</h2><p>{t.categoryCopy}</p></div>
+        <div class="sandstone-categories__grid">{sandstoneCategories.map((category) => {
+          const image = category.images[0];
+          return <a href={sandstoneAlbumRoute(locale, category.id)}>
+            <img src={image.src} srcset={image.srcSet} sizes="(min-width: 75rem) 20vw, (min-width: 48rem) 33vw, 50vw" width={image.width} height={image.height} alt={image.alt[locale]} loading="lazy" decoding="async" />
+            <h3>{category.name[locale]}</h3><p>{category.images.length} {t.photos}<span aria-hidden="true">↗</span></p>
+          </a>;
+        })}</div>
       </div>
     </div>
   </section>
@@ -149,6 +165,22 @@ const whatsappHref = `${site.whatsappHref}?text=${encodeURIComponent(sandstoneBr
   .sandstone-work__grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
   .sandstone-work figcaption h3 { font-size: 1.35rem; font-weight: 400; letter-spacing: -.03em; margin-top: 1.3rem; }
   .sandstone-work figcaption p { max-width: 43ch; font-size: .88rem; line-height: 1.6; margin-top: .7rem; }
+  .sandstone-work__card { display: block; min-width: 0; }
+  .sandstone-work__card:focus-visible { outline: 2px solid #30271f; outline-offset: 5px; }
+  .sandstone-work__strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem; margin-top: .35rem; }
+  .sandstone-work__strip img { aspect-ratio: 4 / 3; }
+  .sandstone-work__album { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1rem; padding-block: .6rem; min-height: 3rem; border-bottom: 1px solid #30271f40; font-size: .85rem; }
+  .sandstone-work__album b { font-weight: 400; font-size: 1.2rem; }
+  .sandstone-categories { margin-top: 5rem; padding-top: 4rem; border-top: 1px solid #30271f40; scroll-margin-top: 5rem; }
+  .sandstone-categories__grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2.5rem 1.3rem; }
+  .sandstone-categories__grid a { min-width: 0; display: block; }
+  .sandstone-categories__grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .sandstone-categories__grid h3 { font-size: 1.05rem; line-height: 1.3; font-weight: 500; letter-spacing: -.02em; margin-top: 1rem; }
+  .sandstone-categories__grid p { display: flex; justify-content: space-between; align-items: center; gap: .5rem; font-size: .72rem; min-height: 2.75rem; margin-top: .35rem; border-bottom: 1px solid #30271f40; }
+  .sandstone-categories__grid p span { font-size: 1.2rem; }
+  .sandstone-categories__grid a:focus-visible { outline: 2px solid #30271f; outline-offset: 5px; }
+  @media (max-width: 74.99rem) { .sandstone-categories__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 47.99rem) { .sandstone-categories__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem .8rem; } }
   .sandstone-brief { background: #d8c6af; color: #30271f; padding-block: clamp(4rem, 7vw, 8rem); }
   .sandstone-brief__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
   .sandstone-brief__steps li { border-top: 1px solid #30271f40; padding-top: 1.5rem; }

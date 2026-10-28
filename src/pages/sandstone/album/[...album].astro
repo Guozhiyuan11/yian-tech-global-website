@@ -1,0 +1,13 @@
+---
+import SandstoneAlbumPage from '../../../components/SandstoneAlbumPage.astro';
+import { sandstoneAlbums } from '../../../data/sandstone';
+
+export function getStaticPaths() {
+  return sandstoneAlbums.flatMap((album) => Array.from({ length: Math.ceil(album.images.length / 24) }, (_, index) => ({
+    params: { album: index === 0 ? album.id : `${album.id}/page/${index + 1}` },
+    props: { album, pageNumber: index + 1 },
+  })));
+}
+const { album, pageNumber } = Astro.props;
+---
+<SandstoneAlbumPage locale="en" album={album} pageNumber={pageNumber} />

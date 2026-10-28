@@ -12,12 +12,14 @@ interface Props {
   page?: PageId;
   shareImage?: string;
   shareImageAlt?: string;
+  canonicalPath?: string;
+  languageLinks?: Record<Locale, string>;
 }
 
-const { title, description = site.description, locale = 'en', page = 'home', shareImage, shareImageAlt } = Astro.props;
+const { title, description = site.description, locale = 'en', page = 'home', shareImage, shareImageAlt, canonicalPath, languageLinks } = Astro.props;
 const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
 const t = content[locale];
-const canonical = `https://${site.domain}${routeFor(locale, page)}`;
+const canonical = `https://${site.domain}${canonicalPath || routeFor(locale, page)}`;
 ---
 
 <!doctype html>
@@ -40,14 +42,14 @@ const canonical = `https://${site.domain}${routeFor(locale, page)}`;
       <meta name="twitter:image" content={new URL(shareImage, `https://${site.domain}`).href} />
     </>}
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={`https://${site.domain}${routeFor('en', page)}`} />
-    <link rel="alternate" hreflang="es" href={`https://${site.domain}${routeFor('es', page)}`} />
-    <link rel="alternate" hreflang="x-default" href={`https://${site.domain}${routeFor('en', page)}`} />
+    <link rel="alternate" hreflang="en" href={`https://${site.domain}${languageLinks?.en || routeFor('en', page)}`} />
+    <link rel="alternate" hreflang="es" href={`https://${site.domain}${languageLinks?.es || routeFor('es', page)}`} />
+    <link rel="alternate" hreflang="x-default" href={`https://${site.domain}${languageLinks?.en || routeFor('en', page)}`} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <a class="skip-link" href="#main">{t.skip}</a>
-    <Header locale={locale} page={page} />
+    <Header locale={locale} page={page} languageLinks={languageLinks} />
     <main id="main">
       <slot />
     </main>

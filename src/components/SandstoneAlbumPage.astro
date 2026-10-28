@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { routeFor, type Locale } from '../i18n/content';
+import { sandstoneAlbums, sandstoneAlbumRoute, sandstoneEnquiry, type SandstoneAlbum } from '../data/sandstone';
+
+interface Props { locale?: Locale; album: SandstoneAlbum; pageNumber?: number; pageSize?: number }
+const { locale = 'en', album, pageNumber = 1, pageSize = 24 } = Astro.props;
+const copy = {
+  en: { back: 'All sandstone', eyebrow: 'Sandstone / Photo albums', photographs: 'photographs', page: 'Page', of: 'of', previous: 'Previous page', next: 'Next page', pages: 'Album pages', view: 'View photograph', close: 'Close photograph', previousPhoto: 'Previous photograph', nextPhoto: 'Next photograph', loading: 'Loading photograph…', error: 'This photograph could not load. Try the next photograph.', enquiry: 'Discuss this reference', photo: 'Photograph', note: 'Images are product and design references. Final colour, dimensions and suitability are confirmed for your project.', albums: 'Explore another album', current: 'Current album', brief: 'A reference for your custom order.', briefCopy: 'Tell us which photograph caught your eye. Include your dimensions, drawings, quantity and destination so we can discuss the details.' },
+  es: { back: 'Toda la arenisca', eyebrow: 'Arenisca / Álbumes de fotografías', photographs: 'fotografías', page: 'Página', of: 'de', previous: 'Página anterior', next: 'Página siguiente', pages: 'Páginas del álbum', view: 'Ver fotografía', close: 'Cerrar fotografía', previousPhoto: 'Fotografía anterior', nextPhoto: 'Fotografía siguiente', loading: 'Cargando fotografía…', error: 'No se pudo cargar esta fotografía. Pruebe la siguiente.', enquiry: 'Consultar esta referencia', photo: 'Fotografía', note: 'Las imágenes son referencias de producto y diseño. El color, las dimensiones y la idoneidad se confirman para su proyecto.', albums: 'Explore otro álbum', current: 'Álbum actual', brief: 'Una referencia para su pedido a medida.', briefCopy: 'Indique qué fotografía le interesa. Incluya dimensiones, planos, cantidad y destino para consultar los detalles.' },
+} as const;
+const t = copy[locale];
+const totalPages = Math.ceil(album.images.length / pageSize);
+const start = (pageNumber - 1) * pageSize;
+const photographs = album.images.slice(start, start + pageSize);
+const heading = album.kind === 'colour' ? (locale === 'es' ? `Arenisca · ${album.name[locale]}` : `${album.name[locale]} sandstone`) : album.name[locale];
+const title = `${heading} · ${t.page} ${pageNumber}`;
+const languageLinks = { en: sandstoneAlbumRoute('en', album.id, pageNumber), es: sandstoneAlbumRoute('es', album.id, pageNumber) };
+const viewerData = album.images.map((photo, index) => ({
+  ...photo, alt: photo.alt[locale],
+  enquiry: sandstoneEnquiry(locale, `${album.name[locale]} / ${t.photo} ${index + 1}`),
+}));
+const serialized = JSON.stringify(viewerData).replace(/</g, '\\u003c');
+const albumSections = [
+  { label: locale === 'es' ? 'Por color y textura' : 'By colour & texture', kind: 'colour' },
+  { label: locale === 'es' ? 'Colecciones de diseño' : 'Design collections', kind: 'work' },
+  { label: locale === 'es' ? 'Por producto y entorno' : 'By product & setting', kind: 'category' },
+];
+---
+
+<BaseLayout title={title} description={album.description[locale]} locale={locale} page="sandstone" canonicalPath={languageLinks[locale]} languageLinks={languageLinks} shareImage={album.images[0]?.src} shareImageAlt={album.images[0]?.alt[locale]}>
+  <section class="stone-album" id="top" data-stone-album data-album-name={album.name[locale]} data-photo-label={t.photo}>
+    <div class="shell">
+      <a class="stone-album__back" href={routeFor(locale, 'sandstone')}>← {t.back}</a>
+      <header class="stone-album__header">
+        <div><p class="stone-album__eyebrow">{t.eyebrow}</p><h1>{heading}</h1></div>
+        <div class="stone-album__summary"><p>{album.description[locale]}</p><p class="stone-album__count">{album.images.length} {t.photographs} <span>· {t.page} {pageNumber} {t.of} {totalPages}</span></p></div>
+      </header>
+
+      <div class="stone-album__toolbar"><span>{start + 1}–{Math.min(start + pageSize, album.images.length)} / {album.images.length}</span><a href={sandstoneEnquiry(locale, album.name[locale])}>{t.enquiry}<span aria-hidden="true">↗</span></a></div>
+      <div class="stone-album__grid">
+        {photographs.map((photo, index) => <figure class="stone-photo">
+          <a class="stone-photo__open" href={photo.src} target="_blank" rel="noreferrer" data-photo-open={start + index} aria-label={`${t.view} ${start + index + 1}`} aria-haspopup="dialog" aria-controls="stone-photo-viewer">
+            <img src={photo.src} srcset={photo.srcSet} sizes="(min-width: 80rem) 24vw, (min-width: 48rem) 32vw, (min-width: 24rem) 48vw, 95vw" width={photo.width} height={photo.height} alt={photo.alt[locale]} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" />
+            <span class="stone-photo__arrow" aria-hidden="true">↗</span>
+          </a>
+          <figcaption><span>{String(start + index + 1).padStart(2, '0')}</span><p>{photo.alt[locale]}</p></figcaption>
+        </figure>)}
+      </div>
+
+      <nav class="stone-pagination" aria-label={t.pages}>
+        {pageNumber > 1 ? <a class="stone-pagination__direction" href={sandstoneAlbumRoute(locale, album.id, pageNumber - 1)}>← {t.previous}</a> : <span />}
+        <div>{Array.from({ length: totalPages }, (_, index) => <a href={sandstoneAlbumRoute(locale, album.id, index + 1)} aria-label={`${t.page} ${index + 1}`} aria-current={pageNumber === index + 1 ? 'page' : undefined}>{index + 1}</a>)}</div>
+        {pageNumber < totalPages ? <a class="stone-pagination__direction" href={sandstoneAlbumRoute(locale, album.id, pageNumber + 1)}>{t.next} →</a> : <span />}
+      </nav>
+      <p class="stone-album__note">{t.note}</p>
+
+      <section class="stone-album__brief" aria-labelledby="stone-album-brief"><h2 id="stone-album-brief">{t.brief}</h2><div><p>{t.briefCopy}</p><a href={sandstoneEnquiry(locale, album.name[locale])}>{t.enquiry}<span aria-hidden="true">↗</span></a></div></section>
+      <nav class="stone-album__others" aria-label={t.albums}><h2>{t.albums}</h2>{albumSections.map((section) => <details open={section.kind === album.kind}><summary>{section.label}</summary><div>{sandstoneAlbums.filter((other) => other.kind === section.kind).map((other) => <a href={sandstoneAlbumRoute(locale, other.id)} aria-current={album.id === other.id ? 'page' : undefined}>{other.name[locale]} <span>{other.images.length}</span></a>)}</div></details>)}</nav>
+    </div>
+
+    <dialog class="stone-viewer" id="stone-photo-viewer" aria-labelledby="stone-viewer-title" aria-describedby="stone-viewer-note" data-photo-viewer>
+      <div class="stone-viewer__layout">
+        <header><h2 id="stone-viewer-title">{album.name[locale]}</h2><button type="button" data-photo-close aria-label={t.close} autofocus>×</button></header>
+        <figure class="stone-viewer__figure"><img alt="" data-photo-image decoding="async" sizes="(min-width: 80rem) 1200px, calc(100vw - 2rem)" /><span class="stone-viewer__loading" role="status" data-photo-loading hidden>{t.loading}</span></figure>
+        <div class="stone-viewer__controls"><div><button type="button" data-photo-previous aria-label={t.previousPhoto}>←</button><p data-photo-count role="status" aria-live="polite" aria-atomic="true"></p><button type="button" data-photo-next aria-label={t.nextPhoto}>→</button></div><a href={sandstoneEnquiry(locale, album.name[locale])} data-photo-enquiry>{t.enquiry}<span aria-hidden="true">↗</span></a></div>
+        <p class="stone-viewer__caption" data-photo-caption></p><p class="stone-viewer__note" id="stone-viewer-note">{t.note}</p>
+      </div>
+    </dialog>
+    <script type="application/json" data-photo-data set:html={serialized} />
+    <span hidden data-photo-error>{t.error}</span>
+  </section>
+</BaseLayout>
+
+<script>
+  interface AlbumPhoto { src: string; srcSet: string; width: number; height: number; alt: string; enquiry: string }
+  document.querySelectorAll<HTMLElement>('[data-stone-album]').forEach((album) => {
+    const data = album.querySelector<HTMLScriptElement>('[data-photo-data]');
+    const viewer = album.querySelector<HTMLDialogElement>('[data-photo-viewer]');
+    const image = viewer?.querySelector<HTMLImageElement>('[data-photo-image]');
+    const caption = viewer?.querySelector<HTMLElement>('[data-photo-caption]');
+    const count = viewer?.querySelector<HTMLElement>('[data-photo-count]');
+    const enquiry = viewer?.querySelector<HTMLAnchorElement>('[data-photo-enquiry]');
+    const loading = viewer?.querySelector<HTMLElement>('[data-photo-loading]');
+    const close = viewer?.querySelector<HTMLButtonElement>('[data-photo-close]');
+    const previous = viewer?.querySelector<HTMLButtonElement>('[data-photo-previous]');
+    const next = viewer?.querySelector<HTMLButtonElement>('[data-photo-next]');
+    if (!data || !viewer || !image || !caption || !count || !enquiry || !loading || !close || !previous || !next) return;
+    const photos: AlbumPhoto[] = JSON.parse(data.textContent || '[]');
+    const loadingText = loading.textContent || '';
+    const errorText = album.querySelector('[data-photo-error]')?.textContent || '';
+    let selected = 0;
+    let trigger: HTMLAnchorElement | null = null;
+    let previousOverflow = '';
+    let backdropPress = false;
+    let touchStart: { x: number; y: number } | null = null;
+
+    image.addEventListener('load', () => { loading.hidden = true; image.style.opacity = '1'; });
+    image.addEventListener('error', () => { loading.textContent = errorText; loading.hidden = false; });
+    const render = () => {
+      const photo = photos[selected];
+      if (!photo) return;
+      loading.textContent = loadingText;
+      loading.hidden = false;
+      image.style.opacity = '0';
+      image.alt = photo.alt;
+      image.width = photo.width;
+      image.height = photo.height;
+      image.srcset = photo.srcSet;
+      image.src = photo.src;
+      caption.textContent = photo.alt;
+      count.textContent = `${selected + 1} / ${photos.length}`;
+      enquiry.href = photo.enquiry;
+      previous.disabled = next.disabled = photos.length < 2;
+      if (image.complete && image.naturalWidth) { loading.hidden = true; image.style.opacity = '1'; }
+    };
+    const move = (step: number) => { if (!viewer.open || photos.length < 2) return; selected = (selected + step + photos.length) % photos.length; render(); };
+    album.querySelectorAll<HTMLAnchorElement>('[data-photo-open]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const index = Number(link.dataset.photoOpen);
+        if (!Number.isInteger(index) || !photos[index]) return;
+        event.preventDefault();
+        selected = index;
+        trigger = link;
+        previousOverflow = document.documentElement.style.overflow;
+        viewer.showModal();
+        document.documentElement.style.overflow = 'hidden';
+        render();
+      });
+    });
+    close.addEventListener('click', () => viewer.close());
+    previous.addEventListener('click', () => move(-1));
+    next.addEventListener('click', () => move(1));
+    viewer.addEventListener('keydown', (event) => {
+      if (!viewer.open || event.altKey || event.ctrlKey || event.metaKey) return;
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); move(event.key === 'ArrowLeft' ? -1 : 1); }
+    });
+    const outside = (event: MouseEvent) => { const rect = viewer.getBoundingClientRect(); return event.target === viewer && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom); };
+    viewer.addEventListener('pointerdown', (event) => { backdropPress = outside(event); });
+    viewer.addEventListener('click', (event) => { if (backdropPress && outside(event)) viewer.close(); backdropPress = false; });
+    image.addEventListener('pointerdown', (event) => { if (event.pointerType === 'touch') touchStart = { x: event.clientX, y: event.clientY }; });
+    image.addEventListener('pointerup', (event) => { if (!touchStart) return; const dx = event.clientX - touchStart.x; const dy = event.clientY - touchStart.y; touchStart = null; if (Math.abs(dx) > 60 && Math.abs(dy) < 60) move(dx < 0 ? 1 : -1); });
+    image.addEventListener('pointercancel', () => { touchStart = null; });
+    viewer.addEventListener('close', () => { document.documentElement.style.overflow = previousOverflow; backdropPress = false; touchStart = null; image.removeAttribute('srcset'); image.removeAttribute('src'); trigger?.focus({ preventScroll: true }); });
+  });
+</script>
+
+<style>
+  .stone-album { color: #30271f; background: #e9dfd0; padding: clamp(7rem, 10vw, 10rem) 0 5rem; }
+  .stone-album__back { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .8rem; border-bottom: 1px solid #30271f50; }
+  .stone-album__header { display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem 5rem; align-items: end; padding-block: 3rem; }
+  .stone-album__eyebrow { font: .7rem/1.5 var(--mono); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 1.5rem; }
+  .stone-album h1 { max-width: 14ch; font-size: clamp(3.2rem, 6vw, 7.5rem); font-weight: 400; line-height: 1.02; letter-spacing: -.055em; overflow-wrap: anywhere; }
+  .stone-album__summary > p:first-child { max-width: 45ch; font-size: 1rem; line-height: 1.7; }
+  .stone-album__count { margin-top: 1.4rem; font: .75rem/1.8 var(--mono); }
+  .stone-album__count span { white-space: nowrap; }
+  .stone-album__toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.6rem; padding-block: 1.1rem; border-block: 1px solid #30271f40; font: .75rem/1.5 var(--mono); }
+  .stone-album__toolbar a { display: inline-flex; gap: 2rem; min-height: 2.75rem; align-items: center; }
+  .stone-album__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.75rem 1.4rem; }
+  .stone-photo { min-width: 0; }
+  .stone-photo__open { position: relative; display: block; aspect-ratio: 1; overflow: hidden; background: #d4c5b1; }
+  .stone-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 350ms ease; }
+  .stone-photo__open:hover img { transform: scale(1.035); }
+  .stone-photo__arrow { position: absolute; right: .6rem; bottom: .6rem; display: grid; place-items: center; width: 2.3rem; height: 2.3rem; background: #eee5d9; font-size: 1.2rem; }
+  .stone-photo figcaption { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .6rem; margin-top: .9rem; }
+  .stone-photo figcaption > span { font: .65rem/1.6 var(--mono); padding-top: .15rem; }
+  .stone-photo figcaption p { font-size: .8rem; line-height: 1.6; }
+  .stone-pagination { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; margin-top: 3rem; padding-block: 1.5rem; border-top: 1px solid #30271f40; }
+  .stone-pagination > div { display: flex; gap: .4rem; flex-wrap: wrap; justify-content: center; }
+  .stone-pagination > div a { display: grid; place-items: center; min-width: 2.75rem; min-height: 2.75rem; border: 1px solid #30271f40; font-size: .85rem; }
+  .stone-pagination a[aria-current="page"] { color: #f8f1e7; background: #30271f; }
+  .stone-pagination__direction { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: .8rem; }
+  .stone-pagination > :last-child { justify-self: end; }
+  .stone-album__note { font-size: .78rem; line-height: 1.65; max-width: 80ch; }
+  .stone-album__brief { display: grid; grid-template-columns: 1.2fr .8fr; align-items: start; gap: 2rem 5rem; margin-top: 5rem; padding-top: 3rem; border-top: 1px solid #30271f40; }
+  .stone-album__brief h2 { max-width: 17ch; font-size: clamp(2rem, 3.7vw, 4.5rem); line-height: 1.05; font-weight: 400; letter-spacing: -.04em; }
+  .stone-album__brief p { max-width: 45ch; font-size: .95rem; line-height: 1.7; }
+  .stone-album__brief a { display: inline-flex; gap: 3rem; align-items: center; min-height: 3rem; margin-top: 1rem; border-bottom: 1px solid; font-size: .85rem; }
+  .stone-album__others { margin-top: 4rem; }
+  .stone-album__others h2 { font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; }
+  .stone-album__others details { padding-block: 1rem; border-top: 1px solid #30271f40; }
+  .stone-album__others summary { cursor: pointer; min-height: 2.75rem; font-size: .85rem; padding-block: .7rem; }
+  .stone-album__others details > div { display: flex; flex-wrap: wrap; gap: .6rem; padding-top: 1rem; }
+  .stone-album__others a { display: inline-flex; align-items: center; gap: 1rem; min-height: 2.75rem; border: 1px solid #30271f40; padding: .6rem .9rem; font-size: .78rem; }
+  .stone-album__others a[aria-current="page"] { color: #f8f1e7; background: #30271f; }
+  .stone-album__others a span { font: .65rem/1.5 var(--mono); }
+  .stone-album a:focus-visible, .stone-album button:focus-visible { outline: 2px solid #30271f; outline-offset: 5px; }
+  .stone-viewer { width: min(calc(100vw - 2rem), 80rem); max-width: calc(100vw - 2rem); max-height: calc(100dvh - 2rem); margin: auto; padding: 0; overflow: auto; border: 0; color: #30271f; background: #eee5d9; }
+  .stone-viewer::backdrop { background: #15110ee8; }
+  .stone-viewer header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .8rem 1.2rem; }
+  .stone-viewer header h2 { font-size: clamp(1.1rem, 2vw, 1.6rem); font-weight: 400; letter-spacing: -.02em; }
+  .stone-viewer button { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; flex-shrink: 0; padding: 0; border: 1px solid #30271f40; background: transparent; color: inherit; font-size: 1.3rem; cursor: pointer; }
+  .stone-viewer button:disabled { opacity: .35; cursor: default; }
+  .stone-viewer button:hover:not(:disabled) { background: #d9c9b4; }
+  .stone-viewer__figure { position: relative; display: grid; place-items: center; background: #28231e; }
+  .stone-viewer__figure img { width: 100%; height: min(61svh, 45rem); object-fit: contain; touch-action: pan-y; }
+  .stone-viewer__loading { position: absolute; color: #f5eee5; font-size: .85rem; padding: 2rem; text-align: center; }
+  .stone-viewer__loading[hidden] { display: none; }
+  .stone-viewer__controls { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem 1.2rem .5rem; }
+  .stone-viewer__controls > div { display: flex; align-items: center; gap: 1rem; }
+  .stone-viewer__controls p { min-width: 6rem; text-align: center; font: .75rem/1.5 var(--mono); }
+  .stone-viewer__controls a { display: inline-flex; gap: 3rem; align-items: center; min-height: 2.75rem; border-bottom: 1px solid; font-size: .85rem; }
+  .stone-viewer__caption { padding: .4rem 1.2rem; font-size: .8rem; line-height: 1.55; }
+  .stone-viewer__note { padding: .3rem 1.2rem 1.2rem; font-size: .65rem; line-height: 1.6; }
+  @media (max-width: 79.99rem) { .stone-album__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 47.99rem) {
+    .stone-album__header, .stone-album__brief { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; } .stone-album__header { padding-block: 2rem; }
+    .stone-album h1 { font-size: clamp(2.8rem, 12vw, 4.7rem); } .stone-album__summary > p:first-child { font-size: .9rem; }
+    .stone-album__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem .8rem; } .stone-photo figcaption { grid-template-columns: minmax(0, 1fr); gap: .2rem; } .stone-photo figcaption p { font-size: .72rem; }
+    .stone-album__toolbar { font-size: .65rem; } .stone-album__toolbar a { gap: .7rem; }
+    .stone-pagination { grid-template-columns: 1fr 1fr; } .stone-pagination > div { grid-column: 1 / -1; grid-row: 1; } .stone-pagination__direction { font-size: .72rem; }
+    .stone-viewer__figure img { height: 48svh; } .stone-viewer__controls { align-items: stretch; flex-direction: column; padding-inline: 1rem; } .stone-viewer__controls > div { justify-content: space-between; } .stone-viewer header { padding-inline: 1rem; }
+  }
+  @media (max-width: 23.99rem) { .stone-album__grid { grid-template-columns: minmax(0, 1fr); } }
+  @media (prefers-reduced-motion: reduce) { .stone-photo img { transition: none; } }
+</style>

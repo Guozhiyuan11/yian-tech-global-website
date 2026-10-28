@@ -1,4 +1,5 @@
 import media from './sandstone-media.json';
+import albums from './sandstone-albums.json';
 import { site } from './site';
 import type { Locale } from '../i18n/content';
 
@@ -16,9 +17,26 @@ export interface SandstoneColour {
   images: SandstoneImage[];
 }
 
+export interface SandstoneAlbum {
+  id: string;
+  name: Record<Locale, string>;
+  description: Record<Locale, string>;
+  kind: 'colour' | 'work' | 'category';
+  images: SandstoneImage[];
+}
+
+export const sandstoneAlbums = albums as SandstoneAlbum[];
+export const sandstoneCategories = sandstoneAlbums.filter((album) => album.kind === 'category');
+export const sandstoneAlbumRoute = (locale: Locale, id: string, pageNumber = 1) =>
+  `${locale === 'es' ? '/es' : ''}/sandstone/album/${id}/${pageNumber > 1 ? `page/${pageNumber}/` : ''}`;
+
 export const sandstoneHero: SandstoneImage = media.hero;
-export const sandstoneColours: SandstoneColour[] = media.colours;
-export const sandstoneWork = media.work;
+export const sandstoneColours: SandstoneColour[] = sandstoneAlbums.filter((album) => album.kind === 'colour');
+export const sandstoneWork = media.work.map((work) => ({
+  ...work,
+  images: sandstoneAlbums.find((album) => album.id === work.id)?.images || [work.image],
+  copy: sandstoneAlbums.find((album) => album.id === work.id)?.description || work.copy,
+}));
 
 export const sandstoneBrief = (locale: Locale, colour = '') => locale === 'es'
   ? `Hola YIAN Tech Global:\r\n\r\nQuisiera consultar un pedido de arenisca a medida.\r\n\r\nColor / referencia: ${colour}\r\nDimensiones / espesor:\r\nPlanos / requisitos de forma o superficie:\r\nUso previsto:\r\nCantidad / unidad:\r\nDestino:\r\nPlazo deseado:\r\n\r\nNombre / empresa:\r\nCorreo de respuesta:`

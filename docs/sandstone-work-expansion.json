@@ -1,0 +1,2197 @@
+{
+  "tagDefinitions": [
+    {
+      "id": "blocks-slabs",
+      "label": {
+        "en": "Blocks & slabs",
+        "es": "Bloques y losas"
+      }
+    },
+    {
+      "id": "sample-panels",
+      "label": {
+        "en": "Sample panels",
+        "es": "Paneles de muestra"
+      }
+    },
+    {
+      "id": "surface-details",
+      "label": {
+        "en": "Surface details",
+        "es": "Detalles de superficie"
+      }
+    },
+    {
+      "id": "paving-steps",
+      "label": {
+        "en": "Paving & steps",
+        "es": "Pavimentos y escalones"
+      }
+    },
+    {
+      "id": "wall-cladding",
+      "label": {
+        "en": "Wall cladding",
+        "es": "Revestimientos de pared"
+      }
+    },
+    {
+      "id": "profiles-mouldings",
+      "label": {
+        "en": "Profiles & mouldings",
+        "es": "Perfiles y molduras"
+      }
+    },
+    {
+      "id": "columns-balustrades",
+      "label": {
+        "en": "Columns & balustrades",
+        "es": "Columnas y balaustradas"
+      }
+    },
+    {
+      "id": "spheres",
+      "label": {
+        "en": "Spherical forms",
+        "es": "Formas esféricas"
+      }
+    },
+    {
+      "id": "basins-planters",
+      "label": {
+        "en": "Vessels, basins & planters",
+        "es": "Recipientes, pilas y jardineras"
+      }
+    },
+    {
+      "id": "floral-reliefs",
+      "label": {
+        "en": "Floral reliefs",
+        "es": "Relieves florales"
+      }
+    },
+    {
+      "id": "geometric-reliefs",
+      "label": {
+        "en": "Geometric reliefs & openwork",
+        "es": "Relieves geométricos y calados"
+      }
+    },
+    {
+      "id": "narrative-reliefs",
+      "label": {
+        "en": "Scenic & narrative reliefs",
+        "es": "Relieves de paisajes y escenas"
+      }
+    },
+    {
+      "id": "animal-carving",
+      "label": {
+        "en": "Animal carving",
+        "es": "Tallas de animales"
+      }
+    },
+    {
+      "id": "figures-statues",
+      "label": {
+        "en": "Figures & statues",
+        "es": "Figuras y estatuas"
+      }
+    },
+    {
+      "id": "capitals-bases",
+      "label": {
+        "en": "Capitals & bases",
+        "es": "Capiteles y bases"
+      }
+    },
+    {
+      "id": "facades",
+      "label": {
+        "en": "Facades",
+        "es": "Fachadas"
+      }
+    },
+    {
+      "id": "garden-settings",
+      "label": {
+        "en": "Garden settings",
+        "es": "Entornos ajardinados"
+      }
+    },
+    {
+      "id": "packing-production",
+      "label": {
+        "en": "Workshop & packing references",
+        "es": "Referencias de taller y embalaje"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "carved-reliefs",
+      "photos": [
+        {
+          "id": "s1197",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Lotus relief panels in two colour tones.",
+            "es": "Paneles con relieve de loto en dos tonalidades."
+          }
+        },
+        {
+          "id": "s0893",
+          "kind": "detail",
+          "tags": [
+            "animal-carving",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Grey relief panel with fish and lotus motifs.",
+            "es": "Panel gris en relieve con peces y motivos de loto."
+          }
+        },
+        {
+          "id": "s0907",
+          "kind": "detail",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Circular dragon relief in a warm yellow tone.",
+            "es": "Relieve circular de dragón en tono amarillo cálido."
+          }
+        },
+        {
+          "id": "s0920",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Curved ornamental pieces with scroll-shaped ends.",
+            "es": "Piezas ornamentales curvas con extremos en espiral."
+          }
+        },
+        {
+          "id": "s0936",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Relief panel with a large lotus motif.",
+            "es": "Panel en relieve con un gran motivo de loto."
+          }
+        },
+        {
+          "id": "s0947",
+          "kind": "shaped",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Rectangular carved piece with a gridded top.",
+            "es": "Pieza rectangular tallada con superficie superior de rejilla."
+          }
+        },
+        {
+          "id": "s0949",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Large relief panel with plant motifs.",
+            "es": "Panel de gran formato con motivos vegetales en relieve."
+          }
+        },
+        {
+          "id": "s0950",
+          "kind": "detail",
+          "tags": [
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Grey relief panel with a group of figures.",
+            "es": "Panel gris en relieve con un grupo de figuras."
+          }
+        },
+        {
+          "id": "s0952",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Openwork panels with repeated floral geometry.",
+            "es": "Paneles calados con geometría floral repetida."
+          }
+        },
+        {
+          "id": "s0953",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs",
+            "animal-carving",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Fish and lotus relief beside a square geometric openwork panel.",
+            "es": "Relieve de peces y lotos junto a un panel cuadrado calado geométrico."
+          }
+        },
+        {
+          "id": "s0955",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Grey panel with floral and decorative relief motifs.",
+            "es": "Panel gris con motivos florales y decorativos en relieve."
+          }
+        },
+        {
+          "id": "s0956",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases",
+            "figures-statues"
+          ],
+          "alt": {
+            "en": "Carved pedestal forms with stylised human faces.",
+            "es": "Formas de pedestal talladas con rostros humanos estilizados."
+          }
+        },
+        {
+          "id": "s0958",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Carved panels laid out together.",
+            "es": "Paneles tallados dispuestos en conjunto."
+          }
+        },
+        {
+          "id": "s0959",
+          "kind": "application",
+          "tags": [
+            "narrative-reliefs",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Large outdoor relief with groups of figures.",
+            "es": "Gran relieve exterior con grupos de figuras."
+          }
+        },
+        {
+          "id": "s0960",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Yellow relief panels with flowering plants.",
+            "es": "Paneles amarillos en relieve con plantas en flor."
+          }
+        },
+        {
+          "id": "s0961",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Red square panels with repeated leaf motifs.",
+            "es": "Paneles cuadrados rojos con motivos de hojas repetidos."
+          }
+        },
+        {
+          "id": "s0962",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Decorative panels with circular and linear patterns.",
+            "es": "Paneles decorativos con patrones circulares y lineales."
+          }
+        },
+        {
+          "id": "s0963",
+          "kind": "detail",
+          "tags": [
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Relief panel depicting a sailing boat.",
+            "es": "Panel en relieve que representa un barco de vela."
+          }
+        },
+        {
+          "id": "s0964",
+          "kind": "detail",
+          "tags": [
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Large narrative relief panel in a warm tone.",
+            "es": "Panel narrativo en relieve de gran formato y tono cálido."
+          }
+        },
+        {
+          "id": "s0966",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Openwork rosette panels arranged on a work surface.",
+            "es": "Paneles de rosetas caladas sobre una superficie de trabajo."
+          }
+        },
+        {
+          "id": "s0967",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Rectangular relief panel with flowing plant motifs.",
+            "es": "Panel rectangular en relieve con motivos vegetales ondulantes."
+          }
+        },
+        {
+          "id": "s0968",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Carved ornamental pieces with a central circular opening.",
+            "es": "Piezas ornamentales talladas con una abertura circular central."
+          }
+        },
+        {
+          "id": "s0972",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Two pink-toned panels with floral relief designs.",
+            "es": "Dos paneles rosados con diseños florales en relieve."
+          }
+        },
+        {
+          "id": "s0973",
+          "kind": "detail",
+          "tags": [
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Carved panel with a boat and bridge scene.",
+            "es": "Panel tallado con una escena de barco y puente."
+          }
+        },
+        {
+          "id": "s0987",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Circular grey rosette relief panel.",
+            "es": "Panel gris con una roseta circular en relieve."
+          }
+        },
+        {
+          "id": "s0988",
+          "kind": "detail",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Elongated relief panel with dragon and phoenix motifs.",
+            "es": "Panel alargado en relieve con motivos de dragón y fénix."
+          }
+        },
+        {
+          "id": "s0989",
+          "kind": "production",
+          "tags": [
+            "narrative-reliefs",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Large warm-toned relief panel laid out in a workshop.",
+            "es": "Panel cálido de gran formato en relieve dispuesto en un taller."
+          }
+        },
+        {
+          "id": "s1014",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "A set of rectangular geometric relief panels.",
+            "es": "Conjunto de paneles rectangulares con relieves geométricos."
+          }
+        },
+        {
+          "id": "s1017",
+          "kind": "detail",
+          "tags": [
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Modern relief panel with buildings, a train and geometric motifs.",
+            "es": "Panel moderno en relieve con edificios, un tren y motivos geométricos."
+          }
+        },
+        {
+          "id": "s1026",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Large ornamental vessel with carved sides.",
+            "es": "Gran recipiente ornamental con laterales tallados."
+          }
+        },
+        {
+          "id": "s1027",
+          "kind": "detail",
+          "tags": [
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Long relief panel depicting architectural facades and towers.",
+            "es": "Panel alargado en relieve que representa fachadas y torres arquitectónicas."
+          }
+        },
+        {
+          "id": "s1037",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Wide yellow relief panel with plant and landscape motifs.",
+            "es": "Panel amarillo ancho en relieve con motivos vegetales y de paisaje."
+          }
+        },
+        {
+          "id": "s1038",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Red ornamental panels with geometric linework.",
+            "es": "Paneles ornamentales rojos con trazados geométricos."
+          }
+        },
+        {
+          "id": "s1039",
+          "kind": "detail",
+          "tags": [
+            "animal-carving",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Carved panel with fish and plant motifs.",
+            "es": "Panel tallado con motivos de peces y plantas."
+          }
+        },
+        {
+          "id": "s1048",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Carved balustrade panels with animal motifs.",
+            "es": "Paneles de balaustrada tallados con motivos de animales."
+          }
+        },
+        {
+          "id": "s1062",
+          "kind": "production",
+          "tags": [
+            "floral-reliefs",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Carved panels secured together with protective padding.",
+            "es": "Paneles tallados sujetos en conjunto con protección acolchada."
+          }
+        },
+        {
+          "id": "s1072",
+          "kind": "shaped",
+          "tags": [
+            "figures-statues"
+          ],
+          "alt": {
+            "en": "Figurative stone sculptures displayed together.",
+            "es": "Esculturas figurativas de piedra expuestas en conjunto."
+          }
+        },
+        {
+          "id": "s1074",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Yellow floral relief panel on protective foam.",
+            "es": "Panel amarillo con relieve floral sobre espuma protectora."
+          }
+        },
+        {
+          "id": "s1077",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs",
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Elongated grey floral ornament.",
+            "es": "Ornamento floral gris alargado."
+          }
+        },
+        {
+          "id": "s1084",
+          "kind": "production",
+          "tags": [
+            "columns-balustrades",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Stacked ornamental columns with carved sides.",
+            "es": "Columnas ornamentales apiladas con laterales tallados."
+          }
+        },
+        {
+          "id": "s1085",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Elongated grey panel with a plant relief.",
+            "es": "Panel gris alargado con un relieve vegetal."
+          }
+        },
+        {
+          "id": "s1086",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Small grey panels with carved leaf motifs.",
+            "es": "Pequeños paneles grises con motivos de hojas talladas."
+          }
+        },
+        {
+          "id": "s1092",
+          "kind": "shaped",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Carved bird-shaped ornamental form.",
+            "es": "Forma ornamental tallada de ave."
+          }
+        },
+        {
+          "id": "s1093",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Panel with a stylised plant motif.",
+            "es": "Panel con un motivo vegetal estilizado."
+          }
+        },
+        {
+          "id": "s1094",
+          "kind": "shaped",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Carved guardian-lion sculpture.",
+            "es": "Escultura tallada de león guardián."
+          }
+        },
+        {
+          "id": "s1095",
+          "kind": "shaped",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Bird-shaped sculpture with a curved ornamental base.",
+            "es": "Escultura de ave con base ornamental curva."
+          }
+        },
+        {
+          "id": "s1100",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Large ornamental vessel with a petal-shaped base.",
+            "es": "Gran recipiente ornamental con base en forma de pétalos."
+          }
+        },
+        {
+          "id": "s1102",
+          "kind": "application",
+          "tags": [
+            "figures-statues",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Figurative sculpture in a garden setting.",
+            "es": "Escultura figurativa en un entorno ajardinado."
+          }
+        },
+        {
+          "id": "s1106",
+          "kind": "application",
+          "tags": [
+            "figures-statues",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Standing figurative sculpture beside a lawn.",
+            "es": "Escultura figurativa de pie junto a un césped."
+          }
+        },
+        {
+          "id": "s1107",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Red carved column and balustrade detail.",
+            "es": "Detalle de columna y balaustrada rojas talladas."
+          }
+        },
+        {
+          "id": "s1109",
+          "kind": "shaped",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Bird-shaped ornaments arranged in a row.",
+            "es": "Ornamentos en forma de aves dispuestos en fila."
+          }
+        },
+        {
+          "id": "s1115",
+          "kind": "production",
+          "tags": [
+            "narrative-reliefs",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Relief carving work in progress.",
+            "es": "Trabajo de talla de un relieve en curso."
+          }
+        },
+        {
+          "id": "s1117",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Grey relief strip with a flower and leaf design.",
+            "es": "Franja gris en relieve con diseño de flor y hojas."
+          }
+        },
+        {
+          "id": "s1118",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs",
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Long ornamental strip with scrolling plant motifs.",
+            "es": "Franja ornamental alargada con motivos vegetales en espiral."
+          }
+        },
+        {
+          "id": "s1123",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters"
+          ],
+          "alt": {
+            "en": "Ornamental planters arranged in an outdoor space.",
+            "es": "Jardineras ornamentales dispuestas en un espacio exterior."
+          }
+        },
+        {
+          "id": "s1125",
+          "kind": "shaped",
+          "tags": [
+            "figures-statues"
+          ],
+          "alt": {
+            "en": "Standing figurative sculpture in a warm yellow tone.",
+            "es": "Escultura figurativa de pie en tono amarillo cálido."
+          }
+        },
+        {
+          "id": "s1131",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Two carved ornamental columns in an outdoor setting.",
+            "es": "Dos columnas ornamentales talladas en un entorno exterior."
+          }
+        },
+        {
+          "id": "s1152",
+          "kind": "production",
+          "tags": [
+            "floral-reliefs",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Decorative relief panels stacked with protective spacers.",
+            "es": "Paneles decorativos en relieve apilados con separadores protectores."
+          }
+        },
+        {
+          "id": "s1157",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Openwork yellow panels secured for handling.",
+            "es": "Paneles amarillos calados sujetos para su manipulación."
+          }
+        },
+        {
+          "id": "s1170",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Round architectural column with a scenic relief.",
+            "es": "Columna arquitectónica circular con relieve de paisaje."
+          }
+        },
+        {
+          "id": "s1174",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Ornamental vessels with petal-like carved decoration.",
+            "es": "Recipientes ornamentales con decoración tallada de pétalos."
+          }
+        },
+        {
+          "id": "s1175",
+          "kind": "detail",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Elongated relief panel with a dragon motif.",
+            "es": "Panel alargado en relieve con un motivo de dragón."
+          }
+        },
+        {
+          "id": "s1180",
+          "kind": "detail",
+          "tags": [
+            "animal-carving",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Wide relief panel with cranes, pine branches and rocks.",
+            "es": "Panel ancho en relieve con grullas, ramas de pino y rocas."
+          }
+        },
+        {
+          "id": "s1181",
+          "kind": "production",
+          "tags": [
+            "floral-reliefs",
+            "packing-production",
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Floral and bird relief panels arranged across a workshop floor.",
+            "es": "Paneles con relieves florales y de aves dispuestos en el suelo de un taller."
+          }
+        },
+        {
+          "id": "s1183",
+          "kind": "production",
+          "tags": [
+            "narrative-reliefs",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Detail of a large relief panel being worked on.",
+            "es": "Detalle del trabajo sobre un panel grande en relieve."
+          }
+        },
+        {
+          "id": "s1184",
+          "kind": "detail",
+          "tags": [
+            "animal-carving",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Long pale relief panel with fish and lotus motifs.",
+            "es": "Panel claro alargado en relieve con peces y motivos de loto."
+          }
+        },
+        {
+          "id": "s1193",
+          "kind": "detail",
+          "tags": [
+            "animal-carving"
+          ],
+          "alt": {
+            "en": "Red panel with an animal relief motif.",
+            "es": "Panel rojo con un motivo animal en relieve."
+          }
+        },
+        {
+          "id": "s1195",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Red square panel with a large lotus relief.",
+            "es": "Panel cuadrado rojo con un gran relieve de loto."
+          }
+        },
+        {
+          "id": "s1202",
+          "kind": "detail",
+          "tags": [
+            "narrative-reliefs"
+          ],
+          "alt": {
+            "en": "Modern relief panel with architectural and geometric motifs.",
+            "es": "Panel moderno en relieve con motivos arquitectónicos y geométricos."
+          }
+        },
+        {
+          "id": "s1221",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Tall grey panel with raised floral decoration.",
+            "es": "Panel gris vertical con decoración floral en relieve."
+          }
+        },
+        {
+          "id": "s1248",
+          "kind": "detail",
+          "tags": [
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Framed warm-toned floral relief panel.",
+            "es": "Panel floral cálido en relieve y enmarcado."
+          }
+        }
+      ]
+    },
+    {
+      "id": "shaped-pieces",
+      "photos": [
+        {
+          "id": "s1403",
+          "kind": "shaped",
+          "tags": [
+            "spheres"
+          ],
+          "alt": {
+            "en": "Spherical stone forms in light and woodgrain tones.",
+            "es": "Formas esféricas de piedra en tonos claros y veteados."
+          }
+        },
+        {
+          "id": "s1381",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters"
+          ],
+          "alt": {
+            "en": "Round stone vessel beside a rectangular stone form.",
+            "es": "Recipiente redondo de piedra junto a una forma rectangular."
+          }
+        },
+        {
+          "id": "s1387",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Pale longitudinal profile pieces arranged together.",
+            "es": "Piezas de perfil longitudinal claro dispuestas en conjunto."
+          }
+        },
+        {
+          "id": "s1390",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Stacked curved pieces in a yellow tone.",
+            "es": "Piezas curvas apiladas en tono amarillo."
+          }
+        },
+        {
+          "id": "s1398",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Half-round profile pieces arranged in a row.",
+            "es": "Piezas de perfil semicircular dispuestas en fila."
+          }
+        },
+        {
+          "id": "s1399",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Yellow longitudinal pieces with a curved profile.",
+            "es": "Piezas longitudinales amarillas con perfil curvo."
+          }
+        },
+        {
+          "id": "s1400",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases"
+          ],
+          "alt": {
+            "en": "Ornamental capitals and shaped bases displayed together.",
+            "es": "Capiteles ornamentales y bases perfiladas expuestos en conjunto."
+          }
+        },
+        {
+          "id": "s1406",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Red shaped frame pieces arranged on supports.",
+            "es": "Piezas rojas de marco perfilado dispuestas sobre soportes."
+          }
+        },
+        {
+          "id": "s1407",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases"
+          ],
+          "alt": {
+            "en": "Square cap pieces with sloping faces.",
+            "es": "Piezas cuadradas de remate con caras inclinadas."
+          }
+        },
+        {
+          "id": "s1408",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Red linear pieces with stepped profiles.",
+            "es": "Piezas lineales rojas con perfiles escalonados."
+          }
+        },
+        {
+          "id": "s1421",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Pale curved pieces resting on a pallet.",
+            "es": "Piezas curvas claras apoyadas sobre un palé."
+          }
+        },
+        {
+          "id": "s1422",
+          "kind": "shaped",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Circular red stone ring.",
+            "es": "Aro circular de piedra roja."
+          }
+        },
+        {
+          "id": "s1424",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Long pale moulding pieces displayed together.",
+            "es": "Piezas largas de moldura clara expuestas en conjunto."
+          }
+        },
+        {
+          "id": "s1427",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Fluted architectural profile pieces.",
+            "es": "Piezas de perfil arquitectónico estriado."
+          }
+        },
+        {
+          "id": "s1428",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases"
+          ],
+          "alt": {
+            "en": "Tall rectangular stone forms with shaped edges.",
+            "es": "Formas altas rectangulares de piedra con cantos perfilados."
+          }
+        },
+        {
+          "id": "s1429",
+          "kind": "detail",
+          "tags": [
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Rough-faced samples in red and grey tones.",
+            "es": "Muestras de cara rugosa en tonos rojos y grises."
+          }
+        },
+        {
+          "id": "s1447",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Linear stone pieces with angular cross-sections.",
+            "es": "Piezas lineales de piedra con secciones angulares."
+          }
+        },
+        {
+          "id": "s1451",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs",
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Pale panel with repeated longitudinal grooves.",
+            "es": "Panel claro con ranuras longitudinales repetidas."
+          }
+        },
+        {
+          "id": "s1454",
+          "kind": "detail",
+          "tags": [
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Close view of a grey rough-faced piece.",
+            "es": "Vista cercana de una pieza gris de cara rugosa."
+          }
+        },
+        {
+          "id": "s1457",
+          "kind": "production",
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Curved profile pieces bundled with protective spacers.",
+            "es": "Piezas de perfil curvo agrupadas con separadores protectores."
+          }
+        },
+        {
+          "id": "s1460",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Warm-toned curved pieces arranged together outdoors.",
+            "es": "Piezas curvas de tonos cálidos dispuestas en conjunto al exterior."
+          }
+        },
+        {
+          "id": "s1466",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Circular curved forms stacked together.",
+            "es": "Formas curvas circulares apiladas en conjunto."
+          }
+        },
+        {
+          "id": "s1474",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Shaped corner pieces bundled together.",
+            "es": "Piezas de esquina perfiladas agrupadas en conjunto."
+          }
+        },
+        {
+          "id": "s1475",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Curved forms with stepped ornamental edges.",
+            "es": "Formas curvas con bordes ornamentales escalonados."
+          }
+        },
+        {
+          "id": "s1482",
+          "kind": "detail",
+          "tags": [
+            "surface-details",
+            "sample-panels"
+          ],
+          "alt": {
+            "en": "Rectangular samples with contrasting colours and textures.",
+            "es": "Muestras rectangulares con colores y texturas contrastantes."
+          }
+        },
+        {
+          "id": "s1488",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Pale architectural moulding pieces with stepped details.",
+            "es": "Piezas claras de moldura arquitectónica con detalles escalonados."
+          }
+        },
+        {
+          "id": "s1492",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "A group of angular and curved architectural pieces.",
+            "es": "Grupo de piezas arquitectónicas angulares y curvas."
+          }
+        },
+        {
+          "id": "s1497",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Pink panel with a repeated raised square pattern.",
+            "es": "Panel rosado con un patrón repetido de cuadrados en relieve."
+          }
+        },
+        {
+          "id": "s1503",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Rectangular frame pieces laid out together.",
+            "es": "Piezas rectangulares de marco dispuestas en conjunto."
+          }
+        },
+        {
+          "id": "s1510",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Curved pale pieces with broad smooth faces.",
+            "es": "Piezas curvas claras con caras anchas y lisas."
+          }
+        },
+        {
+          "id": "s1513",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Red profiled pieces arranged in parallel rows.",
+            "es": "Piezas rojas perfiladas dispuestas en filas paralelas."
+          }
+        },
+        {
+          "id": "s1517",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases"
+          ],
+          "alt": {
+            "en": "Ornamental circular forms with layered edges.",
+            "es": "Formas circulares ornamentales con bordes escalonados."
+          }
+        },
+        {
+          "id": "s1523",
+          "kind": "shaped",
+          "tags": [
+            "paving-steps"
+          ],
+          "alt": {
+            "en": "Hexagonal woodgrain-toned pieces arranged in stacks.",
+            "es": "Piezas hexagonales de tonos veteados dispuestas en pilas."
+          }
+        },
+        {
+          "id": "s1525",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Pale semicircular profile pieces on a flat surface.",
+            "es": "Piezas claras de perfil semicircular sobre una superficie plana."
+          }
+        },
+        {
+          "id": "s1530",
+          "kind": "production",
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Shaped stone pieces being worked on in a workshop.",
+            "es": "Piezas de piedra perfiladas durante el trabajo en un taller."
+          }
+        },
+        {
+          "id": "s1531",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Dark linear profile samples displayed against a pale background.",
+            "es": "Muestras oscuras de perfiles lineales sobre fondo claro."
+          }
+        },
+        {
+          "id": "s1536",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Two bundled forms with curved outer profiles.",
+            "es": "Dos formas agrupadas con perfiles exteriores curvos."
+          }
+        },
+        {
+          "id": "s1537",
+          "kind": "shaped",
+          "tags": [
+            "wall-cladding",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Large curved wall sections arranged on a workshop floor.",
+            "es": "Grandes secciones curvas de pared dispuestas en el suelo de un taller."
+          }
+        },
+        {
+          "id": "s1539",
+          "kind": "shaped",
+          "tags": [
+            "blocks-slabs"
+          ],
+          "alt": {
+            "en": "Small angular grey pieces piled together.",
+            "es": "Pequeñas piezas grises angulares apiladas en conjunto."
+          }
+        },
+        {
+          "id": "s1543",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases"
+          ],
+          "alt": {
+            "en": "Pale shaped cap pieces displayed together.",
+            "es": "Piezas claras de remate perfilado expuestas en conjunto."
+          }
+        },
+        {
+          "id": "s1547",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Dark rounded profile pieces secured in bundles.",
+            "es": "Piezas oscuras de perfil redondeado sujetas en grupos."
+          }
+        },
+        {
+          "id": "s1549",
+          "kind": "production",
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Red stone blocks being shaped by hand.",
+            "es": "Bloques de piedra roja durante el trabajo manual de perfilado."
+          }
+        },
+        {
+          "id": "s1565",
+          "kind": "shaped",
+          "tags": [
+            "paving-steps"
+          ],
+          "alt": {
+            "en": "Framed arrangement of irregular pale paving pieces.",
+            "es": "Disposición enmarcada de piezas claras de pavimento irregular."
+          }
+        },
+        {
+          "id": "s1568",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Large red frame pieces with stepped edges.",
+            "es": "Piezas grandes de marco rojo con bordes escalonados."
+          }
+        },
+        {
+          "id": "s1571",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters",
+            "floral-reliefs"
+          ],
+          "alt": {
+            "en": "Grey ornamental vessels with carved decoration.",
+            "es": "Recipientes ornamentales grises con decoración tallada."
+          }
+        },
+        {
+          "id": "s1573",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases"
+          ],
+          "alt": {
+            "en": "Ornamental capital forms arranged on a pallet.",
+            "es": "Formas de capitel ornamental dispuestas sobre un palé."
+          }
+        },
+        {
+          "id": "s1577",
+          "kind": "shaped",
+          "tags": [
+            "blocks-slabs"
+          ],
+          "alt": {
+            "en": "Rectangular stone blocks with circular openings.",
+            "es": "Bloques rectangulares de piedra con aberturas circulares."
+          }
+        },
+        {
+          "id": "s1582",
+          "kind": "shaped",
+          "tags": [
+            "columns-balustrades"
+          ],
+          "alt": {
+            "en": "Rounded cylindrical pieces in several colour tones.",
+            "es": "Piezas cilíndricas redondeadas en varias tonalidades."
+          }
+        },
+        {
+          "id": "s1595",
+          "kind": "detail",
+          "tags": [
+            "surface-details",
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Red rectangular panel with repeated linear grooves.",
+            "es": "Panel rectangular rojo con ranuras lineales repetidas."
+          }
+        },
+        {
+          "id": "s1600",
+          "kind": "production",
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Pink shaped pieces bundled with protective spacers.",
+            "es": "Piezas rosadas perfiladas agrupadas con separadores protectores."
+          }
+        },
+        {
+          "id": "s1601",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters"
+          ],
+          "alt": {
+            "en": "Cylindrical pink stone vessels arranged in rows.",
+            "es": "Recipientes cilíndricos de piedra rosada dispuestos en filas."
+          }
+        },
+        {
+          "id": "s1606",
+          "kind": "shaped",
+          "tags": [
+            "basins-planters",
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Rectangular red vessels with textured sides.",
+            "es": "Recipientes rectangulares rojos con laterales texturados."
+          }
+        },
+        {
+          "id": "s1615",
+          "kind": "detail",
+          "tags": [
+            "wall-cladding",
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Dark rough-faced pieces assembled as a wall panel.",
+            "es": "Piezas oscuras de cara rugosa ensambladas como panel de pared."
+          }
+        },
+        {
+          "id": "s1616",
+          "kind": "shaped",
+          "tags": [
+            "paving-steps",
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Stacks of irregular grey pieces with rough faces.",
+            "es": "Pilas de piezas grises irregulares con caras rugosas."
+          }
+        },
+        {
+          "id": "s1628",
+          "kind": "shaped",
+          "tags": [
+            "paving-steps"
+          ],
+          "alt": {
+            "en": "Rounded irregular paving pieces arranged in stacks.",
+            "es": "Piezas irregulares redondeadas de pavimento dispuestas en pilas."
+          }
+        },
+        {
+          "id": "s1638",
+          "kind": "detail",
+          "tags": [
+            "surface-details",
+            "sample-panels"
+          ],
+          "alt": {
+            "en": "Two colour samples with diagonal surface patterns.",
+            "es": "Dos muestras de color con patrones diagonales en la superficie."
+          }
+        },
+        {
+          "id": "s1641",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Yellow angular pieces arranged in parallel rows.",
+            "es": "Piezas amarillas angulares dispuestas en filas paralelas."
+          }
+        },
+        {
+          "id": "s1643",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Pale corner and linear pieces laid out together.",
+            "es": "Piezas claras de esquina y lineales dispuestas en conjunto."
+          }
+        },
+        {
+          "id": "s1647",
+          "kind": "detail",
+          "tags": [
+            "geometric-reliefs"
+          ],
+          "alt": {
+            "en": "Dark polygonal pieces fitted together.",
+            "es": "Piezas poligonales oscuras encajadas en conjunto."
+          }
+        },
+        {
+          "id": "s1662",
+          "kind": "detail",
+          "tags": [
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Pale rectangular sample with an uneven textured face.",
+            "es": "Muestra rectangular clara con cara de textura irregular."
+          }
+        },
+        {
+          "id": "s1666",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Warm-toned corner form with smooth adjoining faces.",
+            "es": "Forma de esquina de tono cálido con caras contiguas lisas."
+          }
+        },
+        {
+          "id": "s1668",
+          "kind": "detail",
+          "tags": [
+            "surface-details",
+            "paving-steps"
+          ],
+          "alt": {
+            "en": "Long red pieces with closely spaced surface grooves.",
+            "es": "Piezas rojas alargadas con ranuras superficiales próximas entre sí."
+          }
+        },
+        {
+          "id": "s1671",
+          "kind": "detail",
+          "tags": [
+            "surface-details"
+          ],
+          "alt": {
+            "en": "Close detail of a yellow rough-faced piece.",
+            "es": "Detalle cercano de una pieza amarilla de cara rugosa."
+          }
+        },
+        {
+          "id": "s1681",
+          "kind": "shaped",
+          "tags": [
+            "capitals-bases"
+          ],
+          "alt": {
+            "en": "Angular pale cap pieces arranged on a workshop floor.",
+            "es": "Piezas claras angulares de remate dispuestas en el suelo de un taller."
+          }
+        },
+        {
+          "id": "s1695",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Rows of pale curved profile pieces.",
+            "es": "Filas de piezas claras de perfil curvo."
+          }
+        },
+        {
+          "id": "s1702",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Curved warm-toned moulding pieces arranged in stacks.",
+            "es": "Piezas curvas de moldura cálida dispuestas en pilas."
+          }
+        },
+        {
+          "id": "s1703",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Yellow architectural pieces with stepped profiles.",
+            "es": "Piezas arquitectónicas amarillas con perfiles escalonados."
+          }
+        },
+        {
+          "id": "s1704",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings",
+            "sample-panels"
+          ],
+          "alt": {
+            "en": "Yellow profile and curved-piece samples on a pale background.",
+            "es": "Muestras amarillas de perfiles y piezas curvas sobre fondo claro."
+          }
+        },
+        {
+          "id": "s1707",
+          "kind": "shaped",
+          "tags": [
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Broad curved yellow pieces arranged together.",
+            "es": "Piezas amarillas curvas y anchas dispuestas en conjunto."
+          }
+        },
+        {
+          "id": "s1708",
+          "kind": "shaped",
+          "tags": [
+            "columns-balustrades"
+          ],
+          "alt": {
+            "en": "Baluster forms in pale and pink tones.",
+            "es": "Formas de balaustre en tonos claros y rosados."
+          }
+        },
+        {
+          "id": "s1709",
+          "kind": "production",
+          "tags": [
+            "columns-balustrades",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Balusters and architectural profiles arranged in a workshop.",
+            "es": "Balaustres y perfiles arquitectónicos dispuestos en un taller."
+          }
+        },
+        {
+          "id": "s1538",
+          "kind": "production",
+          "tags": [
+            "spheres",
+            "profiles-mouldings",
+            "packing-production"
+          ],
+          "alt": {
+            "en": "Rounded finial forms and profiled pieces secured with protective padding.",
+            "es": "Formas de remate redondeadas y piezas perfiladas sujetas con protección acolchada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "architecture-reference",
+      "photos": [
+        {
+          "id": "s1337",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: pale facade with columns and textured wall sections.",
+            "es": "Referencia de aplicación: fachada clara con columnas y zonas de pared texturadas."
+          }
+        },
+        {
+          "id": "s1278",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: pale balustrade beside outdoor steps.",
+            "es": "Referencia de aplicación: balaustrada clara junto a escalones exteriores."
+          }
+        },
+        {
+          "id": "s1281",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: pale exterior wall with framed window details.",
+            "es": "Referencia de aplicación: pared exterior clara con detalles de ventanas enmarcadas."
+          }
+        },
+        {
+          "id": "s1283",
+          "kind": "application",
+          "tags": [
+            "facades"
+          ],
+          "alt": {
+            "en": "Application reference: a row of pale building facades.",
+            "es": "Referencia de aplicación: hilera de fachadas claras."
+          }
+        },
+        {
+          "id": "s1284",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "facades"
+          ],
+          "alt": {
+            "en": "Application reference: exterior balcony balustrade.",
+            "es": "Referencia de aplicación: balaustrada de balcón exterior."
+          }
+        },
+        {
+          "id": "s1285",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "columns-balustrades"
+          ],
+          "alt": {
+            "en": "Application reference: warm-toned facade with columns and a balcony.",
+            "es": "Referencia de aplicación: fachada cálida con columnas y balcón."
+          }
+        },
+        {
+          "id": "s1286",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Application reference: ornamental facade detail during construction.",
+            "es": "Referencia de aplicación: detalle ornamental de fachada durante la obra."
+          }
+        },
+        {
+          "id": "s1290",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Application reference: red window surrounds and facade detailing.",
+            "es": "Referencia de aplicación: marcos de ventana rojos y detalles de fachada."
+          }
+        },
+        {
+          "id": "s1291",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: carved outdoor balustrade beside a walkway.",
+            "es": "Referencia de aplicación: balaustrada exterior tallada junto a un paseo."
+          }
+        },
+        {
+          "id": "s1293",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: red exterior walls with arched openings.",
+            "es": "Referencia de aplicación: paredes exteriores rojas con aberturas en arco."
+          }
+        },
+        {
+          "id": "s1294",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: pale cladding at an exterior building corner.",
+            "es": "Referencia de aplicación: revestimiento claro en una esquina exterior del edificio."
+          }
+        },
+        {
+          "id": "s1296",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: warm pink exterior wall and window detail.",
+            "es": "Referencia de aplicación: pared exterior rosada cálida y detalle de ventana."
+          }
+        },
+        {
+          "id": "s1299",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "columns-balustrades"
+          ],
+          "alt": {
+            "en": "Application reference: pale facade with ornamental column details.",
+            "es": "Referencia de aplicación: fachada clara con detalles de columnas ornamentales."
+          }
+        },
+        {
+          "id": "s1303",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: a walkway lined with pale balustrades.",
+            "es": "Referencia de aplicación: paseo flanqueado por balaustradas claras."
+          }
+        },
+        {
+          "id": "s1305",
+          "kind": "application",
+          "tags": [
+            "facades"
+          ],
+          "alt": {
+            "en": "Application reference: warm-toned residential-style facade.",
+            "es": "Referencia de aplicación: fachada de estilo residencial en tonos cálidos."
+          }
+        },
+        {
+          "id": "s1306",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: warm-toned building viewed from its garden.",
+            "es": "Referencia de aplicación: edificio de tonos cálidos visto desde su jardín."
+          }
+        },
+        {
+          "id": "s1311",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: a long clad facade during construction.",
+            "es": "Referencia de aplicación: fachada larga revestida durante la obra."
+          }
+        },
+        {
+          "id": "s1315",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: grey bridge balustrade beside water and greenery.",
+            "es": "Referencia de aplicación: balaustrada gris de puente junto al agua y la vegetación."
+          }
+        },
+        {
+          "id": "s1318",
+          "kind": "application",
+          "tags": [
+            "paving-steps",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: warm-toned paving beside planted areas.",
+            "es": "Referencia de aplicación: pavimento de tonos cálidos junto a zonas ajardinadas."
+          }
+        },
+        {
+          "id": "s1320",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Application reference: red ornamental surround at a window opening.",
+            "es": "Referencia de aplicación: marco ornamental rojo de una abertura de ventana."
+          }
+        },
+        {
+          "id": "s1322",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: a low warm-toned facade and forecourt.",
+            "es": "Referencia de aplicación: fachada baja de tonos cálidos y espacio frontal."
+          }
+        },
+        {
+          "id": "s1327",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: textured cladding detail at a facade corner.",
+            "es": "Referencia de aplicación: detalle de revestimiento texturado en una esquina de fachada."
+          }
+        },
+        {
+          "id": "s1330",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "columns-balustrades"
+          ],
+          "alt": {
+            "en": "Application reference: tall pale entrance columns.",
+            "es": "Referencia de aplicación: columnas altas y claras de entrada."
+          }
+        },
+        {
+          "id": "s1341",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: red balustrade in a wooded outdoor setting.",
+            "es": "Referencia de aplicación: balaustrada roja en un entorno exterior arbolado."
+          }
+        },
+        {
+          "id": "s1342",
+          "kind": "application",
+          "tags": [
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: stone wayfinding signs in a landscaped setting.",
+            "es": "Referencia de aplicación: señales de orientación de piedra en un entorno ajardinado."
+          }
+        },
+        {
+          "id": "s1344",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades"
+          ],
+          "alt": {
+            "en": "Application reference: carved pale balustrade beside exterior steps.",
+            "es": "Referencia de aplicación: balaustrada clara tallada junto a escalones exteriores."
+          }
+        },
+        {
+          "id": "s1345",
+          "kind": "application",
+          "tags": [
+            "columns-balustrades",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: grey carved balustrade beside planting.",
+            "es": "Referencia de aplicación: balaustrada gris tallada junto a vegetación."
+          }
+        },
+        {
+          "id": "s1348",
+          "kind": "application",
+          "tags": [
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: circular garden entrance framing a walkway.",
+            "es": "Referencia de aplicación: entrada circular de jardín que enmarca un paseo."
+          }
+        },
+        {
+          "id": "s1356",
+          "kind": "application",
+          "tags": [
+            "narrative-reliefs",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: curved outdoor wall with a large grey relief.",
+            "es": "Referencia de aplicación: pared exterior curva con un gran relieve gris."
+          }
+        },
+        {
+          "id": "s1360",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "profiles-mouldings"
+          ],
+          "alt": {
+            "en": "Application reference: detailed stone-toned facade beside a street.",
+            "es": "Referencia de aplicación: fachada detallada en tonos de piedra junto a una calle."
+          }
+        },
+        {
+          "id": "s1361",
+          "kind": "application",
+          "tags": [
+            "facades"
+          ],
+          "alt": {
+            "en": "Application reference: red-toned facade of a tall urban building.",
+            "es": "Referencia de aplicación: fachada de tonos rojos de un edificio urbano alto."
+          }
+        },
+        {
+          "id": "s1365",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "columns-balustrades"
+          ],
+          "alt": {
+            "en": "Application reference: warm-toned facade with a balcony balustrade.",
+            "es": "Referencia de aplicación: fachada cálida con una balaustrada de balcón."
+          }
+        },
+        {
+          "id": "s1371",
+          "kind": "application",
+          "tags": [
+            "paving-steps",
+            "garden-settings"
+          ],
+          "alt": {
+            "en": "Application reference: patterned outdoor paving along a planted route.",
+            "es": "Referencia de aplicación: pavimento exterior con patrón junto a un recorrido ajardinado."
+          }
+        },
+        {
+          "id": "s1372",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: lower facade detailing on a residential building.",
+            "es": "Referencia de aplicación: detalles de la parte baja de la fachada de un edificio residencial."
+          }
+        },
+        {
+          "id": "s1375",
+          "kind": "application",
+          "tags": [
+            "facades",
+            "columns-balustrades",
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: columns with smooth and textured facade details.",
+            "es": "Referencia de aplicación: columnas con detalles de fachada lisos y texturados."
+          }
+        },
+        {
+          "id": "s1658",
+          "kind": "application",
+          "tags": [
+            "wall-cladding"
+          ],
+          "alt": {
+            "en": "Application reference: warm-toned rough-faced exterior wall.",
+            "es": "Referencia de aplicación: pared exterior cálida de caras rugosas."
+          }
+        }
+      ]
+    }
+  ]
+}

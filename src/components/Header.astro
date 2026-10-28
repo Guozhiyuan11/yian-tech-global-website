@@ -5,9 +5,10 @@ import { content, routeFor, type Locale, type PageId } from '../i18n/content';
 interface Props {
   locale?: Locale;
   page?: PageId;
+  languageLinks?: Record<Locale, string>;
 }
 
-const { locale = 'en', page = 'home' } = Astro.props;
+const { locale = 'en', page = 'home', languageLinks } = Astro.props;
 const t = content[locale];
 const home = routeFor(locale, 'home');
 const products = routeFor(locale, 'products');
@@ -35,9 +36,9 @@ const sectionHref = (id: string) => page === 'home' ? `#${id}` : `${home}#${id}`
     <a href={sectionHref('about')}>{t.nav.about}</a>
     <a href={sectionHref('approach')}>{t.nav.process}</a>
     <span class="language-switch" aria-label="Language / Idioma">
-      <a href={routeFor('en', page)} lang="en" aria-current={locale === 'en' ? 'page' : undefined}>EN</a>
+      <a href={languageLinks?.en || routeFor('en', page)} lang="en" aria-current={locale === 'en' ? 'page' : undefined}>EN</a>
       <i aria-hidden="true">/</i>
-      <a href={routeFor('es', page)} lang="es" aria-current={locale === 'es' ? 'page' : undefined}>ES</a>
+      <a href={languageLinks?.es || routeFor('es', page)} lang="es" aria-current={locale === 'es' ? 'page' : undefined}>ES</a>
     </span>
     <a class="main-nav__contact" href={sectionHref('contact')}>{t.nav.enquiry} <span aria-hidden="true">↗</span></a>
   </nav>

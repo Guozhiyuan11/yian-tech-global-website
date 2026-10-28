@@ -1,0 +1,2847 @@
+{
+  "groups": [
+    {
+      "id": "red",
+      "photos": [
+        {
+          "id": "s0054",
+          "kind": "sample",
+          "alt": {
+            "en": "Red sandstone sample pieces showing different surface textures.",
+            "es": "Muestras de arenisca roja con diferentes texturas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0346",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of red sandstone grain.",
+            "es": "Detalle del grano de la arenisca roja."
+          },
+          "tags": [
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0001",
+          "kind": "production",
+          "alt": {
+            "en": "A broad red sandstone slab beside rough stone blocks.",
+            "es": "Una placa ancha de arenisca roja junto a bloques de piedra rugosa."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0007",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of red sandstone pieces with flat faces and squared ends.",
+            "es": "Filas de piezas de arenisca roja con caras planas y extremos rectos."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0028",
+          "kind": "production",
+          "alt": {
+            "en": "Rectangular red sandstone pieces grouped on pallets.",
+            "es": "Piezas rectangulares de arenisca roja agrupadas sobre palés."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0040",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of the granular surface of a red sandstone sample.",
+            "es": "Detalle de la superficie granulada de una muestra de arenisca roja."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0042",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long red sandstone profile pieces laid in rows.",
+            "es": "Piezas largas de arenisca roja con perfil colocadas en filas."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0065",
+          "kind": "production",
+          "alt": {
+            "en": "Bundled red sandstone slabs secured on a flatbed truck.",
+            "es": "Placas de arenisca roja agrupadas y sujetas sobre un camión de plataforma."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0083",
+          "kind": "production",
+          "alt": {
+            "en": "Thin red sandstone panels standing in parallel rows.",
+            "es": "Paneles delgados de arenisca roja colocados en filas paralelas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0094",
+          "kind": "production",
+          "alt": {
+            "en": "Red sandstone slabs separated with protective material on a pallet.",
+            "es": "Placas de arenisca roja separadas con material protector sobre un palé."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0099",
+          "kind": "shaped",
+          "alt": {
+            "en": "Red sandstone panel with a repeating geometric relief.",
+            "es": "Panel de arenisca roja con un relieve geométrico repetido."
+          },
+          "tags": [
+            "geometric-reliefs"
+          ]
+        },
+        {
+          "id": "s0109",
+          "kind": "application",
+          "alt": {
+            "en": "Red stone steps and a textured border in a landscaped area.",
+            "es": "Escalones de piedra roja y un borde texturado en una zona ajardinada."
+          },
+          "tags": [
+            "paving-steps",
+            "garden-settings"
+          ]
+        },
+        {
+          "id": "s0111",
+          "kind": "detail",
+          "alt": {
+            "en": "Red sandstone blocks with flat tops and rough sides.",
+            "es": "Bloques de arenisca roja con caras superiores planas y laterales rugosos."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0112",
+          "kind": "application",
+          "alt": {
+            "en": "Outdoor red stone wall with carved human figures and scenes.",
+            "es": "Muro exterior de piedra roja con figuras humanas y escenas talladas."
+          },
+          "tags": [
+            "narrative-reliefs",
+            "garden-settings"
+          ]
+        },
+        {
+          "id": "s0121",
+          "kind": "shaped",
+          "alt": {
+            "en": "Stacks of irregular red sandstone pieces with rounded edges.",
+            "es": "Pilas de piezas irregulares de arenisca roja con bordes redondeados."
+          },
+          "tags": [
+            "blocks-slabs"
+          ]
+        },
+        {
+          "id": "s0128",
+          "kind": "shaped",
+          "alt": {
+            "en": "Curved red sandstone pieces arranged in nested rows.",
+            "es": "Piezas curvas de arenisca roja dispuestas en filas encajadas."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0131",
+          "kind": "sample",
+          "alt": {
+            "en": "Upright red sandstone sample with a rough split face.",
+            "es": "Muestra vertical de arenisca roja con una cara partida rugosa."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0140",
+          "kind": "application",
+          "alt": {
+            "en": "Red stone railing panels with floral reliefs around a terrace.",
+            "es": "Paneles de barandilla de piedra roja con relieves florales alrededor de una terraza."
+          },
+          "tags": [
+            "columns-balustrades",
+            "floral-reliefs",
+            "garden-settings"
+          ]
+        },
+        {
+          "id": "s0142",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of large rectangular red stone blocks outdoors.",
+            "es": "Filas de grandes bloques rectangulares de piedra roja al aire libre."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0164",
+          "kind": "detail",
+          "alt": {
+            "en": "Red sandstone panel with closely spaced vertical grooves.",
+            "es": "Panel de arenisca roja con ranuras verticales muy próximas."
+          },
+          "tags": [
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0174",
+          "kind": "shaped",
+          "alt": {
+            "en": "Red sandstone frame with four rounded rectangular openings.",
+            "es": "Marco de arenisca roja con cuatro aberturas rectangulares redondeadas."
+          },
+          "tags": [
+            "profiles-mouldings"
+          ]
+        },
+        {
+          "id": "s0184",
+          "kind": "application",
+          "alt": {
+            "en": "Red rough-faced stone pieces arranged in a regular wall grid.",
+            "es": "Piezas de piedra roja con caras rugosas dispuestas en una cuadrícula de muro."
+          },
+          "tags": [
+            "surface-details",
+            "wall-cladding"
+          ]
+        },
+        {
+          "id": "s0202",
+          "kind": "production",
+          "alt": {
+            "en": "Red stone blocks and cut surfaces across an outdoor work area.",
+            "es": "Bloques de piedra roja y superficies cortadas en una zona de trabajo exterior."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0207",
+          "kind": "detail",
+          "alt": {
+            "en": "Two red sandstone samples with rough linear textures.",
+            "es": "Dos muestras de arenisca roja con texturas lineales rugosas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0188",
+          "kind": "production",
+          "alt": {
+            "en": "Rough-faced red sandstone panels standing in grouped rows.",
+            "es": "Paneles de arenisca roja con caras rugosas colocados en filas agrupadas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0224",
+          "kind": "production",
+          "alt": {
+            "en": "Large rough red stone blocks stacked outdoors.",
+            "es": "Grandes bloques rugosos de piedra roja apilados al aire libre."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0234",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of a broad red stone face and its fine linear marks.",
+            "es": "Detalle de una cara ancha de piedra roja con marcas lineales finas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0243",
+          "kind": "detail",
+          "alt": {
+            "en": "Red sandstone panel showing coarse parallel grooves.",
+            "es": "Panel de arenisca roja con ranuras paralelas gruesas."
+          },
+          "tags": [
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0250",
+          "kind": "shaped",
+          "alt": {
+            "en": "Red sandstone pieces with stepped rectangular profiles.",
+            "es": "Piezas de arenisca roja con perfiles rectangulares escalonados."
+          },
+          "tags": [
+            "profiles-mouldings"
+          ]
+        },
+        {
+          "id": "s0271",
+          "kind": "shaped",
+          "alt": {
+            "en": "Open rectangular red stone forms with textured sides.",
+            "es": "Formas rectangulares abiertas de piedra roja con laterales texturados."
+          },
+          "tags": [
+            "basins-planters"
+          ]
+        },
+        {
+          "id": "s0274",
+          "kind": "sample",
+          "alt": {
+            "en": "Two red sandstone samples showing uneven textured faces.",
+            "es": "Dos muestras de arenisca roja con caras de textura irregular."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0280",
+          "kind": "sample",
+          "alt": {
+            "en": "Two flat red sandstone samples on a light background.",
+            "es": "Dos muestras planas de arenisca roja sobre un fondo claro."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0284",
+          "kind": "sample",
+          "alt": {
+            "en": "Two red stone samples with broad irregular surface markings.",
+            "es": "Dos muestras de piedra roja con marcas superficiales amplias e irregulares."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0317",
+          "kind": "sample",
+          "alt": {
+            "en": "Square red sandstone pieces arranged in a grid.",
+            "es": "Piezas cuadradas de arenisca roja dispuestas en una cuadrícula."
+          },
+          "tags": [
+            "blocks-slabs",
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0334",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of red sandstone panels grouped on supports in a work area.",
+            "es": "Filas de paneles de arenisca roja agrupados sobre soportes en una zona de trabajo."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0341",
+          "kind": "shaped",
+          "alt": {
+            "en": "Ring-shaped red sandstone piece on a light background.",
+            "es": "Pieza de arenisca roja en forma de anillo sobre un fondo claro."
+          },
+          "tags": [
+            "profiles-mouldings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yellow-woodgrain",
+      "photos": [
+        {
+          "id": "s0413",
+          "kind": "sample",
+          "alt": {
+            "en": "Yellow woodgrain sandstone sample pieces.",
+            "es": "Muestras de arenisca amarilla veteada."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0436",
+          "kind": "sample",
+          "alt": {
+            "en": "Two light woodgrain sandstone samples.",
+            "es": "Dos muestras de arenisca clara veteada."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0351",
+          "kind": "production",
+          "alt": {
+            "en": "Pale woodgrain sandstone blocks stacked with their banded faces visible.",
+            "es": "Bloques de arenisca clara veteada apilados con sus caras de bandas visibles."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0354",
+          "kind": "sample",
+          "alt": {
+            "en": "A long woodgrain sandstone sample on a light background.",
+            "es": "Una muestra larga de arenisca veteada sobre un fondo claro."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0356",
+          "kind": "detail",
+          "alt": {
+            "en": "A broad pale sandstone slab with sweeping woodgrain bands.",
+            "es": "Una placa ancha de arenisca clara con bandas veteadas amplias."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0358",
+          "kind": "application",
+          "alt": {
+            "en": "Light woodgrain stone cladding around a building entrance under construction.",
+            "es": "Revestimiento de piedra clara veteada alrededor de una entrada de edificio en construcción."
+          },
+          "tags": [
+            "wall-cladding",
+            "facades"
+          ]
+        },
+        {
+          "id": "s0361",
+          "kind": "detail",
+          "alt": {
+            "en": "Woodgrain stone blocks with curved bands and horizontal joints.",
+            "es": "Bloques de piedra veteada con bandas curvas y juntas horizontales."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0363",
+          "kind": "application",
+          "alt": {
+            "en": "Woodgrain sandstone panels meeting at a corner.",
+            "es": "Paneles de arenisca veteada que se encuentran en una esquina."
+          },
+          "tags": [
+            "surface-details",
+            "wall-cladding"
+          ]
+        },
+        {
+          "id": "s0365",
+          "kind": "application",
+          "alt": {
+            "en": "Woodgrain sandstone slabs arranged in a rectangular paving layout.",
+            "es": "Placas de arenisca veteada dispuestas en un patrón de pavimento rectangular."
+          },
+          "tags": [
+            "surface-details",
+            "paving-steps"
+          ]
+        },
+        {
+          "id": "s0372",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of narrow parallel bands across a woodgrain sandstone slab.",
+            "es": "Detalle de bandas estrechas y paralelas en una placa de arenisca veteada."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0374",
+          "kind": "production",
+          "alt": {
+            "en": "Upright woodgrain stone pieces separated by protective sheets.",
+            "es": "Piezas verticales de piedra veteada separadas por láminas protectoras."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0377",
+          "kind": "sample",
+          "alt": {
+            "en": "Woodgrain sandstone sample pieces with contrasting tones and grain directions.",
+            "es": "Muestras de arenisca veteada con tonos y direcciones de veta en contraste."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0380",
+          "kind": "application",
+          "alt": {
+            "en": "Light woodgrain stone wall panels around a window.",
+            "es": "Paneles de piedra clara veteada alrededor de una ventana."
+          },
+          "tags": [
+            "wall-cladding"
+          ]
+        },
+        {
+          "id": "s0384",
+          "kind": "sample",
+          "alt": {
+            "en": "Two pale yellow sandstone samples with diagonal woodgrain bands.",
+            "es": "Dos muestras de arenisca amarilla clara con bandas veteadas diagonales."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0386",
+          "kind": "detail",
+          "alt": {
+            "en": "Long warm-toned sandstone face with sweeping curved grain.",
+            "es": "Cara larga de arenisca en tonos cálidos con vetas curvas amplias."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0393",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of fine curved bands on a pale sandstone face.",
+            "es": "Detalle de bandas curvas finas en una cara de arenisca clara."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0396",
+          "kind": "production",
+          "alt": {
+            "en": "Large pale woodgrain slabs with irregular edges laid in a row.",
+            "es": "Grandes placas claras veteadas con bordes irregulares colocadas en fila."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0398",
+          "kind": "detail",
+          "alt": {
+            "en": "A long pale sandstone slab with fine lengthwise grain.",
+            "es": "Una placa larga de arenisca clara con vetas longitudinales finas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0403",
+          "kind": "production",
+          "alt": {
+            "en": "Tall woodgrain stone slabs standing together in a work area.",
+            "es": "Placas altas de piedra veteada colocadas juntas en una zona de trabajo."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0406",
+          "kind": "production",
+          "alt": {
+            "en": "Woodgrain sandstone panels secured in offset stacks.",
+            "es": "Paneles de arenisca veteada sujetos en pilas desplazadas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0424",
+          "kind": "sample",
+          "alt": {
+            "en": "Three small light woodgrain sandstone samples side by side.",
+            "es": "Tres pequeñas muestras de arenisca clara veteada una al lado de otra."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0425",
+          "kind": "application",
+          "alt": {
+            "en": "Rectangular woodgrain stone panels within a contrasting border.",
+            "es": "Paneles rectangulares de piedra veteada dentro de un borde de otro color."
+          },
+          "tags": [
+            "surface-details",
+            "wall-cladding"
+          ]
+        },
+        {
+          "id": "s0435",
+          "kind": "detail",
+          "alt": {
+            "en": "Long yellow sandstone piece showing a broad pale band through its grain.",
+            "es": "Pieza larga de arenisca amarilla con una banda clara ancha entre sus vetas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0450",
+          "kind": "detail",
+          "alt": {
+            "en": "Curving woodgrain bands across a stone slab with an irregular edge.",
+            "es": "Bandas veteadas curvas en una placa de piedra con un borde irregular."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "golden-yellow",
+      "photos": [
+        {
+          "id": "s0498",
+          "kind": "sample",
+          "alt": {
+            "en": "Golden-yellow sandstone sample pieces.",
+            "es": "Muestras de arenisca de color amarillo dorado."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0474",
+          "kind": "detail",
+          "alt": {
+            "en": "Textured golden-yellow sandstone surface.",
+            "es": "Superficie texturada de arenisca amarilla dorada."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0470",
+          "kind": "application",
+          "alt": {
+            "en": "Polygonal golden stone paving around square access covers.",
+            "es": "Pavimento de piedra dorada con piezas poligonales alrededor de tapas cuadradas."
+          },
+          "tags": [
+            "paving-steps"
+          ]
+        },
+        {
+          "id": "s0476",
+          "kind": "sample",
+          "alt": {
+            "en": "Golden sandstone pieces arranged together on a work surface.",
+            "es": "Piezas de arenisca dorada dispuestas juntas sobre una superficie de trabajo."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0477",
+          "kind": "production",
+          "alt": {
+            "en": "Large pale-gold rough stone blocks stacked outdoors.",
+            "es": "Grandes bloques rugosos de piedra de color dorado claro apilados al aire libre."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0479",
+          "kind": "production",
+          "alt": {
+            "en": "Golden sandstone square pieces stacked on a pallet.",
+            "es": "Piezas cuadradas de arenisca dorada apiladas sobre un palé."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0482",
+          "kind": "shaped",
+          "alt": {
+            "en": "Stacks of polygonal golden sandstone pieces beside a paving layout.",
+            "es": "Pilas de piezas poligonales de arenisca dorada junto a un pavimento."
+          },
+          "tags": [
+            "paving-steps"
+          ]
+        },
+        {
+          "id": "s0488",
+          "kind": "production",
+          "alt": {
+            "en": "Long golden sandstone slabs among stone offcuts.",
+            "es": "Placas largas de arenisca dorada entre recortes de piedra."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0489",
+          "kind": "production",
+          "alt": {
+            "en": "Two people working on the edge of a golden sandstone slab.",
+            "es": "Dos personas trabajan en el borde de una placa de arenisca dorada."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0490",
+          "kind": "shaped",
+          "alt": {
+            "en": "Two circular golden sandstone pieces on protective material.",
+            "es": "Dos piezas circulares de arenisca dorada sobre material protector."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0492",
+          "kind": "production",
+          "alt": {
+            "en": "Long rows of rectangular golden stone pieces in a work area.",
+            "es": "Filas largas de piezas rectangulares de piedra dorada en una zona de trabajo."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0494",
+          "kind": "detail",
+          "alt": {
+            "en": "Golden sandstone pieces showing deeply textured faces.",
+            "es": "Piezas de arenisca dorada con caras de textura profunda."
+          },
+          "tags": [
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0501",
+          "kind": "production",
+          "alt": {
+            "en": "Thick golden sandstone slabs grouped on workshop supports.",
+            "es": "Placas gruesas de arenisca dorada agrupadas sobre soportes de taller."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0509",
+          "kind": "sample",
+          "alt": {
+            "en": "Two yellow sandstone samples with contrasting fine and coarse textures.",
+            "es": "Dos muestras de arenisca amarilla con texturas finas y gruesas en contraste."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0510",
+          "kind": "production",
+          "alt": {
+            "en": "Stacks of rectangular golden sandstone pieces in a work area.",
+            "es": "Pilas de piezas rectangulares de arenisca dorada en una zona de trabajo."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0512",
+          "kind": "shaped",
+          "alt": {
+            "en": "Square golden sandstone forms with textured upper faces.",
+            "es": "Formas cuadradas de arenisca dorada con caras superiores texturadas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0513",
+          "kind": "sample",
+          "alt": {
+            "en": "Two long yellow sandstone samples with visible grain and surface texture.",
+            "es": "Dos muestras largas de arenisca amarilla con vetas y textura visibles."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0522",
+          "kind": "sample",
+          "alt": {
+            "en": "A golden sandstone sample with fine diagonal grain.",
+            "es": "Una muestra de arenisca dorada con vetas diagonales finas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0523",
+          "kind": "sample",
+          "alt": {
+            "en": "Golden sandstone sample pieces with lengthwise bands.",
+            "es": "Muestras de arenisca dorada con bandas longitudinales."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0549",
+          "kind": "shaped",
+          "alt": {
+            "en": "Stacks of golden stone components with shaped rectangular ends.",
+            "es": "Pilas de componentes de piedra dorada con extremos rectangulares perfilados."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0555",
+          "kind": "shaped",
+          "alt": {
+            "en": "Barrel-shaped light golden stone forms arranged in rows.",
+            "es": "Formas de piedra de color dorado claro tipo tambor dispuestas en filas."
+          },
+          "tags": [
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0564",
+          "kind": "production",
+          "alt": {
+            "en": "Golden stone panels with grooved faces standing in rows.",
+            "es": "Paneles de piedra dorada con caras ranuradas colocados en filas."
+          },
+          "tags": [
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0575",
+          "kind": "shaped",
+          "alt": {
+            "en": "Chunky golden stone pieces with uneven textured sides.",
+            "es": "Piezas gruesas de piedra dorada con laterales de textura irregular."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0579",
+          "kind": "shaped",
+          "alt": {
+            "en": "Golden sandstone slabs with angled and projecting edges.",
+            "es": "Placas de arenisca dorada con bordes angulares y salientes."
+          },
+          "tags": [
+            "profiles-mouldings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patterned-yellow",
+      "photos": [
+        {
+          "id": "s0590",
+          "kind": "sample",
+          "alt": {
+            "en": "Yellow sandstone samples with linear surface patterns.",
+            "es": "Muestras de arenisca amarilla con patrones lineales."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0592",
+          "kind": "sample",
+          "alt": {
+            "en": "Angled view of a patterned yellow sandstone sample.",
+            "es": "Vista en ángulo de una muestra de arenisca amarilla texturada."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0583",
+          "kind": "production",
+          "alt": {
+            "en": "Yellow sandstone panels separated by protective strips and secured with green straps.",
+            "es": "Paneles de arenisca amarilla separados por tiras protectoras y sujetos con flejes verdes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0585",
+          "kind": "production",
+          "alt": {
+            "en": "Close view of banded yellow sandstone panels in a protected bundle.",
+            "es": "Detalle de paneles de arenisca amarilla con bandas en un paquete protegido."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0587",
+          "kind": "production",
+          "alt": {
+            "en": "Flat yellow sandstone slabs grouped together with edge protection.",
+            "es": "Placas planas de arenisca amarilla agrupadas con protección en los bordes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0594",
+          "kind": "production",
+          "alt": {
+            "en": "Upright yellow sandstone panels arranged in protected rows.",
+            "es": "Paneles verticales de arenisca amarilla dispuestos en filas protegidas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0596",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long yellow stone pieces showing diagonal grain and straight edges.",
+            "es": "Piezas largas de piedra amarilla con vetas diagonales y bordes rectos."
+          },
+          "tags": [
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0598",
+          "kind": "production",
+          "alt": {
+            "en": "Broad golden stone slabs stacked in an outdoor work area.",
+            "es": "Placas anchas de piedra dorada apiladas en una zona de trabajo exterior."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grey",
+      "photos": [
+        {
+          "id": "s0638",
+          "kind": "sample",
+          "alt": {
+            "en": "Grey sandstone slab colour reference.",
+            "es": "Referencia de color de una placa de arenisca gris."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0611",
+          "kind": "detail",
+          "alt": {
+            "en": "Two grey sandstone pieces with rough surfaces.",
+            "es": "Dos piezas de arenisca gris con superficies rugosas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0600",
+          "kind": "production",
+          "alt": {
+            "en": "Grey sandstone profiles arranged on wooden supports.",
+            "es": "Perfiles de arenisca gris colocados sobre soportes de madera."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0606",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of long grey sandstone pieces on pallets.",
+            "es": "Filas de piezas largas de arenisca gris sobre palés."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0608",
+          "kind": "sample",
+          "alt": {
+            "en": "Grey sandstone samples with smooth and rough textures.",
+            "es": "Muestras de arenisca gris con texturas lisas y rugosas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0609",
+          "kind": "detail",
+          "alt": {
+            "en": "Stacked grey slabs with irregular split edges.",
+            "es": "Placas grises apiladas con bordes partidos irregulares."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0612",
+          "kind": "shaped",
+          "alt": {
+            "en": "Circular and rectangular dark-grey sandstone pieces.",
+            "es": "Piezas circulares y rectangulares de arenisca gris oscura."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0613",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of a large grey stone block and its rough edge.",
+            "es": "Detalle de un bloque grande de piedra gris y su borde rugoso."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0618",
+          "kind": "sample",
+          "alt": {
+            "en": "Long pale-grey sandstone sample on a light background.",
+            "es": "Muestra larga de arenisca gris clara sobre un fondo claro."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0623",
+          "kind": "sample",
+          "alt": {
+            "en": "Three dark-grey samples showing different surface textures.",
+            "es": "Tres muestras de color gris oscuro con distintas texturas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0624",
+          "kind": "production",
+          "alt": {
+            "en": "Pale-grey sandstone slabs stacked horizontally.",
+            "es": "Placas de arenisca gris clara apiladas horizontalmente."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0627",
+          "kind": "sample",
+          "alt": {
+            "en": "Grey sample pieces with contrasting smooth and textured faces.",
+            "es": "Muestras grises con caras lisas y texturadas en contraste."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0631",
+          "kind": "production",
+          "alt": {
+            "en": "A worker shaping the edge of a grey stone block.",
+            "es": "Una persona trabaja el borde de un bloque de piedra gris."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0633",
+          "kind": "detail",
+          "alt": {
+            "en": "Broad grey block face with a rough perimeter.",
+            "es": "Cara ancha de un bloque gris con perímetro rugoso."
+          },
+          "tags": [
+            "blocks-slabs"
+          ]
+        },
+        {
+          "id": "s0634",
+          "kind": "production",
+          "alt": {
+            "en": "Flat grey slabs secured with green straps.",
+            "es": "Placas grises planas sujetas con flejes verdes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0643",
+          "kind": "sample",
+          "alt": {
+            "en": "Small grey sandstone sample held for a closer view.",
+            "es": "Pequeña muestra de arenisca gris sostenida para verla de cerca."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0644",
+          "kind": "detail",
+          "alt": {
+            "en": "Two grey slabs with fine linear markings.",
+            "es": "Dos placas grises con líneas finas en la superficie."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0645",
+          "kind": "detail",
+          "alt": {
+            "en": "Light-grey stone surface showing sweeping curved marks.",
+            "es": "Superficie de piedra gris clara con marcas curvas amplias."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0646",
+          "kind": "shaped",
+          "alt": {
+            "en": "Curved grey sandstone sections arranged in a row.",
+            "es": "Secciones curvas de arenisca gris colocadas en fila."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0648",
+          "kind": "shaped",
+          "alt": {
+            "en": "Upright grey sandstone piece with a moulded profile.",
+            "es": "Pieza vertical de arenisca gris con perfil moldurado."
+          },
+          "tags": [
+            "sample-panels",
+            "profiles-mouldings"
+          ]
+        },
+        {
+          "id": "s0649",
+          "kind": "sample",
+          "alt": {
+            "en": "Two light-grey rectangular sandstone samples.",
+            "es": "Dos muestras rectangulares de arenisca gris clara."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0652",
+          "kind": "application",
+          "alt": {
+            "en": "Grey stone framing an angular garden doorway.",
+            "es": "Piedra gris enmarca una entrada angular a un jardín."
+          },
+          "tags": [
+            "paving-steps",
+            "wall-cladding",
+            "garden-settings"
+          ]
+        },
+        {
+          "id": "s0653",
+          "kind": "shaped",
+          "alt": {
+            "en": "Tall grey stone profiles leaning against a wall.",
+            "es": "Perfiles altos de piedra gris apoyados contra una pared."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0655",
+          "kind": "production",
+          "alt": {
+            "en": "Grey sandstone profiles and flat pieces on supports.",
+            "es": "Perfiles y piezas planas de arenisca gris sobre soportes."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cream-beige",
+      "photos": [
+        {
+          "id": "s0692",
+          "kind": "sample",
+          "alt": {
+            "en": "Cream and beige sandstone sample pieces.",
+            "es": "Muestras de arenisca en tonos crema y beige."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0683",
+          "kind": "sample",
+          "alt": {
+            "en": "Cream-beige sandstone slabs.",
+            "es": "Placas de arenisca crema y beige."
+          },
+          "tags": [
+            "blocks-slabs"
+          ]
+        },
+        {
+          "id": "s0659",
+          "kind": "production",
+          "alt": {
+            "en": "Broad light-coloured sandstone pieces on workshop supports.",
+            "es": "Piezas anchas de arenisca clara sobre soportes de taller."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0660",
+          "kind": "production",
+          "alt": {
+            "en": "Light sandstone slabs and offcuts in a work area.",
+            "es": "Placas y recortes de arenisca clara en una zona de trabajo."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0664",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of long beige sandstone pieces on supports.",
+            "es": "Filas de piezas largas de arenisca beige sobre soportes."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0674",
+          "kind": "sample",
+          "alt": {
+            "en": "Two beige sandstone samples with different surface textures.",
+            "es": "Dos muestras de arenisca beige con diferentes texturas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0676",
+          "kind": "production",
+          "alt": {
+            "en": "Thin beige panels standing in parallel rows.",
+            "es": "Paneles delgados de color beige en filas paralelas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0681",
+          "kind": "detail",
+          "alt": {
+            "en": "Large pale sandstone blocks with rough-cut faces.",
+            "es": "Bloques grandes de arenisca clara con caras de corte rugoso."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0684",
+          "kind": "shaped",
+          "alt": {
+            "en": "Cream sandstone pieces with angular raised profiles.",
+            "es": "Piezas de arenisca crema con perfiles angulares elevados."
+          },
+          "tags": [
+            "profiles-mouldings"
+          ]
+        },
+        {
+          "id": "s0685",
+          "kind": "production",
+          "alt": {
+            "en": "Beige sandstone slabs bundled with green straps.",
+            "es": "Placas de arenisca beige agrupadas con flejes verdes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0689",
+          "kind": "production",
+          "alt": {
+            "en": "Repeated pale sandstone panels arranged upright.",
+            "es": "Paneles repetidos de arenisca clara colocados verticalmente."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0699",
+          "kind": "shaped",
+          "alt": {
+            "en": "Curved beige sandstone sections grouped on the ground.",
+            "es": "Secciones curvas de arenisca beige agrupadas en el suelo."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0701",
+          "kind": "shaped",
+          "alt": {
+            "en": "Light sandstone columns beside straight profile pieces.",
+            "es": "Columnas de arenisca clara junto a piezas de perfil recto."
+          },
+          "tags": [
+            "columns-balustrades",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0702",
+          "kind": "sample",
+          "alt": {
+            "en": "Three rough-faced sandstone samples in beige tones.",
+            "es": "Tres muestras de arenisca con caras rugosas en tonos beige."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0703",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of shaped pale sandstone components in a work area.",
+            "es": "Filas de componentes de arenisca clara en una zona de trabajo."
+          },
+          "tags": [
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0706",
+          "kind": "shaped",
+          "alt": {
+            "en": "Cream sandstone pieces with stepped and angled profiles.",
+            "es": "Piezas de arenisca crema con perfiles escalonados y angulares."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0708",
+          "kind": "shaped",
+          "alt": {
+            "en": "Round moulded sandstone forms secured in a bundle.",
+            "es": "Formas redondas molduradas de arenisca sujetas en un paquete."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production",
+            "capitals-bases"
+          ]
+        },
+        {
+          "id": "s0710",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long moulded sandstone profiles stacked together.",
+            "es": "Perfiles largos de arenisca moldurada apilados juntos."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0714",
+          "kind": "shaped",
+          "alt": {
+            "en": "Large cream stone scroll forms arranged outdoors.",
+            "es": "Grandes formas de volutas de piedra crema colocadas al aire libre."
+          },
+          "tags": [
+            "packing-production",
+            "capitals-bases"
+          ]
+        },
+        {
+          "id": "s0715",
+          "kind": "shaped",
+          "alt": {
+            "en": "Geometric cream sandstone components grouped on pallets.",
+            "es": "Componentes geométricos de arenisca crema agrupados sobre palés."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0721",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long pale stone pieces forming rectangular frames.",
+            "es": "Piezas largas de piedra clara que forman marcos rectangulares."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0723",
+          "kind": "sample",
+          "alt": {
+            "en": "Cream rectangular panels laid out together.",
+            "es": "Paneles rectangulares de color crema dispuestos juntos."
+          },
+          "tags": [
+            "blocks-slabs"
+          ]
+        },
+        {
+          "id": "s0726",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of stacked beige sandstone edges.",
+            "es": "Detalle de los bordes de arenisca beige apilada."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0737",
+          "kind": "detail",
+          "alt": {
+            "en": "Pale sandstone panels with rough and moulded surfaces.",
+            "es": "Paneles de arenisca clara con superficies rugosas y molduradas."
+          },
+          "tags": [
+            "surface-details",
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grey-green",
+      "photos": [
+        {
+          "id": "s0881",
+          "kind": "sample",
+          "alt": {
+            "en": "Grey-green sandstone samples showing tonal variation.",
+            "es": "Muestras de arenisca gris verdosa con variaciones de tono."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0787",
+          "kind": "detail",
+          "alt": {
+            "en": "Grey-green sandstone blocks with rough surfaces.",
+            "es": "Bloques de arenisca gris verdosa con superficies rugosas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0738",
+          "kind": "sample",
+          "alt": {
+            "en": "Grey-green rectangular samples arranged as a panel.",
+            "es": "Muestras rectangulares de color gris verdoso dispuestas en un panel."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0740",
+          "kind": "production",
+          "alt": {
+            "en": "Large grey-green sandstone pieces bundled on supports.",
+            "es": "Piezas grandes de arenisca gris verdosa agrupadas sobre soportes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0741",
+          "kind": "shaped",
+          "alt": {
+            "en": "Carved drum-shaped stone forms with decorative reliefs.",
+            "es": "Formas de piedra tallada tipo tambor con relieves decorativos."
+          },
+          "tags": [
+            "packing-production",
+            "animal-carving"
+          ]
+        },
+        {
+          "id": "s0744",
+          "kind": "detail",
+          "alt": {
+            "en": "Large grey-green stone block with horizontal bands.",
+            "es": "Bloque grande de piedra gris verdosa con bandas horizontales."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0757",
+          "kind": "production",
+          "alt": {
+            "en": "A worker placing packing material around stone pieces.",
+            "es": "Una persona coloca material de embalaje alrededor de piezas de piedra."
+          },
+          "tags": [
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0762",
+          "kind": "shaped",
+          "alt": {
+            "en": "Stacks of irregular round-edged grey stone pieces.",
+            "es": "Pilas de piezas grises irregulares con bordes redondeados."
+          },
+          "tags": [
+            "paving-steps",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0767",
+          "kind": "shaped",
+          "alt": {
+            "en": "Rounded cylindrical sandstone forms grouped together.",
+            "es": "Formas cilíndricas redondeadas de arenisca agrupadas juntas."
+          },
+          "tags": [
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0770",
+          "kind": "application",
+          "alt": {
+            "en": "Decorative grey stone railing beside steps.",
+            "es": "Barandilla decorativa de piedra gris junto a unos escalones."
+          },
+          "tags": [
+            "paving-steps",
+            "columns-balustrades",
+            "geometric-reliefs"
+          ]
+        },
+        {
+          "id": "s0774",
+          "kind": "sample",
+          "alt": {
+            "en": "Three pale grey-green slabs with linear grain.",
+            "es": "Tres placas de color gris verdoso claro con vetas lineales."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0775",
+          "kind": "sample",
+          "alt": {
+            "en": "Two grey-green stone samples showing fine stripes.",
+            "es": "Dos muestras de piedra gris verdosa con rayas finas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0776",
+          "kind": "shaped",
+          "alt": {
+            "en": "Rows of sandstone spindle-shaped forms.",
+            "es": "Filas de formas de arenisca tipo balaustre."
+          },
+          "tags": [
+            "columns-balustrades",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0778",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of a textured grey-green sandstone face.",
+            "es": "Detalle de una cara texturada de arenisca gris verdosa."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s0780",
+          "kind": "shaped",
+          "alt": {
+            "en": "Stepped grey-green stone form with rough upper surfaces.",
+            "es": "Forma escalonada de piedra gris verdosa con superficies superiores rugosas."
+          },
+          "tags": [
+            "surface-details",
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0782",
+          "kind": "shaped",
+          "alt": {
+            "en": "Carved rectangular stone panels bundled together.",
+            "es": "Paneles rectangulares de piedra tallada agrupados juntos."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "geometric-reliefs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0786",
+          "kind": "shaped",
+          "alt": {
+            "en": "Decorative grey stone vessels with wide circular openings.",
+            "es": "Recipientes decorativos de piedra gris con aberturas circulares anchas."
+          },
+          "tags": [
+            "basins-planters",
+            "floral-reliefs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0790",
+          "kind": "application",
+          "alt": {
+            "en": "Grey stone railing along a garden path.",
+            "es": "Barandilla de piedra gris a lo largo de un sendero de jardín."
+          },
+          "tags": [
+            "paving-steps",
+            "columns-balustrades",
+            "floral-reliefs",
+            "garden-settings"
+          ]
+        },
+        {
+          "id": "s0795",
+          "kind": "shaped",
+          "alt": {
+            "en": "Square stone form with carved floral faces.",
+            "es": "Forma cuadrada de piedra con caras talladas con flores."
+          },
+          "tags": [
+            "floral-reliefs",
+            "capitals-bases"
+          ]
+        },
+        {
+          "id": "s0797",
+          "kind": "sample",
+          "alt": {
+            "en": "Dark grey-green stone pieces arranged in an angular pattern.",
+            "es": "Piezas de piedra gris verdosa oscura dispuestas en un patrón angular."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s0812",
+          "kind": "detail",
+          "alt": {
+            "en": "Dark stone slabs with wet reflective surfaces.",
+            "es": "Placas de piedra oscura con superficies húmedas y reflectantes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0828",
+          "kind": "shaped",
+          "alt": {
+            "en": "Grey-green panel with a carved flowering branch.",
+            "es": "Panel gris verdoso con una rama florida tallada."
+          },
+          "tags": [
+            "floral-reliefs"
+          ]
+        },
+        {
+          "id": "s0866",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long grey stone piece with a rectangular channel.",
+            "es": "Pieza larga de piedra gris con un canal rectangular."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s0888",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long pale-grey stone profile with an angled side.",
+            "es": "Perfil largo de piedra gris clara con un lateral angular."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red-woodgrain",
+      "photos": [
+        {
+          "id": "s1745",
+          "kind": "sample",
+          "alt": {
+            "en": "Violet-red sandstone panel with fine linear grain.",
+            "es": "Panel de arenisca rojo violáceo con vetas lineales finas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1743",
+          "kind": "detail",
+          "alt": {
+            "en": "Red woodgrain sandstone slabs.",
+            "es": "Placas de arenisca roja veteada."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1710",
+          "kind": "detail",
+          "alt": {
+            "en": "Reddish stone block with a smooth face and rough upper edge.",
+            "es": "Bloque de piedra rojiza con una cara lisa y un borde superior rugoso."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1711",
+          "kind": "detail",
+          "alt": {
+            "en": "Red woodgrain slabs with wet reflective surfaces.",
+            "es": "Placas rojas veteadas con superficies húmedas y reflectantes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1713",
+          "kind": "sample",
+          "alt": {
+            "en": "Small red woodgrain sample resting on a long slab.",
+            "es": "Pequeña muestra roja veteada apoyada sobre una placa larga."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1714",
+          "kind": "sample",
+          "alt": {
+            "en": "Pale red-brown woodgrain sample on a larger slab.",
+            "es": "Muestra veteada de tono marrón rojizo claro sobre una placa mayor."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1719",
+          "kind": "sample",
+          "alt": {
+            "en": "Upright reddish sandstone piece with strong vertical stripes.",
+            "es": "Pieza vertical de arenisca rojiza con rayas verticales marcadas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1720",
+          "kind": "detail",
+          "alt": {
+            "en": "Long red-brown sandstone slabs showing parallel grain.",
+            "es": "Placas largas de arenisca marrón rojiza con vetas paralelas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1721",
+          "kind": "production",
+          "alt": {
+            "en": "Red sandstone profiles arranged on workshop supports.",
+            "es": "Perfiles de arenisca roja colocados sobre soportes de taller."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1723",
+          "kind": "detail",
+          "alt": {
+            "en": "Broad red sandstone face with fine horizontal bands.",
+            "es": "Cara ancha de arenisca roja con bandas horizontales finas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1725",
+          "kind": "shaped",
+          "alt": {
+            "en": "Red stone blocks and a recessed rectangular form.",
+            "es": "Bloques de piedra roja y una forma rectangular rebajada."
+          },
+          "tags": [
+            "blocks-slabs",
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1727",
+          "kind": "production",
+          "alt": {
+            "en": "Thick red-brown sandstone pieces stacked outdoors.",
+            "es": "Piezas gruesas de arenisca marrón rojiza apiladas al aire libre."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1731",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of reddish sandstone bands and sawn edges.",
+            "es": "Detalle de las bandas rojizas de la arenisca y sus bordes cortados."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1732",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long red sandstone pieces with projecting profiles.",
+            "es": "Piezas largas de arenisca roja con perfiles salientes."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1715",
+          "kind": "production",
+          "alt": {
+            "en": "Tall violet-red stone slabs standing side by side.",
+            "es": "Placas altas de piedra rojo violáceo colocadas una junto a otra."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1741",
+          "kind": "sample",
+          "alt": {
+            "en": "Two violet-red samples showing striped and rough surfaces.",
+            "es": "Dos muestras rojo violáceo con superficies veteadas y rugosas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1742",
+          "kind": "shaped",
+          "alt": {
+            "en": "Long violet-red sandstone piece with a recessed channel.",
+            "es": "Pieza larga de arenisca rojo violáceo con un canal rebajado."
+          },
+          "tags": [
+            "profiles-mouldings"
+          ]
+        },
+        {
+          "id": "s1746",
+          "kind": "production",
+          "alt": {
+            "en": "Thin red-brown slabs separated by protective foam.",
+            "es": "Placas delgadas de tono marrón rojizo separadas con espuma protectora."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chocolate",
+      "photos": [
+        {
+          "id": "s1764",
+          "kind": "sample",
+          "alt": {
+            "en": "Brown sandstone colour samples.",
+            "es": "Muestras de color de arenisca marrón."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s1765",
+          "kind": "detail",
+          "alt": {
+            "en": "Brown sandstone slab surface.",
+            "es": "Superficie de una placa de arenisca marrón."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1748",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of reddish-brown textured sandstone slabs.",
+            "es": "Filas de placas de arenisca marrón rojiza texturada."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1752",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of stone panels standing in a covered work area.",
+            "es": "Filas de paneles de piedra colocados verticalmente en una zona cubierta."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1754",
+          "kind": "production",
+          "alt": {
+            "en": "Upright stone slabs separated by wooden spacers.",
+            "es": "Placas verticales de piedra separadas mediante listones de madera."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1755",
+          "kind": "sample",
+          "alt": {
+            "en": "Three muted brown sandstone samples on a light background.",
+            "es": "Tres muestras de arenisca marrón suave sobre un fondo claro."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s1756",
+          "kind": "detail",
+          "alt": {
+            "en": "Bundled brown stone blocks with irregular textured faces.",
+            "es": "Bloques de piedra marrón agrupados con caras de textura irregular."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1758",
+          "kind": "detail",
+          "alt": {
+            "en": "A broad pale-brown slab viewed at an angle.",
+            "es": "Placa ancha de color marrón claro vista en ángulo."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1760",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of a rough split surface in a reddish tone.",
+            "es": "Detalle de una superficie partida rugosa en un tono rojizo."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1761",
+          "kind": "production",
+          "alt": {
+            "en": "Large rough stone blocks arranged beside a paved lane.",
+            "es": "Bloques grandes de piedra rugosa colocados junto a un camino pavimentado."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1762",
+          "kind": "sample",
+          "alt": {
+            "en": "A large muted-brown sandstone slab held upright.",
+            "es": "Placa grande de arenisca marrón suave sostenida verticalmente."
+          },
+          "tags": [
+            "blocks-slabs"
+          ]
+        },
+        {
+          "id": "s1763",
+          "kind": "production",
+          "alt": {
+            "en": "Brown sandstone slabs resting in wooden supports.",
+            "es": "Placas de arenisca marrón apoyadas en soportes de madera."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1766",
+          "kind": "production",
+          "alt": {
+            "en": "Brown rectangular slabs secured with green straps.",
+            "es": "Placas rectangulares marrones sujetas con flejes verdes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "black",
+      "photos": [
+        {
+          "id": "s1798",
+          "kind": "sample",
+          "alt": {
+            "en": "Black sandstone sample pieces.",
+            "es": "Muestras de arenisca negra."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s1839",
+          "kind": "detail",
+          "alt": {
+            "en": "Black sandstone samples with a rough surface.",
+            "es": "Muestras de arenisca negra con una superficie rugosa."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1770",
+          "kind": "sample",
+          "alt": {
+            "en": "A dark rectangular sandstone sample viewed at an angle.",
+            "es": "Muestra rectangular de arenisca oscura vista en ángulo."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s1771",
+          "kind": "production",
+          "alt": {
+            "en": "Tall dark sandstone panels bundled on supports.",
+            "es": "Paneles altos de arenisca oscura agrupados sobre soportes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1778",
+          "kind": "detail",
+          "alt": {
+            "en": "Stacked dark slabs with fine linear surface marks.",
+            "es": "Placas oscuras apiladas con marcas lineales finas en la superficie."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1779",
+          "kind": "production",
+          "alt": {
+            "en": "Square dark sandstone slabs stacked outdoors.",
+            "es": "Placas cuadradas de arenisca oscura apiladas al aire libre."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1787",
+          "kind": "detail",
+          "alt": {
+            "en": "Close view of a dark split stone surface.",
+            "es": "Detalle de una superficie de piedra oscura partida."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1788",
+          "kind": "shaped",
+          "alt": {
+            "en": "Dark stone pieces with angular and stepped profiles.",
+            "es": "Piezas de piedra oscura con perfiles angulares y escalonados."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1792",
+          "kind": "shaped",
+          "alt": {
+            "en": "Curved dark sandstone sections arranged in a row.",
+            "es": "Secciones curvas de arenisca oscura colocadas en fila."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1800",
+          "kind": "production",
+          "alt": {
+            "en": "Dark stone components arranged across a workshop floor.",
+            "es": "Componentes de piedra oscura dispuestos en el suelo de un taller."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1801",
+          "kind": "production",
+          "alt": {
+            "en": "Long narrow dark sandstone profiles standing together.",
+            "es": "Perfiles largos y estrechos de arenisca oscura colocados juntos."
+          },
+          "tags": [
+            "profiles-mouldings",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1806",
+          "kind": "detail",
+          "alt": {
+            "en": "Large dark stone block with an uneven rough face.",
+            "es": "Bloque grande de piedra oscura con una cara rugosa e irregular."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1810",
+          "kind": "production",
+          "alt": {
+            "en": "Rows of dark rectangular stone pieces laid on supports.",
+            "es": "Filas de piezas rectangulares de piedra oscura sobre soportes."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1812",
+          "kind": "shaped",
+          "alt": {
+            "en": "Bundles of rounded dark sandstone components.",
+            "es": "Paquetes de componentes redondeados de arenisca oscura."
+          },
+          "tags": [
+            "columns-balustrades",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1813",
+          "kind": "shaped",
+          "alt": {
+            "en": "Irregular dark stone panels stacked with uneven edges.",
+            "es": "Paneles irregulares de piedra oscura apilados con bordes desiguales."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1816",
+          "kind": "sample",
+          "alt": {
+            "en": "Light and dark sample pieces resting on larger dark panels.",
+            "es": "Muestras claras y oscuras apoyadas sobre paneles oscuros mayores."
+          },
+          "tags": [
+            "blocks-slabs",
+            "sample-panels"
+          ]
+        },
+        {
+          "id": "s1817",
+          "kind": "production",
+          "alt": {
+            "en": "Bundled dark panels standing in parallel groups.",
+            "es": "Paneles oscuros agrupados verticalmente en grupos paralelos."
+          },
+          "tags": [
+            "blocks-slabs",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1819",
+          "kind": "sample",
+          "alt": {
+            "en": "Large dark sandstone sample with a textured face.",
+            "es": "Muestra grande de arenisca oscura con una cara texturada."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1824",
+          "kind": "detail",
+          "alt": {
+            "en": "Dark stone strips showing fine repeated surface ridges.",
+            "es": "Tiras de piedra oscura con relieves finos repetidos en la superficie."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1826",
+          "kind": "detail",
+          "alt": {
+            "en": "Stacked rectangular dark stone slabs with textured top faces.",
+            "es": "Placas rectangulares de piedra oscura apiladas con caras superiores texturadas."
+          },
+          "tags": [
+            "blocks-slabs",
+            "surface-details",
+            "packing-production"
+          ]
+        },
+        {
+          "id": "s1834",
+          "kind": "sample",
+          "alt": {
+            "en": "Two dark stone samples with pronounced rough texture.",
+            "es": "Dos muestras de piedra oscura con una textura rugosa pronunciada."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1848",
+          "kind": "sample",
+          "alt": {
+            "en": "Dark sandstone samples with smooth and split surfaces.",
+            "es": "Muestras de arenisca oscura con superficies lisas y partidas."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1842",
+          "kind": "sample",
+          "alt": {
+            "en": "Four dark rectangular samples showing tonal differences.",
+            "es": "Cuatro muestras rectangulares oscuras con diferencias de tono."
+          },
+          "tags": [
+            "sample-panels",
+            "surface-details"
+          ]
+        },
+        {
+          "id": "s1846",
+          "kind": "sample",
+          "alt": {
+            "en": "Four dark sandstone pieces arranged in a vertical panel.",
+            "es": "Cuatro piezas de arenisca oscura dispuestas en un panel vertical."
+          },
+          "tags": [
+            "sample-panels"
+          ]
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "blocks-slabs",
+      "name": {
+        "en": "Blocks & slabs",
+        "es": "Bloques y placas"
+      },
+      "description": {
+        "en": "Rough blocks, cut slabs and flat stone pieces.",
+        "es": "Bloques rugosos, placas cortadas y piezas planas de piedra."
+      }
+    },
+    {
+      "id": "sample-panels",
+      "name": {
+        "en": "Colour & surface samples",
+        "es": "Muestras de color y superficie"
+      },
+      "description": {
+        "en": "Sample pieces showing visible colour, grain and surface differences.",
+        "es": "Muestras que muestran diferencias visibles de color, vetas y superficie."
+      }
+    },
+    {
+      "id": "surface-details",
+      "name": {
+        "en": "Surface & grain details",
+        "es": "Detalles de superficie y vetas"
+      },
+      "description": {
+        "en": "Close views of grain, grooves and uneven stone surfaces.",
+        "es": "Vistas de cerca de las vetas, ranuras y superficies irregulares de la piedra."
+      }
+    },
+    {
+      "id": "paving-steps",
+      "name": {
+        "en": "Paving layouts & steps",
+        "es": "Pavimentos y escalones"
+      },
+      "description": {
+        "en": "Paving arrangements, polygonal pieces and visible steps.",
+        "es": "Disposiciones de pavimento, piezas poligonales y escalones visibles."
+      }
+    },
+    {
+      "id": "wall-cladding",
+      "name": {
+        "en": "Wall cladding details",
+        "es": "Detalles de revestimiento"
+      },
+      "description": {
+        "en": "Stone panels, joints and corner details visible on walls.",
+        "es": "Paneles de piedra, juntas y detalles de esquina visibles en muros."
+      }
+    },
+    {
+      "id": "profiles-mouldings",
+      "name": {
+        "en": "Profiles & curved pieces",
+        "es": "Perfiles y piezas curvas"
+      },
+      "description": {
+        "en": "Straight profiles, curved sections and pieces with shaped edges.",
+        "es": "Perfiles rectos, secciones curvas y piezas con bordes perfilados."
+      }
+    },
+    {
+      "id": "columns-balustrades",
+      "name": {
+        "en": "Columns & balustrades",
+        "es": "Columnas y balaustradas"
+      },
+      "description": {
+        "en": "Column forms, railing panels and baluster-shaped stone pieces.",
+        "es": "Formas de columnas, paneles de barandilla y piezas de piedra tipo balaustre."
+      }
+    },
+    {
+      "id": "basins-planters",
+      "name": {
+        "en": "Basins & open containers",
+        "es": "Pilas y recipientes abiertos"
+      },
+      "description": {
+        "en": "Stone vessels and rectangular forms with visible openings.",
+        "es": "Recipientes de piedra y formas rectangulares con aberturas visibles."
+      }
+    },
+    {
+      "id": "floral-reliefs",
+      "name": {
+        "en": "Floral reliefs",
+        "es": "Relieves florales"
+      },
+      "description": {
+        "en": "Carved flowers, leaves and branching plant motifs.",
+        "es": "Flores, hojas y motivos de ramas vegetales tallados."
+      }
+    },
+    {
+      "id": "geometric-reliefs",
+      "name": {
+        "en": "Geometric reliefs",
+        "es": "Relieves geométricos"
+      },
+      "description": {
+        "en": "Stone panels with carved repeating geometric patterns.",
+        "es": "Paneles de piedra con patrones geométricos repetidos tallados."
+      }
+    },
+    {
+      "id": "animal-carving",
+      "name": {
+        "en": "Animal carving",
+        "es": "Tallado de animales"
+      },
+      "description": {
+        "en": "Visible animal forms and animal motifs carved in stone.",
+        "es": "Formas y motivos de animales visibles tallados en piedra."
+      }
+    },
+    {
+      "id": "capitals-bases",
+      "name": {
+        "en": "Capitals & base forms",
+        "es": "Capiteles y formas de base"
+      },
+      "description": {
+        "en": "Decorative capital and base forms with shaped or carved faces.",
+        "es": "Formas decorativas de capiteles y bases con caras perfiladas o talladas."
+      }
+    },
+    {
+      "id": "facades",
+      "name": {
+        "en": "Building exterior references",
+        "es": "Referencias de exteriores de edificios"
+      },
+      "description": {
+        "en": "Photographs of stone-faced building exteriors, including work in progress.",
+        "es": "Fotografías de exteriores de edificios revestidos de piedra, incluidas obras en curso."
+      }
+    },
+    {
+      "id": "garden-settings",
+      "name": {
+        "en": "Garden & landscape references",
+        "es": "Referencias de jardines y paisajismo"
+      },
+      "description": {
+        "en": "Stone steps, railings and decorative walls in visible garden settings.",
+        "es": "Escalones, barandillas y muros decorativos de piedra en entornos de jardín visibles."
+      }
+    },
+    {
+      "id": "packing-production",
+      "name": {
+        "en": "Packing & work-area references",
+        "es": "Referencias de embalaje y zonas de trabajo"
+      },
+      "description": {
+        "en": "Photographs of stone packing, grouped pieces and work-area activity.",
+        "es": "Fotografías de embalaje de piedra, piezas agrupadas y actividad en zonas de trabajo."
+      }
+    },
+    {
+      "id": "narrative-reliefs",
+      "name": {
+        "en": "Scenic & narrative reliefs",
+        "es": "Relieves de paisajes y escenas"
+      },
+      "description": {
+        "en": "Carved panels showing people, buildings, boats and narrative scenes.",
+        "es": "Paneles tallados que muestran personas, edificios, barcos y escenas narrativas."
+      }
+    }
+  ]
+}
